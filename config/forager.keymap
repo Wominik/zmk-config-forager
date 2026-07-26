@@ -144,11 +144,6 @@
             key-positions = <LM4 LM3>;
             bindings = <&mt LC(LALT) ESC>;
         };
-        combo_esc_2 {
-            timeout-ms = <50>;
-            key-positions = <LM3 LM2>;
-            bindings = <&mt LA(LGUI) ESC>;
-        };
         combo_tab {
             timeout-ms = <50>;
             key-positions = <LM2 LM1>;
@@ -172,7 +167,7 @@
         combo_right_screen {
             timeout-ms = <50>;
             key-positions = <RB2 RB3>;
-            bindings = <&kp LC(LEFT)>;
+            bindings = <&kp LC(RIGHT)>;
         };
         combo_go_back {
             timeout-ms = <50>;
@@ -203,6 +198,11 @@
             timeout-ms = <50>;
             key-positions = <LB4 LB3>;
             bindings = <&kp LG(Z)>;
+        };
+        combo_redo {
+            timeout-ms = <50>;
+            key-positions = <LB4 LB3 LB2>;
+            bindings = <&kp LG(LS(Z))>;
         };
         combo_studio {
             timeout-ms = <50>;
