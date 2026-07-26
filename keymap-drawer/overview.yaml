@@ -76,13 +76,13 @@ layers:
       br: SYM
       bl: '}'
     - t: G
-      h: ⌃⌥⇧⌘
+      h: ✦
       tr: ⌃⌥⇧⌘
       tl: ⌃⌥⇧⌘
       br: ⌃⌥⇧⌘
       bl: ''
     - t: H
-      h: ⇧⌥⌃⌘
+      h: ✦
       tr: ''
       tl: ''
       br: ''

@@ -123,6 +123,8 @@ path.combo {
     visibility: hidden;
 }
 /* End Tabler Icons Cleanup */
+
+text.footer { text-anchor: middle; }
 </style>
 <g transform="translate(30, 0)" class="layer-BASE">
 <g transform="translate(0, 56)">
@@ -218,7 +220,7 @@ path.combo {
 <g transform="translate(252, 100)" class="key keypos-14">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">G</text>
-<text x="0" y="24" class="key hold">⌃⌥⇧⌘</text>
+<text x="0" y="24" class="key hold">✦</text>
 <text x="-24" y="-24" class="key tl">⌃⌥⇧⌘</text>
 <text x="24" y="-24" class="key tr">⌃⌥⇧⌘</text>
 <text x="24" y="24" class="key br">⌃⌥⇧⌘</text>
@@ -226,7 +228,7 @@ path.combo {
 <g transform="translate(448, 100)" class="key keypos-15">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">H</text>
-<text x="0" y="24" class="key hold">⇧⌥⌃⌘</text>
+<text x="0" y="24" class="key hold">✦</text>
 <text x="-24" y="24" class="key bl"><tspan style="font-size: 64%">(RA(RC(RGU…</tspan></text>
 </g>
 <g transform="translate(504, 94)" class="key keypos-16">
@@ -525,4 +527,4 @@ path.combo {
 </g>
 </g>
 </g>
-</svg>
+<text x="50%" y="730.0" class="footer">✦ = ⌃⌥⌘⇧</text></svg>
