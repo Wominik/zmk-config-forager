@@ -3,152 +3,89 @@ layout:
 layers:
   BASE:
     - t: Q
-      tr: ''
-      br: ''
-      bl: ''
     - t: W
-      tr: ''
-      br: ''
-      bl: ''
     - t: E
-      tr: ''
-      br: ''
       bl: (
     - t: R
-      tr: ''
-      br: ''
       bl: )
     - t: T
-      tr: ''
-      br: ''
-      bl: ''
     - t: Y
-      tr: ''
-      br: ''
-      bl: ''
     - t: U
       tr: ⇱
       br: '7'
-      bl: ''
+      tl: '&'
     - t: I
       tr: ⇟
       br: '8'
-      bl: ''
+      tl: '*'
     - t: O
       tr: ⇞
       br: '9'
-      bl: ''
+      tl: (
     - t: P
       tr: ⇲
       br: '-'
-      bl: ''
+      tl: _
     - t: A
       h: ⌃
-      tr: ⌃
-      br: ⌃
       bl: <
     - t: S
       h: ⌥
-      tr: ⌥
-      br: ⌥
       bl: '>'
     - t: D
       h: ⌘
-      tr: ⌘
-      br: ⌘
       bl: '{'
     - t: F
       h: ⇧
-      tr: ⇧
-      br: ⇧
       bl: '}'
     - t: G
       h: ✦
-      tr: ⌃⌥⇧⌘
-      br: ⌃⌥⇧⌘
-      bl: ''
     - t: H
       h: ✦
-      tr: ''
-      br: ''
-      bl: (RA(RC(RGUI)))
     - t: J
       h: ⇧
-      tr: ←
       br: '4'
-      bl: ⇧
     - t: K
       h: ⌘
-      tr: ↓
       br: '5'
-      bl: ⌘
     - t: L
       h: ⌥
-      tr: ↑
       br: '6'
-      bl: ⌥
     - t: ;
       h: ⌃
-      tr: →
       br: +
-      bl: ⌃
     - t: Z
-      tr: ''
-      br: ''
-      bl: ''
     - t: X
-      tr: ''
-      br: ''
-      bl: ''
     - t: C
-      tr: ''
-      br: ''
       bl: '['
     - t: V
-      tr: ''
-      br: ''
       bl: ']'
     - t: B
-      tr: ''
-      br: ''
-      bl: ''
     - t: N
-      tr: ''
       br: '0'
-      bl: ''
+      tl: )
     - t: M
-      tr: ''
       br: '1'
-      bl: ''
+      tl: '!'
     - t: ','
-      tr: ''
       br: '2'
-      bl: ''
+      tl: '@'
     - t: .
-      tr: ''
       br: '3'
-      bl: ''
+      tl: '#'
     - t: /
-      tr: ''
       br: \
-      bl: ''
+      tl: '|'
     - t: ␣
       h: NAV
-      br: ''
-      bl: ␣
     - t: ⇥
       h: NUM
-      tr: ''
-      bl: ⇥
     - t: ⌫
       h: FUN
       tr: ⌫
-      br: ⌫
-      bl: ''
     - t: ␣
       h: BRAC
       tr: ␣
-      br: ␣
   Combos:
     - ''
     - ''
