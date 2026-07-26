@@ -171,7 +171,6 @@ text.footer { text-anchor: middle; }
 <g transform="translate(616, 44)" class="key keypos-8">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">O</text>
-<text x="-24" y="-24" class="key tl">(</text>
 <text x="24" y="-24" class="key tr">⇞</text>
 <text x="24" y="24" class="key br">9</text>
 </g>
@@ -272,7 +271,6 @@ text.footer { text-anchor: middle; }
 <g transform="translate(448, 156)" class="key keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">N</text>
-<text x="-24" y="-24" class="key tl">)</text>
 <text x="24" y="24" class="key br">0</text>
 </g>
 <g transform="translate(504, 150)" class="key keypos-26">
@@ -446,19 +444,15 @@ text.footer { text-anchor: middle; }
 <text x="588" y="103" class="combo hold">⇧⌘</text>
 </g>
 <g class="combo combopos-4">
-<path d="M532,184 h-22 a6.0,6.0 0 0 1 -6.0,-6.0 v-10" class="combo"/>
-<path d="M532,184 h22 a6.0,6.0 0 0 0 6.0,-6.0 v-19" class="combo"/>
-<rect rx="6" ry="6" x="518" y="171" width="28" height="26" class="combo"/>
-<text x="532" y="184" class="combo tap">
-<tspan x="532" dy="-0.6em">Space</tspan><tspan x="532" dy="1.2em">←</tspan>
+<rect rx="6" ry="6" x="518" y="132" width="28" height="26" class="combo"/>
+<text x="532" y="145" class="combo tap">
+<tspan x="532" dy="-0.6em">←</tspan><tspan x="532" dy="1.2em">□</tspan>
 </text>
 </g>
 <g class="combo combopos-5">
-<path d="M588,190 h-22 a6.0,6.0 0 0 1 -6.0,-6.0 v-26" class="combo"/>
-<path d="M588,190 h22 a6.0,6.0 0 0 0 6.0,-6.0 v-10" class="combo"/>
-<rect rx="6" ry="6" x="574" y="177" width="28" height="26" class="combo"/>
-<text x="588" y="190" class="combo tap">
-<tspan x="588" dy="-0.6em">Space</tspan><tspan x="588" dy="1.2em">→</tspan>
+<rect rx="6" ry="6" x="574" y="135" width="28" height="26" class="combo"/>
+<text x="588" y="148" class="combo tap">
+<tspan x="588" dy="-0.6em">□</tspan><tspan x="588" dy="1.2em">→</tspan>
 </text>
 </g>
 <g class="combo combopos-6">
@@ -470,10 +464,8 @@ text.footer { text-anchor: middle; }
 <text x="588" y="36" class="combo tap">Forward</text>
 </g>
 <g class="combo combopos-8">
-<path d="M168,184 h-22 a6.0,6.0 0 0 1 -6.0,-6.0 v-19" class="combo"/>
-<path d="M168,184 h22 a6.0,6.0 0 0 0 6.0,-6.0 v-10" class="combo"/>
-<rect rx="6" ry="6" x="154" y="171" width="28" height="26" class="combo"/>
-<text x="168" y="184" class="combo tap">Copy</text>
+<rect rx="6" ry="6" x="154" y="132" width="28" height="26" class="combo"/>
+<text x="168" y="145" class="combo tap">Copy</text>
 </g>
 <g class="combo combopos-9">
 <path d="M123,190 h-33 a6.0,6.0 0 0 1 -6.0,-6.0 v-10" class="combo"/>
@@ -482,16 +474,12 @@ text.footer { text-anchor: middle; }
 <text x="123" y="190" class="combo tap">Paste</text>
 </g>
 <g class="combo combopos-10">
-<path d="M112,190 h-22 a6.0,6.0 0 0 1 -6.0,-6.0 v-10" class="combo"/>
-<path d="M112,190 h22 a6.0,6.0 0 0 0 6.0,-6.0 v-26" class="combo"/>
-<rect rx="6" ry="6" x="98" y="177" width="28" height="26" class="combo"/>
-<text x="112" y="190" class="combo tap">Cut</text>
+<rect rx="6" ry="6" x="98" y="135" width="28" height="26" class="combo"/>
+<text x="112" y="148" class="combo tap">Cut</text>
 </g>
 <g class="combo combopos-11">
-<path d="M56,209 h-22 a6.0,6.0 0 0 1 -6.0,-6.0 v-10" class="combo"/>
-<path d="M56,209 h22 a6.0,6.0 0 0 0 6.0,-6.0 v-28" class="combo"/>
-<rect rx="6" ry="6" x="42" y="196" width="28" height="26" class="combo"/>
-<text x="56" y="209" class="combo tap">Undo</text>
+<rect rx="6" ry="6" x="42" y="152" width="28" height="26" class="combo"/>
+<text x="56" y="165" class="combo tap">Undo</text>
 </g>
 <g class="combo combopos-12">
 <path d="M84,237 h-50 a6.0,6.0 0 0 1 -6.0,-6.0 v-38" class="combo"/>
@@ -530,4 +518,4 @@ text.footer { text-anchor: middle; }
 </g>
 </g>
 </g>
-<text x="50%" y="730.0" class="footer">✦ = ⌃⌥⌘⇧</text></svg>
+</svg>
