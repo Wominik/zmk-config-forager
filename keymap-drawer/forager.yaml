@@ -239,3 +239,7 @@ combos:
   k: Gui+Z
 - p: [4, 5]
   k: '&studio_unlock'
+- p: [0, 1]
+  k: GRAVE
+- p: [8, 9]
+  k: APOS

@@ -195,6 +195,16 @@
             key-positions = <LT0 RT0>;
             bindings = <&studio_unlock>;
         };
+        combo_grave {
+            timeout-ms = <50>;
+            key-positions = <LT4 LT3>;
+            bindings = <&kp GRAVE>;
+        };
+        combo_apos {
+            timeout-ms = <50>;
+            key-positions = <RT3 RT4>;
+            bindings = <&kp APOS>;
+        };
     };
 
     keymap {
