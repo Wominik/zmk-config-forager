@@ -182,10 +182,6 @@ combos:
     k: {t: ⎋, h: ⌃⌥}
     l:
       - Combos
-  - p: [11, 12]
-    k: {t: ⎋, h: ⌥⌘}
-    l:
-      - Combos
   - p: [12, 13]
     k: {t: ⇥, h: ⇧⌘}
     l:
@@ -203,7 +199,7 @@ combos:
     l:
       - Combos
   - p: [27, 28]
-    k: ⌃←
+    k: ⌃→
     l:
       - Combos
   - p: [6, 7]
@@ -228,6 +224,10 @@ combos:
       - Combos
   - p: [20, 21]
     k: ⌘Z
+    l:
+      - Combos
+  - p: [20, 21, 22]
+    k: ⌘⇧Z
     l:
       - Combos
   - p: [4, 5]
