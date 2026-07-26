@@ -10,9 +10,17 @@ on:
 # https://github.com/urob/zmk-config (generated there locally via `just draw`,
 # reproduced here in CI so nothing needs to be installed/run locally):
 #   - base.svg:     every layer drawn on its own, plus a virtual "Combos" layer
-#   - overview.svg: NAV/SYM/NUM/BRAC folded into BASE as per-key corner labels
-#                    (tr/tl/br/bl - only 4 slots, FUN is intentionally left out
-#                    of the overview but still fully shown in base.svg)
+#   - overview.svg: NAV/NUM/BRAC folded into BASE as per-key corner labels
+#                    (tr=NAV, br=NUM, bl=BRAC, tl=synthetic "NUM+Shift" symbol
+#                    - FUN is intentionally left out of the overview but still
+#                    fully shown in base.svg). On the home row (positions
+#                    10-19) the NAV and tl corners are always dropped, and a
+#                    NUM/BRAC corner is dropped whenever it would just repeat
+#                    the key's own tap/hold (e.g. the modifier row that's
+#                    mirrored onto NUM/BRAC for consistency) - G/H (14/15) are
+#                    hardcoded to show no corners at all since their Hyper
+#                    hold is abbreviated to "✦" and wouldn't text-match the
+#                    spelled-out chord on NUM/BRAC.
 
 jobs:
   draw:
@@ -50,25 +58,44 @@ jobs:
           # keymap-drawer places the footer at the right edge; re-center it (see config.yaml's svg_extra_style)
           sed -i -E 's/(x=")[0-9.]+(" y="[0-9.]+" class="footer")/\150%\2/' keymap-drawer/base.svg
 
-      - name: Build overview.yaml (NAV/SYM/NUM/BRAC as corner labels on BASE)
+      - name: Build overview.yaml (NAV/NUM/BRAC as corner labels on BASE)
         run: |
           set -euo pipefail
           jq_expr='
             def extract_label: if type == "string" then . else .t end;
             def is_transparent: type == "object" and (.type == "trans" or .type == "held");
+            # tap (and hold, if any) text already shown in the center/bottom of the key
+            def base_values: if type == "string" then [.] else ([.t] + (if has("h") then [.h] else [] end)) end;
+            # what Shift+key produces on a US layout, for the synthetic "NUM+Shift" tl corner
+            def shift_map: {
+              "1": "!", "2": "@", "3": "#", "4": "$", "5": "%",
+              "6": "^", "7": "&", "8": "*", "9": "(", "0": ")",
+              "-": "_", "\\": "|"
+            };
+
             .layers = {
               BASE: [
-                [.layers.BASE, .layers.NAV, .layers.SYM, .layers.NUM, .layers.BRAC] | transpose[] |
-                (.[0] | if type == "string" then {t: .} else . end) as $base |
-                (.[1] | if is_transparent then null else extract_label end) as $nav |
-                (.[2] | if is_transparent then null else extract_label end) as $sym |
-                (.[3] | if is_transparent then null else extract_label end) as $num |
-                (.[4] | if is_transparent then null else extract_label end) as $brac |
+                [.layers.BASE, .layers.NAV, .layers.NUM, .layers.BRAC] | transpose | to_entries[] |
+                .key as $pos |
+                (.value[0] | if type == "string" then {t: .} else . end) as $base |
+                ($base | base_values) as $base_vals |
+                # home row (10-19): never repeat NAV there, arrows are fully shown on their own layer in base.svg
+                (.value[1] | if is_transparent or ($pos >= 10 and $pos <= 19) then null else extract_label end) as $nav |
+                (.value[2] | if is_transparent then null else extract_label end) as $num_label |
+                # G (14): NUM there is just the Hyper chord already shown as "✦" on the hold - drop it
+                (if $num_label == null or $pos == 14 or ($base_vals | index($num_label)) then null else $num_label end) as $num |
+                # NUM+Shift symbol, top-left - skipped on the home row (10-19) to keep it minimal there
+                # (e.g. J already shows "4" at br; adding "$" at tl too would clutter it)
+                (if $num_label == null or ($pos >= 10 and $pos <= 19) or ((shift_map | has($num_label)) | not)
+                 then null else shift_map[$num_label] end) as $tl |
+                # H (15): BRAC there is just the Hyper chord already shown as "✦" on the hold - drop it
+                (.value[3] | if is_transparent or $pos == 15 then null else extract_label end) as $brac_raw |
+                (if $brac_raw == null or ($base_vals | index($brac_raw)) then null else $brac_raw end) as $brac |
                 $base
-                + (if $nav  == null then {} else {tr: $nav}  end)
-                + (if $sym  == null then {} else {tl: $sym}  end)
-                + (if $num  == null then {} else {br: $num}  end)
-                + (if $brac == null then {} else {bl: $brac} end)
+                + (if $nav  == null or $nav  == "" then {} else {tr: $nav}  end)
+                + (if $num  == null or $num  == "" then {} else {br: $num}  end)
+                + (if $brac == null or $brac == "" then {} else {bl: $brac} end)
+                + (if $tl   == null or $tl   == "" then {} else {tl: $tl}   end)
               ],
               Combos: .layers.Combos
             } |
