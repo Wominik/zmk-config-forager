@@ -65,10 +65,12 @@ jobs:
             def is_transparent: type == "object" and (.type == "trans" or .type == "held");
             # tap (and hold, if any) text already shown in the center/bottom of the key
             def base_values: if type == "string" then [.] else ([.t] + (if has("h") then [.h] else [] end)) end;
-            # what Shift+key produces on a US layout, for the synthetic "NUM+Shift" tl corner
+            # what Shift+key produces on a US layout, for the synthetic "NUM+Shift" tl corner.
+            # 9 and 0 are deliberately absent - they are now &num9_morph/&num0_morph in the
+            # keymap, so keymap-drawer already renders their Shift value natively as "shifted".
             def shift_map: {
               "1": "!", "2": "@", "3": "#", "4": "$", "5": "%",
-              "6": "^", "7": "&", "8": "*", "9": "(", "0": ")",
+              "6": "^", "7": "&", "8": "*",
               "-": "_", "\\": "|"
             };
 

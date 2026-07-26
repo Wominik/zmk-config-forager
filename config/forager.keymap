@@ -93,6 +93,23 @@
             hold-trigger-key-positions = <KEYS_L THUMBS>;
             hold-trigger-on-release;
         };
+
+        // NUM already reuses N9/N0 for "(" and ")" via Shift on a US layout,
+        // duplicating what BRAC's dedicated LPAR/RPAR already provide - morph
+        // them into something not available elsewhere instead.
+        num9_morph: num9_morph {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N9>, <&kp EQUAL>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        num0_morph: num0_morph {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N0>, <&kp TILDE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -252,11 +269,11 @@
             label = "NUM";
             bindings = <
 //                       ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                           XXX           XXX           XXX           XXX           XXX               XXX           &kp N7        &kp N8        &kp N9        &kp MINUS
+                           XXX           XXX           XXX           XXX           XXX               XXX           &kp N7        &kp N8        &num9_morph   &kp MINUS
 //                       ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                            &kp LCTRL      &kp LALT      &kp LGUI     &kp LSHFT     LHPR              XXX           &kp N4        &kp N5        &kp N6        &kp PLUS
 //                       ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                           XXX           XXX           XXX           XXX           XXX               &kp N0        &kp N1        &kp N2        &kp N3        &kp BSLH
+                           XXX           XXX           XXX           XXX           XXX               &num0_morph   &kp N1        &kp N2        &kp N3        &kp BSLH
 //                       ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
                                                                      XXX           XXX               &kp BSPC      &kp SPACE
 //                                                                 ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
