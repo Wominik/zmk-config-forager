@@ -126,6 +126,37 @@ parse_config:
     "&hml LS(LA(LC(LGUI))) G": { t: G, h: "✦" }
     "&hmr RS(RA(RC(RGUI))) H": { t: H, h: "✦" }
 
+    # named actions on the combo diagram: show what they do, not the raw shortcut
+    "&kp LG(C)": Copy
+    "&kp LG(V)": Paste
+    "&kp LG(X)": Cut
+    "&kp LG(Z)": Undo
+    "&kp LG(LS(Z))": Redo
+    "&kp LG(LS(LBKT))": Back
+    "&kp LG(LS(RBKT))": Forward
+    "&kp LC(LEFT)": Space ←
+    "&kp LC(RIGHT)": Space →
+    "&kp LS(LC(LG(N4)))": Screenshot
+    "&studio_unlock": Studio
+    "&clipboard_manager": Clipboard
+
+  # Nudge combo boxes apart where several combos' key-positions overlap and
+  # their default (centroid) placement would otherwise collide - see
+  # https://github.com/caksoylar/keymap-drawer's ComboSpec align/offset ("a"/"o").
+  # 2-key combos stay close to the row (small offset); the 3-key combos that
+  # are supersets of them (redo, clipboard manager, screenshot) are pushed
+  # further out so they land on a second, further-out line instead of on top.
+  zmk_combos:
+    combo_undo: { align: bottom, offset: 0.1 }
+    combo_cut: { align: bottom, offset: 0.1 }
+    combo_copy: { align: bottom, offset: 0.1 }
+    combo_paste: { align: bottom, offset: 0.1, slide: -0.3 }
+    combo_redo: { align: bottom, offset: 0.6 }
+    combo_clipboard_manager: { align: bottom, offset: 0.6 }
+    combo_left_screen: { align: bottom, offset: 0.1 }
+    combo_right_screen: { align: bottom, offset: 0.1 }
+    combo_screenshot: { align: bottom, offset: 0.6 }
+
 draw_config:
   footer_text: "✦ = ⌃⌥⌘⇧"
   svg_extra_style: |
