@@ -1,0 +1,325 @@
+layout:
+  zmk_keyboard: forager
+layers:
+  BASE:
+    - t: Q
+      tr: ''
+      tl: ''
+      br: ''
+      bl: ''
+    - t: W
+      tr: ''
+      tl: ''
+      br: ''
+      bl: ''
+    - t: E
+      tr: ''
+      tl: ''
+      br: ''
+      bl: (
+    - t: R
+      tr: ''
+      tl: ''
+      br: ''
+      bl: )
+    - t: T
+      tr: ''
+      tl: ''
+      br: ''
+      bl: ''
+    - t: Y
+      tr: ''
+      tl: ''
+      br: ''
+      bl: ''
+    - t: U
+      tr: HOME
+      tl: '&'
+      br: '7'
+      bl: ''
+    - t: I
+      tr: PG DN
+      tl: '*'
+      br: '8'
+      bl: ''
+    - t: O
+      tr: PG UP
+      tl: _
+      br: '9'
+      bl: ''
+    - t: P
+      tr: END
+      tl: '-'
+      br: '-'
+      bl: ''
+    - t: A
+      h: LCTRL
+      tr: LCTRL
+      tl: LGUI
+      br: LCTRL
+      bl: <
+    - t: S
+      h: LALT
+      tr: LALT
+      tl: LALT
+      br: LALT
+      bl: '>'
+    - t: D
+      h: LGUI
+      tr: LGUI
+      tl: LCTRL
+      br: LGUI
+      bl: '{'
+    - t: F
+      h: LSHFT
+      tr: LSHFT
+      br: SYM
+      bl: '}'
+    - t: G
+      h: Meh+LGUI
+      tr: Meh+LGUI
+      tl: Meh+LGUI
+      br: Meh+LGUI
+      bl: ''
+    - t: H
+      h: Sft+AltGr+Ctl+RGUI
+      tr: ''
+      tl: ''
+      br: ''
+      bl: (RA(RC(RGUI)))
+    - t: J
+      h: RSHFT
+      tr: LEFT
+      tl: $
+      br: '4'
+      bl: RSHFT
+    - t: K
+      h: RGUI
+      tr: DOWN
+      tl: '%'
+      br: '5'
+      bl: LGUI
+    - t: L
+      h: RALT
+      tr: UP
+      tl: ^
+      br: '6'
+      bl: LALT
+    - t: ;
+      h: RCTRL
+      tr: RIGHT
+      tl: +
+      br: +
+      bl: RCTRL
+    - t: Z
+      tr: ''
+      tl: ''
+      br: ''
+      bl: ''
+    - t: X
+      tr: ''
+      tl: ''
+      br: ''
+      bl: ''
+    - t: C
+      tr: ''
+      tl: ''
+      br: ''
+      bl: '['
+    - t: V
+      tr: ''
+      tl: ''
+      br: ''
+      bl: ']'
+    - t: B
+      tr: ''
+      tl: ''
+      br: ''
+      bl: ''
+    - t: N
+      tr: ''
+      tl: ''
+      br: '0'
+      bl: ''
+    - t: M
+      tr: ''
+      tl: '!'
+      br: '1'
+      bl: ''
+    - t: ','
+      tr: ''
+      tl: '@'
+      br: '2'
+      bl: ''
+    - t: .
+      tr: ''
+      tl: '#'
+      br: '3'
+      bl: ''
+    - t: /
+      tr: ''
+      tl: '|'
+      br: \
+      bl: ''
+    - t: SPACE
+      h: NAV
+      tl: ''
+      br: ''
+      bl: SPACE
+    - t: TAB
+      h: NUM
+      tr: ''
+      bl: TAB
+    - t: BSPC
+      h: FUN
+      tr: BSPC
+      tl: BSPC
+      br: BSPC
+      bl: ''
+    - t: SPACE
+      h: BRAC
+      tr: SPACE
+      tl: SPACE
+      br: SPACE
+  Combos:
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+combos:
+  - p:
+      - 10
+      - 11
+    k:
+      t: ESC
+      h: Ctl+LALT
+    l:
+      - Combos
+  - p:
+      - 11
+      - 12
+    k:
+      t: ESC
+      h: Alt+LGUI
+    l:
+      - Combos
+  - p:
+      - 12
+      - 13
+    k:
+      t: TAB
+      h: Sft+LGUI
+    l:
+      - Combos
+  - p:
+      - 16
+      - 17
+    k:
+      t: ENTER
+      h: Sft+RGUI
+    l:
+      - Combos
+  - p:
+      - 17
+      - 18
+    k:
+      t: BSPC
+      h: Sft+RGUI
+    l:
+      - Combos
+  - p:
+      - 26
+      - 27
+    k: Ctl+LEFT
+    l:
+      - Combos
+  - p:
+      - 27
+      - 28
+    k: Ctl+LEFT
+    l:
+      - Combos
+  - p:
+      - 6
+      - 7
+    k: Gui+Sft+[
+    l:
+      - Combos
+  - p:
+      - 7
+      - 8
+    k: Gui+Sft+]
+    l:
+      - Combos
+  - p:
+      - 22
+      - 23
+    k: Gui+C
+    l:
+      - Combos
+  - p:
+      - 21
+      - 23
+    k: Gui+V
+    l:
+      - Combos
+  - p:
+      - 21
+      - 22
+    k: Gui+X
+    l:
+      - Combos
+  - p:
+      - 20
+      - 21
+    k: Gui+Z
+    l:
+      - Combos
+  - p:
+      - 4
+      - 5
+    k: '&studio_unlock'
+    l:
+      - Combos
+  - p:
+      - 0
+      - 1
+    k: '`'
+    l:
+      - Combos
+  - p:
+      - 8
+      - 9
+    k: ''''
+    l:
+      - Combos
