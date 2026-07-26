@@ -1,0 +1,90 @@
+name: Draw ZMK keymaps
+on:
+  workflow_dispatch: # can be triggered manually
+  push: # automatically run on changes to following paths
+    paths:
+      - "config/*.keymap"
+      - "keymap-drawer/config.yaml"
+
+# Produces two diagrams in keymap-drawer/, following the approach used by
+# https://github.com/urob/zmk-config (generated there locally via `just draw`,
+# reproduced here in CI so nothing needs to be installed/run locally):
+#   - base.svg:     every layer drawn on its own, plus a virtual "Combos" layer
+#   - overview.svg: NAV/SYM/NUM/BRAC folded into BASE as per-key corner labels
+#                    (tr/tl/br/bl - only 4 slots, FUN is intentionally left out
+#                    of the overview but still fully shown in base.svg)
+
+jobs:
+  draw:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # allow workflow to commit the generated files back
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Install keymap-drawer, west and yq
+        run: |
+          pipx install keymap-drawer
+          pipx install west
+          pipx install yq # python-yq (jq wrapper for YAML), NOT the golang yq
+
+      - name: Fetch west modules (needed to resolve the forager physical layout)
+        run: |
+          west init -l config
+          west config --local manifest.project-filter " -zmk,-zephyr"
+          west update --fetch-opt=--filter=tree:0
+
+      - name: Draw base.svg (all layers + virtual Combos layer)
+        run: |
+          set -euo pipefail
+          mkdir -p keymap-drawer
+          config_path="keymap-drawer/config.yaml"
+          [ -e "$config_path" ] && config_arg=(-c "$config_path") || config_arg=()
+
+          keymap "${config_arg[@]}" parse -z config/forager.keymap --virtual-layers Combos > keymap-drawer/base.yaml
+          yq -Yi '.combos.[].l = ["Combos"]' keymap-drawer/base.yaml
+          keymap "${config_arg[@]}" draw keymap-drawer/base.yaml > keymap-drawer/base.svg
+
+      - name: Build overview.yaml (NAV/SYM/NUM/BRAC as corner labels on BASE)
+        run: |
+          set -euo pipefail
+          jq_expr='
+            def extract_label: if type == "string" then . else .t end;
+            def is_transparent: type == "object" and (.type == "trans" or .type == "held");
+            .layers = {
+              BASE: [
+                [.layers.BASE, .layers.NAV, .layers.SYM, .layers.NUM, .layers.BRAC] | transpose[] |
+                (.[0] | if type == "string" then {t: .} else . end) as $base |
+                (.[1] | if is_transparent then null else extract_label end) as $nav |
+                (.[2] | if is_transparent then null else extract_label end) as $sym |
+                (.[3] | if is_transparent then null else extract_label end) as $num |
+                (.[4] | if is_transparent then null else extract_label end) as $brac |
+                $base
+                + (if $nav  == null then {} else {tr: $nav}  end)
+                + (if $sym  == null then {} else {tl: $sym}  end)
+                + (if $num  == null then {} else {br: $num}  end)
+                + (if $brac == null then {} else {bl: $brac} end)
+              ],
+              Combos: .layers.Combos
+            } |
+            .combos = [.combos[] | .l = ["Combos"]]
+          '
+          yq -y "$jq_expr" keymap-drawer/base.yaml > keymap-drawer/overview.yaml
+
+      - name: Draw overview.svg
+        run: |
+          set -euo pipefail
+          config_path="keymap-drawer/config.yaml"
+          [ -e "$config_path" ] && config_arg=(-c "$config_path") || config_arg=()
+
+          keymap "${config_arg[@]}" draw keymap-drawer/overview.yaml > keymap-drawer/overview.svg
+          sed -i '/<text.*class="label"/d' keymap-drawer/overview.svg
+
+      - name: Commit updated diagrams
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          file_pattern: "keymap-drawer/*.svg keymap-drawer/*.yaml"
+          commit_message: "keymap-drawer render"
