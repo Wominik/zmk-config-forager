@@ -1,0 +1,147 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
+
+#define BASE 0
+#define NAV  1
+#define NUM  2
+#define ADJ  3
+
+#define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
+#define MEH LS(LC(LALT))
+
+/ {
+    behaviors {
+        as: auto_shift {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            require-prior-idle-ms = <100>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+        ht: hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
+        osht: os_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&mac_tap>;
+        };
+    };
+
+    macros {
+        mac_tap: mac_tap {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_param_1to1>
+                , <&macro_tap &kp MACRO_PLACEHOLDER>
+                , <&macro_release &kp LGUI>
+                ;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <2 3>;
+            bindings = <&kp ESC>;
+            layers = <0>;
+        };
+        combo_tab {
+            timeout-ms = <50>;
+            key-positions = <12 13>;
+            bindings = <&kp TAB>;
+            layers = <0>;
+        };
+        combo_lshift {
+            timeout-ms = <50>;
+            key-positions = <22 23>;
+            bindings = <&kp LSHFT>;
+            layers = <0 2>;
+        };
+        combo_del {
+            timeout-ms = <50>;
+            key-positions = <6 7>;
+            bindings = <&kp DEL>;
+            layers = <0>;
+        };
+        combo_bspc {
+            timeout-ms = <50>;
+            key-positions = <16 17>;
+            bindings = <&kp BSPC>;
+            layers = <0>;
+        };
+        combo_rshift {
+            timeout-ms = <50>;
+            key-positions = <26 27>;
+            bindings = <&kp LSHFT>;
+            layers = <0 2>;
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        base {
+            bindings = <
+            AS(Q)           AS(W)           AS(E)           AS(R)           AS(T)                                           AS(Y)           AS(U)           AS(I)           AS(O)           AS(P)
+            AS(A)           AS(S)           AS(D)           AS(F)           AS(G)                                           AS(H)           AS(J)           AS(K)           AS(L)           &kp SEMI
+            AS(Z)           AS(X)           AS(C)           AS(V)           AS(B)                                           AS(N)           AS(M)           AS(COMMA)       AS(DOT)         AS(FSLH)
+                                                                            &mo NUM         &ht LGUI RET    &kp SPACE       &mo NAV
+            >;
+        };
+
+        nav {
+            bindings = <
+            &trans          &trans          &trans          &trans          &trans                                          &kp PAGE_UP     &kp LC(PG_UP)   &kp UP          &kp LC(PG_DN)   &kp DELETE
+            &trans          &kp LCTRL       &kp LALT        &trans          &kp CAPS                                        &kp PAGE_DOWN   &kp LEFT        &kp DOWN        &kp RIGHT       &kp BSLH
+            &trans          &trans          &trans          &trans          &trans                                          &trans          &kp HOME        &kp END         &kp LC(SPACE)   &kp LC(SPACE)
+                                                                            &mo NUM         &trans          &trans          &trans
+            >;
+        };
+
+        num {
+            bindings = <
+            &kp N1          &kp N2          &kp N3          &kp N4          &kp N5                                          &kp N6          &kp N7          &kp N8          &ht UNDERSCORE N9   &ht QMARK N0
+            &kp LPAR        &kp RPAR        &kp HASH        &osht LC(C) C   &osht LC(V) V                                   &kp MINUS       &kp UNDERSCORE  &kp QMARK       &ht LBKT LS(APOS)   &ht RBKT APOS
+            &trans          &trans          &trans          &osht LC(Z) Z   &osht LC(LS(Z)) LS(Z)                           &kp EQUAL       &kp PLUS        &kp ASTERISK    &kp LS(LBKT)    &kp RBRC
+                                                                            &trans          &trans          &trans          &mo NAV
+            >;
+        };
+
+        adj {
+            bindings = <
+            &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_CLR_ALL                                  &kp C_SLEEP     &trans          &trans          &kp C_BRI_DN    &kp C_BRI_UP
+            &studio_unlock  &trans          &trans          &trans          &trans                                          &trans          &trans          &trans          &kp C_VOL_DN    &kp C_VOL_UP
+            &bootloader     &trans          &trans          &trans          &trans                                          &trans          &trans          &trans          &trans          &bootloader
+                                                                            &trans          &trans          &trans          &trans
+            >;
+        };
+    };
+};
+
+&mt {
+    quick-tap-ms = <200>;
+};

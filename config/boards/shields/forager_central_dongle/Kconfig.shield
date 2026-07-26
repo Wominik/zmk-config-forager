@@ -1,0 +1,2 @@
+config SHIELD_FORAGER_CENTRAL_DONGLE
+    def_bool $(shields_list_contains,forager_central_dongle)
