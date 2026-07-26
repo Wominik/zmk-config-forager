@@ -79,16 +79,16 @@ jobs:
                 (.value[0] | if type == "string" then {t: .} else . end) as $base |
                 ($base | base_values) as $base_vals |
                 # G (14): NAV there is just the Hyper chord already shown as "✦" on the hold - drop it.
-                # Everywhere else, only drop NAV when it's an exact repeat of the tap/hold already
+                # Everywhere else, only drop NAV when it is an exact repeat of the tap/hold already
                 # shown (the modifier row mirrored onto NAV for consistency) - e.g. A/S/D/F stay
-                # clean, but J/K/L/; still get their arrows since those aren't duplicates.
+                # clean, but J/K/L/; still get their arrows since those are not duplicates.
                 (.value[1] | if is_transparent then null else extract_label end) as $nav_label |
                 (if $nav_label == null or $pos == 14 or ($base_vals | index($nav_label)) then null else $nav_label end) as $nav |
                 (.value[2] | if is_transparent then null else extract_label end) as $num_label |
                 # G (14): NUM there is just the Hyper chord already shown as "✦" on the hold - drop it
                 (if $num_label == null or $pos == 14 or ($base_vals | index($num_label)) then null else $num_label end) as $num |
                 # NUM+Shift symbol, top-left (never fires on A/S/D/F/G/H since their NUM value is a
-                # modifier/chord, not a digit, so it's naturally absent there without special-casing)
+                # modifier/chord, not a digit, so it is naturally absent there without special-casing)
                 (if $num_label == null or ((shift_map | has($num_label)) | not)
                  then null else shift_map[$num_label] end) as $tl |
                 # H (15): BRAC there is just the Hyper chord already shown as "✦" on the hold - drop it
