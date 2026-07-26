@@ -107,7 +107,7 @@
         num0_morph: num0_morph {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp N0>, <&kp TILDE>;
+            bindings = <&kp N0>, <&fat_arrow>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
@@ -123,6 +123,12 @@
                 , <&macro_release &kp SPACE>
                 , <&macro_release &kp LGUI>
                 ;
+        };
+
+        fat_arrow: fat_arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp GT>;
         };
     };
 
