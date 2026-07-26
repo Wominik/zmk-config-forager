@@ -11,16 +11,16 @@ layers:
     - I
     - O
     - P
-    - {t: A, h: LCTRL}
-    - {t: S, h: LALT}
-    - {t: D, h: LGUI}
-    - {t: F, h: LSHFT}
-    - {t: G, h: Meh+LGUI}
-    - {t: H, h: Sft+AltGr+Ctl+RGUI}
-    - {t: J, h: RSHFT}
-    - {t: K, h: RGUI}
-    - {t: L, h: RALT}
-    - {t: ;, h: RCTRL}
+    - {t: A, h: ⌃}
+    - {t: S, h: ⌥}
+    - {t: D, h: ⌘}
+    - {t: F, h: ⇧}
+    - {t: G, h: ⌃⌥⇧⌘}
+    - {t: H, h: ⇧⌥⌃⌘}
+    - {t: J, h: ⇧}
+    - {t: K, h: ⌘}
+    - {t: L, h: ⌥}
+    - {t: ;, h: ⌃}
     - Z
     - X
     - C
@@ -31,10 +31,10 @@ layers:
     - ','
     - .
     - /
-    - {t: SPACE, h: NAV}
-    - {t: TAB, h: NUM}
-    - {t: BSPC, h: FUN}
-    - {t: SPACE, h: BRAC}
+    - {t: ␣, h: NAV}
+    - {t: ⇥, h: NUM}
+    - {t: ⌫, h: FUN}
+    - {t: ␣, h: BRAC}
   NAV:
     - ''
     - ''
@@ -42,20 +42,20 @@ layers:
     - ''
     - ''
     - ''
-    - HOME
-    - PG DN
-    - PG UP
-    - END
-    - LCTRL
-    - LALT
-    - LGUI
-    - LSHFT
-    - Meh+LGUI
+    - ⇱
+    - ⇟
+    - ⇞
+    - ⇲
+    - ⌃
+    - ⌥
+    - ⌘
+    - ⇧
+    - ⌃⌥⇧⌘
     - ''
-    - LEFT
-    - DOWN
-    - UP
-    - RIGHT
+    - ←
+    - ↓
+    - ↑
+    - →
     - ''
     - ''
     - ''
@@ -68,8 +68,8 @@ layers:
     - ''
     - {type: held}
     - ''
-    - BSPC
-    - SPACE
+    - ⌫
+    - ␣
   NUM:
     - ''
     - ''
@@ -81,11 +81,11 @@ layers:
     - '8'
     - '9'
     - '-'
-    - LCTRL
-    - LALT
-    - LGUI
+    - ⌃
+    - ⌥
+    - ⌘
     - SYM
-    - Meh+LGUI
+    - ⌃⌥⇧⌘
     - ''
     - '4'
     - '5'
@@ -103,8 +103,8 @@ layers:
     - \
     - ''
     - {type: held}
-    - BSPC
-    - SPACE
+    - ⌫
+    - ␣
   SYM:
     - ''
     - ''
@@ -116,11 +116,11 @@ layers:
     - '*'
     - _
     - '-'
-    - LGUI
-    - LALT
-    - LCTRL
-    - {t: LSHFT, type: held}
-    - Meh+LGUI
+    - ⌘
+    - ⌥
+    - ⌃
+    - {t: ⇧, type: held}
+    - ⌃⌥⇧⌘
     - ''
     - $
     - '%'
@@ -138,8 +138,8 @@ layers:
     - '|'
     - ''
     - {type: held}
-    - BSPC
-    - SPACE
+    - ⌫
+    - ␣
   BRAC:
     - ''
     - ''
@@ -157,10 +157,10 @@ layers:
     - '}'
     - ''
     - (RA(RC(RGUI)))
-    - RSHFT
-    - LGUI
-    - LALT
-    - RCTRL
+    - ⇧
+    - ⌘
+    - ⌥
+    - ⌃
     - ''
     - ''
     - '['
@@ -171,8 +171,8 @@ layers:
     - ''
     - ''
     - ''
-    - SPACE
-    - TAB
+    - ␣
+    - ⇥
     - ''
     - {type: held}
   FUN:
@@ -192,10 +192,10 @@ layers:
     - F6
     - ''
     - (RA(RC(RGUI)))
-    - RSHFT
-    - LGUI
-    - LALT
-    - RCTRL
+    - ⇧
+    - ⌘
+    - ⌥
+    - ⌃
     - F10
     - F1
     - F2
@@ -206,63 +206,63 @@ layers:
     - ''
     - ''
     - ''
-    - SPACE
-    - TAB
+    - ␣
+    - ⇥
     - {type: held}
     - ''
   Combos: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
     '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
 combos:
   - p: [10, 11]
-    k: {t: ESC, h: Ctl+LALT}
+    k: {t: ⎋, h: ⌃⌥}
     l:
       - Combos
   - p: [11, 12]
-    k: {t: ESC, h: Alt+LGUI}
+    k: {t: ⎋, h: ⌥⌘}
     l:
       - Combos
   - p: [12, 13]
-    k: {t: TAB, h: Sft+LGUI}
+    k: {t: ⇥, h: ⇧⌘}
     l:
       - Combos
   - p: [16, 17]
-    k: {t: ENTER, h: Sft+RGUI}
+    k: {t: ⏎, h: ⇧⌘}
     l:
       - Combos
   - p: [17, 18]
-    k: {t: BSPC, h: Sft+RGUI}
+    k: {t: ⌫, h: ⇧⌘}
     l:
       - Combos
   - p: [26, 27]
-    k: Ctl+LEFT
+    k: ⌃←
     l:
       - Combos
   - p: [27, 28]
-    k: Ctl+LEFT
+    k: ⌃←
     l:
       - Combos
   - p: [6, 7]
-    k: Gui+Sft+[
+    k: ⌘⇧[
     l:
       - Combos
   - p: [7, 8]
-    k: Gui+Sft+]
+    k: ⌘⇧]
     l:
       - Combos
   - p: [22, 23]
-    k: Gui+C
+    k: ⌘C
     l:
       - Combos
   - p: [21, 23]
-    k: Gui+V
+    k: ⌘V
     l:
       - Combos
   - p: [21, 22]
-    k: Gui+X
+    k: ⌘X
     l:
       - Combos
   - p: [20, 21]
-    k: Gui+Z
+    k: ⌘Z
     l:
       - Combos
   - p: [4, 5]

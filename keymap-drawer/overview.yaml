@@ -33,84 +33,84 @@ layers:
       br: ''
       bl: ''
     - t: U
-      tr: HOME
+      tr: ⇱
       tl: '&'
       br: '7'
       bl: ''
     - t: I
-      tr: PG DN
+      tr: ⇟
       tl: '*'
       br: '8'
       bl: ''
     - t: O
-      tr: PG UP
+      tr: ⇞
       tl: _
       br: '9'
       bl: ''
     - t: P
-      tr: END
+      tr: ⇲
       tl: '-'
       br: '-'
       bl: ''
     - t: A
-      h: LCTRL
-      tr: LCTRL
-      tl: LGUI
-      br: LCTRL
+      h: ⌃
+      tr: ⌃
+      tl: ⌘
+      br: ⌃
       bl: <
     - t: S
-      h: LALT
-      tr: LALT
-      tl: LALT
-      br: LALT
+      h: ⌥
+      tr: ⌥
+      tl: ⌥
+      br: ⌥
       bl: '>'
     - t: D
-      h: LGUI
-      tr: LGUI
-      tl: LCTRL
-      br: LGUI
+      h: ⌘
+      tr: ⌘
+      tl: ⌃
+      br: ⌘
       bl: '{'
     - t: F
-      h: LSHFT
-      tr: LSHFT
+      h: ⇧
+      tr: ⇧
       br: SYM
       bl: '}'
     - t: G
-      h: Meh+LGUI
-      tr: Meh+LGUI
-      tl: Meh+LGUI
-      br: Meh+LGUI
+      h: ⌃⌥⇧⌘
+      tr: ⌃⌥⇧⌘
+      tl: ⌃⌥⇧⌘
+      br: ⌃⌥⇧⌘
       bl: ''
     - t: H
-      h: Sft+AltGr+Ctl+RGUI
+      h: ⇧⌥⌃⌘
       tr: ''
       tl: ''
       br: ''
       bl: (RA(RC(RGUI)))
     - t: J
-      h: RSHFT
-      tr: LEFT
+      h: ⇧
+      tr: ←
       tl: $
       br: '4'
-      bl: RSHFT
+      bl: ⇧
     - t: K
-      h: RGUI
-      tr: DOWN
+      h: ⌘
+      tr: ↓
       tl: '%'
       br: '5'
-      bl: LGUI
+      bl: ⌘
     - t: L
-      h: RALT
-      tr: UP
+      h: ⌥
+      tr: ↑
       tl: ^
       br: '6'
-      bl: LALT
+      bl: ⌥
     - t: ;
-      h: RCTRL
-      tr: RIGHT
+      h: ⌃
+      tr: →
       tl: +
       br: +
-      bl: RCTRL
+      bl: ⌃
     - t: Z
       tr: ''
       tl: ''
@@ -161,26 +161,26 @@ layers:
       tl: '|'
       br: \
       bl: ''
-    - t: SPACE
+    - t: ␣
       h: NAV
       tl: ''
       br: ''
-      bl: SPACE
-    - t: TAB
+      bl: ␣
+    - t: ⇥
       h: NUM
       tr: ''
-      bl: TAB
-    - t: BSPC
+      bl: ⇥
+    - t: ⌫
       h: FUN
-      tr: BSPC
-      tl: BSPC
-      br: BSPC
+      tr: ⌫
+      tl: ⌫
+      br: ⌫
       bl: ''
-    - t: SPACE
+    - t: ␣
       h: BRAC
-      tr: SPACE
-      tl: SPACE
-      br: SPACE
+      tr: ␣
+      tl: ␣
+      br: ␣
   Combos:
     - ''
     - ''
@@ -221,88 +221,88 @@ combos:
       - 10
       - 11
     k:
-      t: ESC
-      h: Ctl+LALT
+      t: ⎋
+      h: ⌃⌥
     l:
       - Combos
   - p:
       - 11
       - 12
     k:
-      t: ESC
-      h: Alt+LGUI
+      t: ⎋
+      h: ⌥⌘
     l:
       - Combos
   - p:
       - 12
       - 13
     k:
-      t: TAB
-      h: Sft+LGUI
+      t: ⇥
+      h: ⇧⌘
     l:
       - Combos
   - p:
       - 16
       - 17
     k:
-      t: ENTER
-      h: Sft+RGUI
+      t: ⏎
+      h: ⇧⌘
     l:
       - Combos
   - p:
       - 17
       - 18
     k:
-      t: BSPC
-      h: Sft+RGUI
+      t: ⌫
+      h: ⇧⌘
     l:
       - Combos
   - p:
       - 26
       - 27
-    k: Ctl+LEFT
+    k: ⌃←
     l:
       - Combos
   - p:
       - 27
       - 28
-    k: Ctl+LEFT
+    k: ⌃←
     l:
       - Combos
   - p:
       - 6
       - 7
-    k: Gui+Sft+[
+    k: ⌘⇧[
     l:
       - Combos
   - p:
       - 7
       - 8
-    k: Gui+Sft+]
+    k: ⌘⇧]
     l:
       - Combos
   - p:
       - 22
       - 23
-    k: Gui+C
+    k: ⌘C
     l:
       - Combos
   - p:
       - 21
       - 23
-    k: Gui+V
+    k: ⌘V
     l:
       - Combos
   - p:
       - 21
       - 22
-    k: Gui+X
+    k: ⌘X
     l:
       - Combos
   - p:
       - 20
       - 21
-    k: Gui+Z
+    k: ⌘Z
     l:
       - Combos
   - p:
