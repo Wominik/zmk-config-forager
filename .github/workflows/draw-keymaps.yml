@@ -47,6 +47,8 @@ jobs:
           keymap "${config_arg[@]}" parse -z config/forager.keymap --virtual-layers Combos > keymap-drawer/base.yaml
           yq -Yi '.combos.[].l = ["Combos"]' keymap-drawer/base.yaml
           keymap "${config_arg[@]}" draw keymap-drawer/base.yaml > keymap-drawer/base.svg
+          # keymap-drawer places the footer at the right edge; re-center it (see config.yaml's svg_extra_style)
+          sed -i -E 's/(x=")[0-9.]+(" y="[0-9.]+" class="footer")/\150%\2/' keymap-drawer/base.svg
 
       - name: Build overview.yaml (NAV/SYM/NUM/BRAC as corner labels on BASE)
         run: |
@@ -82,6 +84,7 @@ jobs:
 
           keymap "${config_arg[@]}" draw keymap-drawer/overview.yaml > keymap-drawer/overview.svg
           sed -i '/<text.*class="label"/d' keymap-drawer/overview.svg
+          sed -i -E 's/(x=")[0-9.]+(" y="[0-9.]+" class="footer")/\150%\2/' keymap-drawer/overview.svg
 
       - name: Commit updated diagrams
         uses: stefanzweifel/git-auto-commit-action@v5

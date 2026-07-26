@@ -117,3 +117,16 @@ parse_config:
     special_combinations:
       left_ctrl+left_alt+left_gui+left_shift: "⌃⌥⌘⇧"
       left_ctrl+left_alt+left_shift: "⌃⌥⇧"
+
+  # HPR_G / HPR_H (the Hyper hold on the G/H keys) are the same 4-mod chord
+  # spelled out on every key already via modifier_fn_map above; showing that
+  # full combo again under G and H is redundant, so collapse it to a single
+  # glyph there and explain it once in the footer instead (see draw_config).
+  raw_binding_map:
+    "&hml LS(LA(LC(LGUI))) G": { t: G, h: "✦" }
+    "&hmr RS(RA(RC(RGUI))) H": { t: H, h: "✦" }
+
+draw_config:
+  footer_text: "✦ = ⌃⌥⌘⇧"
+  svg_extra_style: |
+    text.footer { text-anchor: middle; }
