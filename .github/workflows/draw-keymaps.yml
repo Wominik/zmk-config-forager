@@ -13,14 +13,13 @@ on:
 #   - overview.svg: NAV/NUM/BRAC folded into BASE as per-key corner labels
 #                    (tr=NAV, br=NUM, bl=BRAC, tl=synthetic "NUM+Shift" symbol
 #                    - FUN is intentionally left out of the overview but still
-#                    fully shown in base.svg). On the home row (positions
-#                    10-19) the NAV and tl corners are always dropped, and a
-#                    NUM/BRAC corner is dropped whenever it would just repeat
-#                    the key's own tap/hold (e.g. the modifier row that's
-#                    mirrored onto NUM/BRAC for consistency) - G/H (14/15) are
-#                    hardcoded to show no corners at all since their Hyper
-#                    hold is abbreviated to "✦" and wouldn't text-match the
-#                    spelled-out chord on NUM/BRAC.
+#                    fully shown in base.svg). A corner is dropped whenever it
+#                    would just repeat the key's own tap/hold (e.g. the
+#                    modifier row that's mirrored onto NAV/NUM/BRAC for
+#                    consistency on A/S/D/F) - G/H (14/15) are hardcoded to
+#                    show no corners at all since their Hyper hold is
+#                    abbreviated to "✦" and wouldn't text-match the
+#                    spelled-out chord on NAV/NUM/BRAC.
 
 jobs:
   draw:
@@ -79,14 +78,18 @@ jobs:
                 .key as $pos |
                 (.value[0] | if type == "string" then {t: .} else . end) as $base |
                 ($base | base_values) as $base_vals |
-                # home row (10-19): never repeat NAV there, arrows are fully shown on their own layer in base.svg
-                (.value[1] | if is_transparent or ($pos >= 10 and $pos <= 19) then null else extract_label end) as $nav |
+                # G (14): NAV there is just the Hyper chord already shown as "✦" on the hold - drop it.
+                # Everywhere else, only drop NAV when it's an exact repeat of the tap/hold already
+                # shown (the modifier row mirrored onto NAV for consistency) - e.g. A/S/D/F stay
+                # clean, but J/K/L/; still get their arrows since those aren't duplicates.
+                (.value[1] | if is_transparent then null else extract_label end) as $nav_label |
+                (if $nav_label == null or $pos == 14 or ($base_vals | index($nav_label)) then null else $nav_label end) as $nav |
                 (.value[2] | if is_transparent then null else extract_label end) as $num_label |
                 # G (14): NUM there is just the Hyper chord already shown as "✦" on the hold - drop it
                 (if $num_label == null or $pos == 14 or ($base_vals | index($num_label)) then null else $num_label end) as $num |
-                # NUM+Shift symbol, top-left - skipped on the home row (10-19) to keep it minimal there
-                # (e.g. J already shows "4" at br; adding "$" at tl too would clutter it)
-                (if $num_label == null or ($pos >= 10 and $pos <= 19) or ((shift_map | has($num_label)) | not)
+                # NUM+Shift symbol, top-left (never fires on A/S/D/F/G/H since their NUM value is a
+                # modifier/chord, not a digit, so it's naturally absent there without special-casing)
+                (if $num_label == null or ((shift_map | has($num_label)) | not)
                  then null else shift_map[$num_label] end) as $tl |
                 # H (15): BRAC there is just the Hyper chord already shown as "✦" on the hold - drop it
                 (.value[3] | if is_transparent or $pos == 15 then null else extract_label end) as $brac_raw |
