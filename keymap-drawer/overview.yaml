@@ -44,15 +44,22 @@ layers:
       h: ✦
     - t: J
       h: ⇧
+      tr: ←
       br: '4'
+      tl: $
     - t: K
       h: ⌘
+      tr: ↓
       br: '5'
+      tl: '%'
     - t: L
       h: ⌥
+      tr: ↑
       br: '6'
+      tl: ^
     - t: ;
       h: ⌃
+      tr: →
       br: +
     - t: Z
     - t: X
@@ -82,10 +89,8 @@ layers:
       h: NUM
     - t: ⌫
       h: FUN
-      tr: ⌫
     - t: ␣
       h: BRAC
-      tr: ␣
   Combos:
     - ''
     - ''
@@ -157,62 +162,77 @@ combos:
   - p:
       - 26
       - 27
-    k: ⌃←
+    k: Space ←
+    a: bottom
+    o: 0.1
     l:
       - Combos
   - p:
       - 27
       - 28
-    k: ⌃→
+    k: Space →
+    a: bottom
+    o: 0.1
     l:
       - Combos
   - p:
       - 6
       - 7
-    k: ⌘⇧[
+    k: Back
     l:
       - Combos
   - p:
       - 7
       - 8
-    k: ⌘⇧]
+    k: Forward
     l:
       - Combos
   - p:
       - 22
       - 23
-    k: ⌘C
+    k: Copy
+    a: bottom
+    o: 0.1
     l:
       - Combos
   - p:
       - 21
       - 23
-    k: ⌘V
+    k: Paste
+    a: bottom
+    o: 0.1
+    s: -0.3
     l:
       - Combos
   - p:
       - 21
       - 22
-    k: ⌘X
+    k: Cut
+    a: bottom
+    o: 0.1
     l:
       - Combos
   - p:
       - 20
       - 21
-    k: ⌘Z
+    k: Undo
+    a: bottom
+    o: 0.1
     l:
       - Combos
   - p:
       - 20
       - 21
       - 22
-    k: ⌘⇧Z
+    k: Redo
+    a: bottom
+    o: 0.6
     l:
       - Combos
   - p:
       - 4
       - 5
-    k: '&studio_unlock'
+    k: Studio
     l:
       - Combos
   - p:
@@ -231,13 +251,17 @@ combos:
       - 21
       - 22
       - 23
-    k: '&clipboard_manager'
+    k: Clipboard
     l:
       - Combos
+    a: bottom
+    o: 0.6
   - p:
       - 26
       - 27
       - 28
-    k: ⇧⌃⌘4
+    k: Screenshot
     l:
       - Combos
+    a: bottom
+    o: 0.6
