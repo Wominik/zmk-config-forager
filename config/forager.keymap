@@ -110,7 +110,22 @@
         };
     };
 
-    macros {};
+    macros {
+        // Cmd+Space+4: opens the macOS clipboard manager. Space and 4 are both
+        // regular keys (not modifiers), so this needs a macro rather than a
+        // plain &kp modifier-wrap.
+        clipboard_manager: clipboard_manager {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_press &kp SPACE>
+                , <&macro_tap &kp N4>
+                , <&macro_release &kp SPACE>
+                , <&macro_release &kp LGUI>
+                ;
+        };
+    };
 
     /*                   KEY POSITIONS
         ╭──────────────────────┬─────────────────────╮
@@ -203,6 +218,18 @@
             timeout-ms = <50>;
             key-positions = <RT3 RT4>;
             bindings = <&kp APOS>;
+        };
+        combo_clipboard_manager {
+            timeout-ms = <50>;
+            key-positions = <LB3 LB2 LB1>;
+            bindings = <&clipboard_manager>;
+            layers = <BASE>;
+        };
+        combo_screenshot {
+            timeout-ms = <50>;
+            key-positions = <RB1 RB2 RB3>;
+            bindings = <&kp LS(LC(LG(N4)))>;
+            layers = <BASE>;
         };
     };
 
