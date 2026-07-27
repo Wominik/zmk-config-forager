@@ -12,7 +12,10 @@ config ZMK_SPLIT
 config ZMK_STUDIO
     default y
 
-if ZMK_DISPLAY
+# Skipped when paired with prospector_adapter: that shield brings its own
+# ST7789V color display and LVGL config, which would otherwise conflict with
+# the SSD1306 defaults below (e.g. both set a default for LV_COLOR_DEPTH).
+if ZMK_DISPLAY && !SHIELD_PROSPECTOR_ADAPTER
 
 config I2C
     default y
@@ -24,7 +27,7 @@ choice ZMK_DISPLAY_WORK_QUEUE
     default ZMK_DISPLAY_WORK_QUEUE_DEDICATED
 endchoice
 
-endif # ZMK_DISPLAY
+endif # ZMK_DISPLAY && !SHIELD_PROSPECTOR_ADAPTER
 
 if SSD1306
 

@@ -14,8 +14,11 @@ manifest:
     - name: forager-zmk-module  
       remote: carrefinho        
       revision: 3cafe6b7b26d7b538949e138fc00a148def4b2ed 
-    - name: zmk-rgbled-widget   
+    - name: zmk-rgbled-widget
       remote: caksoylar
-      revision: e6b467792a1dabef8cfa5c9fd26bfefc9c16662b 
+      revision: e6b467792a1dabef8cfa5c9fd26bfefc9c16662b
+    - name: prospector-zmk-module
+      remote: carrefinho
+      revision: ed98221f3b52b7066dbb10ba3af8a29150b93a5a
   self:
     path: config
