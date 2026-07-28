@@ -221,7 +221,7 @@
         };
         combo_apos {
             timeout-ms = <50>;
-            key-positions = <RT3 RT4>;
+            key-positions = <RM3 RM4>;
             bindings = <&kp APOS>;
         };
         combo_clipboard_manager {
