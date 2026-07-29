@@ -147,24 +147,6 @@
   <path d="M15 11l4 4l-4 4m4 -4h-11a4 4 0 0 1 0 -8h1" />
 </svg>
 </svg>
-<svg id="tabler:arrow-forward-up">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-forward-up"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M15 14l4 -4l-4 -4" />
-  <path d="M19 10h-11a4 4 0 1 0 0 8h1" />
-</svg>
-</svg>
 <svg id="tabler:arrow-left">
 <svg
   xmlns="http://www.w3.org/2000/svg"
@@ -1863,34 +1845,27 @@ text.footer { text-anchor: middle; }
 <use href="#tabler:arrow-back-up" xlink:href="#tabler:arrow-back-up" x="49" y="158" height="14" width="14.0" class="combo tap glyph tabler:arrow-back-up"/>
 </g>
 <g class="combo combopos-12">
-<path d="M84,237 h-50 a6.0,6.0 0 0 1 -6.0,-6.0 v-38" class="combo"/>
-<path d="M84,237 l0,-62" class="combo"/>
-<path d="M84,237 h50 a6.0,6.0 0 0 0 6.0,-6.0 v-72" class="combo"/>
-<rect rx="6" ry="6" x="70" y="224" width="28" height="26" class="combo"/>
-<use href="#tabler:arrow-forward-up" xlink:href="#tabler:arrow-forward-up" x="77" y="230" height="14" width="14.0" class="combo tap glyph tabler:arrow-forward-up"/>
-</g>
-<g class="combo combopos-13">
 <path d="M350,44 l-79,0" class="combo"/>
 <path d="M350,44 l79,0" class="combo"/>
 <rect rx="6" ry="6" x="336" y="31" width="28" height="26" class="combo"/>
 <use href="#tabler:lock-open" xlink:href="#tabler:lock-open" x="343" y="37" height="14" width="14.0" class="combo tap glyph tabler:lock-open"/>
 </g>
-<g class="combo combopos-14">
+<g class="combo combopos-13">
 <rect rx="6" ry="6" x="42" y="96" width="28" height="26" class="combo"/>
 <text x="56" y="109" class="combo tap">`</text>
 </g>
-<g class="combo combopos-15">
+<g class="combo combopos-14">
 <rect rx="6" ry="6" x="630" y="96" width="28" height="26" class="combo"/>
 <text x="644" y="109" class="combo tap">&#x27;</text>
 </g>
-<g class="combo combopos-16">
+<g class="combo combopos-15">
 <path d="M140,218 h-50 a6.0,6.0 0 0 1 -6.0,-6.0 v-38" class="combo"/>
 <path d="M140,218 l0,-60" class="combo"/>
 <path d="M140,218 h50 a6.0,6.0 0 0 0 6.0,-6.0 v-44" class="combo"/>
 <rect rx="6" ry="6" x="126" y="205" width="28" height="26" class="combo"/>
 <use href="#tabler:clipboard" xlink:href="#tabler:clipboard" x="133" y="211" height="14" width="14.0" class="combo tap glyph tabler:clipboard"/>
 </g>
-<g class="combo combopos-17">
+<g class="combo combopos-16">
 <path d="M560,218 h-50 a6.0,6.0 0 0 1 -6.0,-6.0 v-44" class="combo"/>
 <path d="M560,218 l0,-60" class="combo"/>
 <path d="M560,218 h50 a6.0,6.0 0 0 0 6.0,-6.0 v-38" class="combo"/>

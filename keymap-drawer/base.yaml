@@ -229,12 +229,6 @@ combos:
     k: $$tabler:arrow-back-up$$
     l:
       - Combos
-  - p: [20, 21, 22]
-    k: $$tabler:arrow-forward-up$$
-    a: bottom
-    o: 0.6
-    l:
-      - Combos
   - p: [4, 5]
     k: $$tabler:lock-open$$
     l:
