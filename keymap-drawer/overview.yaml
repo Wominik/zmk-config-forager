@@ -2,57 +2,57 @@ layout:
   zmk_keyboard: forager
 layers:
   BASE:
-    - t: Q
-    - t: W
-    - t: E
+    - t: $$tabler:letter-q$$
+    - t: $$tabler:letter-w$$
+    - t: $$tabler:letter-e$$
       bl: (
-    - t: R
+    - t: $$tabler:letter-r$$
       bl: )
-    - t: T
-    - t: Y
-    - t: U
+    - t: $$tabler:letter-t$$
+    - t: $$tabler:letter-y$$
+    - t: $$tabler:letter-u$$
       tr: ⇱
       br: '7'
       tl: '&'
-    - t: I
+    - t: $$tabler:letter-i$$
       tr: ⇟
       br: '8'
       tl: '*'
-    - t: O
+    - t: $$tabler:letter-o$$
       tr: ⇞
       br: '9'
-    - t: P
+    - t: $$tabler:letter-p$$
       tr: ⇲
       br: '-'
       tl: _
-    - t: A
+    - t: $$tabler:letter-a$$
       h: $$tabler:chevron-up$$
       bl: <
-    - t: S
-      h: $$tabler:alt$$
+    - t: $$tabler:letter-s$$
+      h: $$tabler:option$$
       bl: '>'
-    - t: D
+    - t: $$tabler:letter-d$$
       h: $$tabler:command$$
       bl: '{'
-    - t: F
+    - t: $$tabler:letter-f$$
       h: $$tabler:arrow-big-up$$
       bl: '}'
-    - t: G
+    - t: $$tabler:letter-g$$
       h: $$tabler:diamonds$$
-    - t: H
+    - t: $$tabler:letter-h$$
       h: $$tabler:diamonds$$
-    - t: J
+    - t: $$tabler:letter-j$$
       h: $$tabler:arrow-big-up$$
       tr: $$tabler:arrow-left$$
       br: '4'
       tl: $
-    - t: K
+    - t: $$tabler:letter-k$$
       h: $$tabler:command$$
       tr: $$tabler:arrow-down$$
       br: '5'
       tl: '%'
-    - t: L
-      h: $$tabler:alt$$
+    - t: $$tabler:letter-l$$
+      h: $$tabler:option$$
       tr: $$tabler:arrow-up$$
       br: '6'
       tl: ^
@@ -60,16 +60,16 @@ layers:
       h: $$tabler:chevron-up$$
       tr: $$tabler:arrow-right$$
       br: +
-    - t: Z
-    - t: X
-    - t: C
+    - t: $$tabler:letter-z$$
+    - t: $$tabler:letter-x$$
+    - t: $$tabler:letter-c$$
       bl: '['
-    - t: V
+    - t: $$tabler:letter-v$$
       bl: ']'
-    - t: B
-    - t: N
+    - t: $$tabler:letter-b$$
+    - t: $$tabler:letter-n$$
       br: '0'
-    - t: M
+    - t: $$tabler:letter-m$$
       br: '1'
       tl: '!'
     - t: ','
@@ -128,33 +128,25 @@ combos:
   - p:
       - 11
       - 12
-    k:
-      t: $$tabler:arrow-down-from-arc$$
-      h: ⌃$$tabler:alt$$
+    k: $$tabler:arrow-down-from-arc$$
     l:
       - Combos
   - p:
       - 12
       - 13
-    k:
-      t: $$tabler:arrow-bar-to-right$$
-      h: ⇧$$tabler:command$$
+    k: $$tabler:arrow-bar-to-right$$
     l:
       - Combos
   - p:
       - 16
       - 17
-    k:
-      t: $$tabler:corner-down-left$$
-      h: ⇧$$tabler:command$$
+    k: $$tabler:corner-down-left$$
     l:
       - Combos
   - p:
       - 17
       - 18
-    k:
-      t: $$tabler:backspace$$
-      h: ⇧$$tabler:command$$
+    k: $$tabler:backspace$$
     l:
       - Combos
   - p:

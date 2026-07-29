@@ -1,33 +1,33 @@
 layout: {zmk_keyboard: forager}
 layers:
   BASE:
-    - Q
-    - W
-    - E
-    - R
-    - T
-    - Y
-    - U
-    - I
-    - O
-    - P
-    - {t: A, h: '$$tabler:chevron-up$$'}
-    - {t: S, h: '$$tabler:alt$$'}
-    - {t: D, h: '$$tabler:command$$'}
-    - {t: F, h: '$$tabler:arrow-big-up$$'}
-    - {t: G, h: '$$tabler:diamonds$$'}
-    - {t: H, h: '$$tabler:diamonds$$'}
-    - {t: J, h: '$$tabler:arrow-big-up$$'}
-    - {t: K, h: '$$tabler:command$$'}
-    - {t: L, h: '$$tabler:alt$$'}
+    - $$tabler:letter-q$$
+    - $$tabler:letter-w$$
+    - $$tabler:letter-e$$
+    - $$tabler:letter-r$$
+    - $$tabler:letter-t$$
+    - $$tabler:letter-y$$
+    - $$tabler:letter-u$$
+    - $$tabler:letter-i$$
+    - $$tabler:letter-o$$
+    - $$tabler:letter-p$$
+    - {t: '$$tabler:letter-a$$', h: '$$tabler:chevron-up$$'}
+    - {t: '$$tabler:letter-s$$', h: '$$tabler:option$$'}
+    - {t: '$$tabler:letter-d$$', h: '$$tabler:command$$'}
+    - {t: '$$tabler:letter-f$$', h: '$$tabler:arrow-big-up$$'}
+    - {t: '$$tabler:letter-g$$', h: '$$tabler:diamonds$$'}
+    - {t: '$$tabler:letter-h$$', h: '$$tabler:diamonds$$'}
+    - {t: '$$tabler:letter-j$$', h: '$$tabler:arrow-big-up$$'}
+    - {t: '$$tabler:letter-k$$', h: '$$tabler:command$$'}
+    - {t: '$$tabler:letter-l$$', h: '$$tabler:option$$'}
     - {t: ;, h: '$$tabler:chevron-up$$'}
-    - Z
-    - X
-    - C
-    - V
-    - B
-    - N
-    - M
+    - $$tabler:letter-z$$
+    - $$tabler:letter-x$$
+    - $$tabler:letter-c$$
+    - $$tabler:letter-v$$
+    - $$tabler:letter-b$$
+    - $$tabler:letter-n$$
+    - $$tabler:letter-m$$
     - ','
     - .
     - /
@@ -47,7 +47,7 @@ layers:
     - ⇞
     - ⇲
     - $$tabler:chevron-up$$
-    - $$tabler:alt$$
+    - $$tabler:option$$
     - $$tabler:command$$
     - $$tabler:arrow-big-up$$
     - ⌃⌥⇧$$tabler:command$$
@@ -82,7 +82,7 @@ layers:
     - {t: '9', s: '='}
     - '-'
     - $$tabler:chevron-up$$
-    - $$tabler:alt$$
+    - $$tabler:option$$
     - $$tabler:command$$
     - $$tabler:arrow-big-up$$
     - ⌃⌥⇧$$tabler:command$$
@@ -124,7 +124,7 @@ layers:
     - (RA(RC(RGUI)))
     - $$tabler:arrow-big-up$$
     - $$tabler:command$$
-    - $$tabler:alt$$
+    - $$tabler:option$$
     - $$tabler:chevron-up$$
     - ''
     - ''
@@ -159,7 +159,7 @@ layers:
     - (RA(RC(RGUI)))
     - $$tabler:arrow-big-up$$
     - $$tabler:command$$
-    - $$tabler:alt$$
+    - $$tabler:option$$
     - $$tabler:chevron-up$$
     - F10
     - F1
@@ -179,19 +179,19 @@ layers:
     '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
 combos:
   - p: [11, 12]
-    k: {t: '$$tabler:arrow-down-from-arc$$', h: '⌃$$tabler:alt$$'}
+    k: $$tabler:arrow-down-from-arc$$
     l:
       - Combos
   - p: [12, 13]
-    k: {t: '$$tabler:arrow-bar-to-right$$', h: '⇧$$tabler:command$$'}
+    k: $$tabler:arrow-bar-to-right$$
     l:
       - Combos
   - p: [16, 17]
-    k: {t: '$$tabler:corner-down-left$$', h: '⇧$$tabler:command$$'}
+    k: $$tabler:corner-down-left$$
     l:
       - Combos
   - p: [17, 18]
-    k: {t: '$$tabler:backspace$$', h: '⇧$$tabler:command$$'}
+    k: $$tabler:backspace$$
     l:
       - Combos
   - p: [26, 27]
