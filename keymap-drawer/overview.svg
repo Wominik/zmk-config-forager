@@ -1,17 +1,5 @@
 <svg width="760" height="758" viewBox="0 0 760 758" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>/* start glyphs */
-<svg id="square-f10">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14" /><g transform="translate(-1.45,0)"><path d="M8 12h2" /><path d="M10 9h-2v6" /></g><g transform="translate(-1.95,0)"><path d="M13 11l2 -2v6" /></g><g transform="translate(3.35,0) scale(0.9,1)"><path d="M13 10.5v3a1.5 1.5 0 0 0 3 0v-3a1.5 1.5 0 0 0 -3 0" /></g></svg>
-
-</svg>
-<svg id="square-f11">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14" /><g transform="translate(-1.25,0)"><path d="M8 12h2" /><path d="M10 9h-2v6" /></g><g transform="translate(-1.75,0)"><path d="M13 11l2 -2v6" /></g><g transform="translate(2.25,0)"><path d="M13 11l2 -2v6" /></g></svg>
-
-</svg>
-<svg id="square-f12">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14" /><g transform="translate(-1.45,0)"><path d="M8 12h2" /><path d="M10 9h-2v6" /></g><g transform="translate(-1.95,0)"><path d="M13 11l2 -2v6" /></g><g transform="translate(4.65,0) scale(0.8,1)"><path d="M13 9h2a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-1a1 1 0 0 0 -1 1v1a1 1 0 0 0 1 1h2" /></g></svg>
-
-</svg>
 <svg id="tabler:arrow-back">
 <svg
   xmlns="http://www.w3.org/2000/svg"
@@ -378,461 +366,6 @@
   <path d="M10.831 20.413l-5.375 -6.91c-.608 -.783 -.608 -2.223 0 -3l5.375 -6.911a1.457 1.457 0 0 1 2.338 0l5.375 6.91c.608 .783 .608 2.223 0 3l-5.375 6.911a1.457 1.457 0 0 1 -2.338 0" />
 </svg>
 </svg>
-<svg id="tabler:letter-a">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-letter-a"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M7 20v-12a4 4 0 0 1 4 -4h2a4 4 0 0 1 4 4v12" />
-  <path d="M7 13l10 0" />
-</svg>
-</svg>
-<svg id="tabler:letter-b">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-letter-b"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M7 20v-16h6a4 4 0 0 1 0 8a4 4 0 0 1 0 8h-6" />
-  <path d="M7 12l6 0" />
-</svg>
-</svg>
-<svg id="tabler:letter-c">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-letter-c"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M18 9a5 5 0 0 0 -5 -5h-2a5 5 0 0 0 -5 5v6a5 5 0 0 0 5 5h2a5 5 0 0 0 5 -5" />
-</svg>
-</svg>
-<svg id="tabler:letter-d">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-letter-d"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M7 4h6a5 5 0 0 1 5 5v6a5 5 0 0 1 -5 5h-6v-16" />
-</svg>
-</svg>
-<svg id="tabler:letter-e">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-letter-e"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M17 4h-10v16h10" />
-  <path d="M7 12l8 0" />
-</svg>
-</svg>
-<svg id="tabler:letter-f">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-letter-f"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M17 4h-10v16" />
-  <path d="M7 12l8 0" />
-</svg>
-</svg>
-<svg id="tabler:letter-g">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-letter-g"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M18 9a5 5 0 0 0 -5 -5h-2a5 5 0 0 0 -5 5v6a5 5 0 0 0 5 5h2a5 5 0 0 0 5 -5v-2h-4" />
-</svg>
-</svg>
-<svg id="tabler:letter-h">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-letter-h"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M17 4l0 16" />
-  <path d="M7 12l10 0" />
-  <path d="M7 4l0 16" />
-</svg>
-</svg>
-<svg id="tabler:letter-i">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-letter-i"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M12 4l0 16" />
-</svg>
-</svg>
-<svg id="tabler:letter-j">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-letter-j"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M17 4v12a4 4 0 0 1 -4 4h-2a4 4 0 0 1 -4 -4" />
-</svg>
-</svg>
-<svg id="tabler:letter-k">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-letter-k"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M7 4l0 16" />
-  <path d="M7 12h2l8 -8" />
-  <path d="M9 12l8 8" />
-</svg>
-</svg>
-<svg id="tabler:letter-l">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-letter-l"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M7 4v16h10" />
-</svg>
-</svg>
-<svg id="tabler:letter-m">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-letter-m"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M6 20v-16l6 14l6 -14v16" />
-</svg>
-</svg>
-<svg id="tabler:letter-n">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-letter-n"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M7 20v-16l10 16v-16" />
-</svg>
-</svg>
-<svg id="tabler:letter-o">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-letter-o"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M18 9a5 5 0 0 0 -5 -5h-2a5 5 0 0 0 -5 5v6a5 5 0 0 0 5 5h2a5 5 0 0 0 5 -5v-6" />
-</svg>
-</svg>
-<svg id="tabler:letter-p">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-letter-p"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M7 20v-16h5.5a4 4 0 0 1 0 9h-5.5" />
-</svg>
-</svg>
-<svg id="tabler:letter-q">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-letter-q"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M18 9a5 5 0 0 0 -5 -5h-2a5 5 0 0 0 -5 5v6a5 5 0 0 0 5 5h2a5 5 0 0 0 5 -5v-6" />
-  <path d="M13 15l5 5" />
-</svg>
-</svg>
-<svg id="tabler:letter-r">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-letter-r"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M7 20v-16h5.5a4 4 0 0 1 0 9h-5.5" />
-  <path d="M12 13l5 7" />
-</svg>
-</svg>
-<svg id="tabler:letter-s">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-letter-s"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M17 8a4 4 0 0 0 -4 -4h-2a4 4 0 0 0 0 8h2a4 4 0 0 1 0 8h-2a4 4 0 0 1 -4 -4" />
-</svg>
-</svg>
-<svg id="tabler:letter-t">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-letter-t"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M6 4l12 0" />
-  <path d="M12 4l0 16" />
-</svg>
-</svg>
-<svg id="tabler:letter-u">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-letter-u"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M6 4v11a5 5 0 0 0 5 5h2a5 5 0 0 0 5 -5v-11" />
-</svg>
-</svg>
-<svg id="tabler:letter-v">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-letter-v"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M6 4l6 16l6 -16" />
-</svg>
-</svg>
-<svg id="tabler:letter-w">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-letter-w"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M4 4l4 16l4 -14l4 14l4 -16" />
-</svg>
-</svg>
-<svg id="tabler:letter-x">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-letter-x"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M7 4l10 16" />
-  <path d="M17 4l-10 16" />
-</svg>
-</svg>
-<svg id="tabler:letter-y">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-letter-y"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M7 4l5 9l5 -9" />
-  <path d="M12 13l0 7" />
-</svg>
-</svg>
-<svg id="tabler:letter-z">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-letter-z"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M7 4h10l-10 16h10" />
-</svg>
-</svg>
 <svg id="tabler:lock-open">
 <svg
   xmlns="http://www.w3.org/2000/svg"
@@ -909,187 +442,6 @@
 >
   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
   <path d="M4 10v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1 -1v-3" />
-</svg>
-</svg>
-<svg id="tabler:square-f1">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-square-f1"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14" />
-  <path d="M13 11l2 -2v6" />
-  <path d="M8 12h2" />
-  <path d="M10 9h-2v6" />
-</svg>
-</svg>
-<svg id="tabler:square-f2">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-square-f2"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14" />
-  <path d="M13 9h2a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-1a1 1 0 0 0 -1 1v1a1 1 0 0 0 1 1h2" />
-  <path d="M8 12h2" />
-  <path d="M10 9h-2v6" />
-</svg>
-</svg>
-<svg id="tabler:square-f3">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-square-f3"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14" />
-  <path d="M13 9.5a.5 .5 0 0 1 .5 -.5h1a1.5 1.5 0 0 1 0 3h-.5h.5a1.5 1.5 0 0 1 0 3h-1a.5 .5 0 0 1 -.5 -.5" />
-  <path d="M8 12h2" />
-  <path d="M10 9h-2v6" />
-</svg>
-</svg>
-<svg id="tabler:square-f4">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-square-f4"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14" />
-  <path d="M13 9v2a1 1 0 0 0 1 1h1" />
-  <path d="M16 9v6" />
-  <path d="M8 12h2" />
-  <path d="M10 9h-2v6" />
-</svg>
-</svg>
-<svg id="tabler:square-f5">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-square-f5"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14" />
-  <path d="M13 14.25c0 .414 .336 .75 .75 .75h1.25a1 1 0 0 0 1 -1v-1a1 1 0 0 0 -1 -1h-2v-3h3" />
-  <path d="M8 12h2" />
-  <path d="M10 9h-2v6" />
-</svg>
-</svg>
-<svg id="tabler:square-f6">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-square-f6"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14" />
-  <path d="M16 9.75a.75 .75 0 0 0 -.75 -.75h-1.25a1 1 0 0 0 -1 1v4a1 1 0 0 0 1 1h1a1 1 0 0 0 1 -1v-1a1 1 0 0 0 -1 -1h-2" />
-  <path d="M8 12h2" />
-  <path d="M10 9h-2v6" />
-</svg>
-</svg>
-<svg id="tabler:square-f7">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-square-f7"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14" />
-  <path d="M13 9h3l-1.5 6" />
-  <path d="M8 12h2" />
-  <path d="M10 9h-2v6" />
-</svg>
-</svg>
-<svg id="tabler:square-f8">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-square-f8"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14" />
-  <path d="M14.5 12h-.5a1 1 0 0 1 -1 -1v-1a1 1 0 0 1 1 -1h1a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-1a1 1 0 0 0 -1 1v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1 -1v-1a1 1 0 0 0 -1 -1" />
-  <path d="M8 12h2" />
-  <path d="M10 9h-2v6" />
-</svg>
-</svg>
-<svg id="tabler:square-f9">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-square-f9"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14" />
-  <path d="M13 14.25c0 .414 .336 .75 .75 .75h1.5a.75 .75 0 0 0 .75 -.75v-4.5a.75 .75 0 0 0 -.75 -.75h-1.5a.75 .75 0 0 0 -.75 .75v1.5c0 .414 .336 .75 .75 .75h2.25" />
-  <path d="M8 12h2" />
-  <path d="M10 9h-2v6" />
 </svg>
 </svg>
 </defs>/* end glyphs */
@@ -1223,107 +575,128 @@ text.footer { text-anchor: middle; }
    hand-built F10/F11/F12 below) - the nested svg element is what carries
    the glyph's own stroke-width, see keymap-drawer's get_glyph_defs() */
 defs svg svg { stroke-width: 1.25 !important; }
+
+/* Nunito (fonts.google.com/specimen/Nunito), subsetted to A-Z/a-z/0-9
+   and embedded as base64 so it renders standalone - no external request,
+   which GitHub's SVG sanitizer would likely strip anyway. Falls back to
+   the default sans-serif for anything outside that range (e.g. the
+   unicode nav symbols not converted to Tabler icons). */
+@font-face {
+  font-family: "Nunito";
+  font-weight: 400;
+  font-display: swap;
+  unicode-range: U+30-39, U+41-5A, U+61-7A;
+  src: url(data:font/woff;base64,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) format("woff");
+}
+@font-face {
+  font-family: "Nunito";
+  font-weight: 700;
+  font-display: swap;
+  unicode-range: U+30-39, U+41-5A, U+61-7A;
+  src: url(data:font/woff;base64,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) format("woff");
+}
+svg.keymap { font-family: "Nunito", sans-serif; }
 </style>
 <g transform="translate(30, 0)" class="layer-BASE">
 <g transform="translate(0, 56)">
 <g transform="translate(28, 62)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#tabler:letter-q" xlink:href="#tabler:letter-q" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:letter-q"/>
-<use href="#square-f12" xlink:href="#square-f12" x="-24" y="-24" height="10" width="10.0" class="key tl glyph square-f12"/>
+<text x="0" y="0" class="key tap">Q</text>
+<text x="-24" y="-24" class="key tl">F12</text>
 </g>
 <g transform="translate(84, 44)" class="key keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#tabler:letter-w" xlink:href="#tabler:letter-w" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:letter-w"/>
-<use href="#tabler:square-f7" xlink:href="#tabler:square-f7" x="-24" y="-24" height="10" width="10.0" class="key tl glyph tabler:square-f7"/>
+<text x="0" y="0" class="key tap">W</text>
+<text x="-24" y="-24" class="key tl">F7</text>
 </g>
 <g transform="translate(140, 28)" class="key keypos-2">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#tabler:letter-e" xlink:href="#tabler:letter-e" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:letter-e"/>
-<use href="#tabler:square-f8" xlink:href="#tabler:square-f8" x="-24" y="-24" height="10" width="10.0" class="key tl glyph tabler:square-f8"/>
+<text x="0" y="0" class="key tap">E</text>
+<text x="-24" y="-24" class="key tl">F8</text>
 <text x="-24" y="24" class="key bl">(</text>
 </g>
 <g transform="translate(196, 38)" class="key keypos-3">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#tabler:letter-r" xlink:href="#tabler:letter-r" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:letter-r"/>
-<use href="#tabler:square-f9" xlink:href="#tabler:square-f9" x="-24" y="-24" height="10" width="10.0" class="key tl glyph tabler:square-f9"/>
+<text x="0" y="0" class="key tap">R</text>
+<text x="-24" y="-24" class="key tl">F9</text>
 <text x="-24" y="24" class="key bl">)</text>
 </g>
 <g transform="translate(252, 44)" class="key keypos-4">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#tabler:letter-t" xlink:href="#tabler:letter-t" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:letter-t"/>
+<text x="0" y="0" class="key tap">T</text>
 </g>
 <g transform="translate(448, 44)" class="key keypos-5">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#tabler:letter-y" xlink:href="#tabler:letter-y" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:letter-y"/>
+<text x="0" y="0" class="key tap">Y</text>
 </g>
 <g transform="translate(504, 38)" class="key keypos-6">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#tabler:letter-u" xlink:href="#tabler:letter-u" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:letter-u"/>
+<text x="0" y="0" class="key tap">U</text>
 <text x="-24" y="-24" class="key tl">&amp;</text>
 <text x="24" y="-24" class="key tr">⇱</text>
 <text x="24" y="24" class="key br">7</text>
 </g>
 <g transform="translate(560, 28)" class="key keypos-7">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#tabler:letter-i" xlink:href="#tabler:letter-i" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:letter-i"/>
+<text x="0" y="0" class="key tap">I</text>
 <text x="-24" y="-24" class="key tl">*</text>
 <text x="24" y="-24" class="key tr">⇟</text>
 <text x="24" y="24" class="key br">8</text>
 </g>
 <g transform="translate(616, 44)" class="key keypos-8">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#tabler:letter-o" xlink:href="#tabler:letter-o" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:letter-o"/>
+<text x="0" y="0" class="key tap">O</text>
 <text x="24" y="-24" class="key tr">⇞</text>
 <text x="24" y="24" class="key br">9</text>
 </g>
 <g transform="translate(672, 62)" class="key keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#tabler:letter-p" xlink:href="#tabler:letter-p" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:letter-p"/>
+<text x="0" y="0" class="key tap">P</text>
 <text x="-24" y="-24" class="key tl">_</text>
 <text x="24" y="-24" class="key tr">⇲</text>
 <text x="24" y="24" class="key br">-</text>
 </g>
 <g transform="translate(28, 118)" class="key keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#tabler:letter-a" xlink:href="#tabler:letter-a" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:letter-a"/>
+<text x="0" y="0" class="key tap">A</text>
 <use href="#tabler:chevron-up" xlink:href="#tabler:chevron-up" x="-6" y="12" height="12" width="12.0" class="key hold glyph tabler:chevron-up"/>
-<use href="#square-f11" xlink:href="#square-f11" x="-24" y="-24" height="10" width="10.0" class="key tl glyph square-f11"/>
+<text x="-24" y="-24" class="key tl">F11</text>
 <text x="-24" y="24" class="key bl">&lt;</text>
 </g>
 <g transform="translate(84, 100)" class="key keypos-11">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#tabler:letter-s" xlink:href="#tabler:letter-s" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:letter-s"/>
+<text x="0" y="0" class="key tap">S</text>
 <use href="#tabler:option" xlink:href="#tabler:option" x="-6" y="12" height="12" width="12.0" class="key hold glyph tabler:option"/>
-<use href="#tabler:square-f4" xlink:href="#tabler:square-f4" x="-24" y="-24" height="10" width="10.0" class="key tl glyph tabler:square-f4"/>
+<text x="-24" y="-24" class="key tl">F4</text>
 <text x="-24" y="24" class="key bl">&gt;</text>
 </g>
 <g transform="translate(140, 84)" class="key keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#tabler:letter-d" xlink:href="#tabler:letter-d" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:letter-d"/>
+<text x="0" y="0" class="key tap">D</text>
 <use href="#tabler:command" xlink:href="#tabler:command" x="-6" y="12" height="12" width="12.0" class="key hold glyph tabler:command"/>
-<use href="#tabler:square-f5" xlink:href="#tabler:square-f5" x="-24" y="-24" height="10" width="10.0" class="key tl glyph tabler:square-f5"/>
+<text x="-24" y="-24" class="key tl">F5</text>
 <text x="-24" y="24" class="key bl">{</text>
 </g>
 <g transform="translate(196, 94)" class="key keypos-13">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#tabler:letter-f" xlink:href="#tabler:letter-f" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:letter-f"/>
+<text x="0" y="0" class="key tap">F</text>
 <use href="#tabler:arrow-big-up" xlink:href="#tabler:arrow-big-up" x="-6" y="12" height="12" width="12.0" class="key hold glyph tabler:arrow-big-up"/>
-<use href="#tabler:square-f6" xlink:href="#tabler:square-f6" x="-24" y="-24" height="10" width="10.0" class="key tl glyph tabler:square-f6"/>
+<text x="-24" y="-24" class="key tl">F6</text>
 <text x="-24" y="24" class="key bl">}</text>
 </g>
 <g transform="translate(252, 100)" class="key keypos-14">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#tabler:letter-g" xlink:href="#tabler:letter-g" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:letter-g"/>
+<text x="0" y="0" class="key tap">G</text>
 <use href="#tabler:diamonds" xlink:href="#tabler:diamonds" x="-6" y="12" height="12" width="12.0" class="key hold glyph tabler:diamonds"/>
 </g>
 <g transform="translate(448, 100)" class="key keypos-15">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#tabler:letter-h" xlink:href="#tabler:letter-h" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:letter-h"/>
+<text x="0" y="0" class="key tap">H</text>
 <use href="#tabler:diamonds" xlink:href="#tabler:diamonds" x="-6" y="12" height="12" width="12.0" class="key hold glyph tabler:diamonds"/>
 </g>
 <g transform="translate(504, 94)" class="key keypos-16">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#tabler:letter-j" xlink:href="#tabler:letter-j" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:letter-j"/>
+<text x="0" y="0" class="key tap">J</text>
 <use href="#tabler:arrow-big-up" xlink:href="#tabler:arrow-big-up" x="-6" y="12" height="12" width="12.0" class="key hold glyph tabler:arrow-big-up"/>
 <text x="-24" y="-24" class="key tl">$</text>
 <use href="#tabler:arrow-left" xlink:href="#tabler:arrow-left" x="14" y="-24" height="10" width="10.0" class="key tr glyph tabler:arrow-left"/>
@@ -1331,7 +704,7 @@ defs svg svg { stroke-width: 1.25 !important; }
 </g>
 <g transform="translate(560, 84)" class="key keypos-17">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#tabler:letter-k" xlink:href="#tabler:letter-k" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:letter-k"/>
+<text x="0" y="0" class="key tap">K</text>
 <use href="#tabler:command" xlink:href="#tabler:command" x="-6" y="12" height="12" width="12.0" class="key hold glyph tabler:command"/>
 <text x="-24" y="-24" class="key tl">%</text>
 <use href="#tabler:arrow-down" xlink:href="#tabler:arrow-down" x="14" y="-24" height="10" width="10.0" class="key tr glyph tabler:arrow-down"/>
@@ -1339,7 +712,7 @@ defs svg svg { stroke-width: 1.25 !important; }
 </g>
 <g transform="translate(616, 100)" class="key keypos-18">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#tabler:letter-l" xlink:href="#tabler:letter-l" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:letter-l"/>
+<text x="0" y="0" class="key tap">L</text>
 <use href="#tabler:option" xlink:href="#tabler:option" x="-6" y="12" height="12" width="12.0" class="key hold glyph tabler:option"/>
 <text x="-24" y="-24" class="key tl">^</text>
 <use href="#tabler:arrow-up" xlink:href="#tabler:arrow-up" x="14" y="-24" height="10" width="10.0" class="key tr glyph tabler:arrow-up"/>
@@ -1354,38 +727,38 @@ defs svg svg { stroke-width: 1.25 !important; }
 </g>
 <g transform="translate(28, 174)" class="key keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#tabler:letter-z" xlink:href="#tabler:letter-z" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:letter-z"/>
-<use href="#square-f10" xlink:href="#square-f10" x="-24" y="-24" height="10" width="10.0" class="key tl glyph square-f10"/>
+<text x="0" y="0" class="key tap">Z</text>
+<text x="-24" y="-24" class="key tl">F10</text>
 </g>
 <g transform="translate(84, 156)" class="key keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#tabler:letter-x" xlink:href="#tabler:letter-x" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:letter-x"/>
-<use href="#tabler:square-f1" xlink:href="#tabler:square-f1" x="-24" y="-24" height="10" width="10.0" class="key tl glyph tabler:square-f1"/>
+<text x="0" y="0" class="key tap">X</text>
+<text x="-24" y="-24" class="key tl">F1</text>
 </g>
 <g transform="translate(140, 140)" class="key keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#tabler:letter-c" xlink:href="#tabler:letter-c" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:letter-c"/>
-<use href="#tabler:square-f2" xlink:href="#tabler:square-f2" x="-24" y="-24" height="10" width="10.0" class="key tl glyph tabler:square-f2"/>
+<text x="0" y="0" class="key tap">C</text>
+<text x="-24" y="-24" class="key tl">F2</text>
 <text x="-24" y="24" class="key bl">[</text>
 </g>
 <g transform="translate(196, 150)" class="key keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#tabler:letter-v" xlink:href="#tabler:letter-v" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:letter-v"/>
-<use href="#tabler:square-f3" xlink:href="#tabler:square-f3" x="-24" y="-24" height="10" width="10.0" class="key tl glyph tabler:square-f3"/>
+<text x="0" y="0" class="key tap">V</text>
+<text x="-24" y="-24" class="key tl">F3</text>
 <text x="-24" y="24" class="key bl">]</text>
 </g>
 <g transform="translate(252, 156)" class="key keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#tabler:letter-b" xlink:href="#tabler:letter-b" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:letter-b"/>
+<text x="0" y="0" class="key tap">B</text>
 </g>
 <g transform="translate(448, 156)" class="key keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#tabler:letter-n" xlink:href="#tabler:letter-n" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:letter-n"/>
+<text x="0" y="0" class="key tap">N</text>
 <text x="24" y="24" class="key br">0</text>
 </g>
 <g transform="translate(504, 150)" class="key keypos-26">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#tabler:letter-m" xlink:href="#tabler:letter-m" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:letter-m"/>
+<text x="0" y="0" class="key tap">M</text>
 <text x="-24" y="-24" class="key tl">!</text>
 <text x="24" y="24" class="key br">1</text>
 </g>

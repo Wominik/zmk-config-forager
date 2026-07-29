@@ -2,64 +2,64 @@ layout:
   zmk_keyboard: forager
 layers:
   BASE:
-    - t: $$tabler:letter-q$$
-      tl: $$square-f12$$
-    - t: $$tabler:letter-w$$
-      tl: $$tabler:square-f7$$
-    - t: $$tabler:letter-e$$
+    - t: Q
+      tl: F12
+    - t: W
+      tl: F7
+    - t: E
       bl: (
-      tl: $$tabler:square-f8$$
-    - t: $$tabler:letter-r$$
+      tl: F8
+    - t: R
       bl: )
-      tl: $$tabler:square-f9$$
-    - t: $$tabler:letter-t$$
-    - t: $$tabler:letter-y$$
-    - t: $$tabler:letter-u$$
+      tl: F9
+    - t: T
+    - t: Y
+    - t: U
       tr: ⇱
       br: '7'
       tl: '&'
-    - t: $$tabler:letter-i$$
+    - t: I
       tr: ⇟
       br: '8'
       tl: '*'
-    - t: $$tabler:letter-o$$
+    - t: O
       tr: ⇞
       br: '9'
-    - t: $$tabler:letter-p$$
+    - t: P
       tr: ⇲
       br: '-'
       tl: _
-    - t: $$tabler:letter-a$$
+    - t: A
       h: $$tabler:chevron-up$$
       bl: <
-      tl: $$square-f11$$
-    - t: $$tabler:letter-s$$
+      tl: F11
+    - t: S
       h: $$tabler:option$$
       bl: '>'
-      tl: $$tabler:square-f4$$
-    - t: $$tabler:letter-d$$
+      tl: F4
+    - t: D
       h: $$tabler:command$$
       bl: '{'
-      tl: $$tabler:square-f5$$
-    - t: $$tabler:letter-f$$
+      tl: F5
+    - t: F
       h: $$tabler:arrow-big-up$$
       bl: '}'
-      tl: $$tabler:square-f6$$
-    - t: $$tabler:letter-g$$
+      tl: F6
+    - t: G
       h: $$tabler:diamonds$$
-    - t: $$tabler:letter-h$$
+    - t: H
       h: $$tabler:diamonds$$
-    - t: $$tabler:letter-j$$
+    - t: J
       h: $$tabler:arrow-big-up$$
       tr: $$tabler:arrow-left$$
       br: '4'
       tl: $
-    - t: $$tabler:letter-k$$
+    - t: K
       h: $$tabler:command$$
       tr: $$tabler:arrow-down$$
       br: '5'
       tl: '%'
-    - t: $$tabler:letter-l$$
+    - t: L
       h: $$tabler:option$$
       tr: $$tabler:arrow-up$$
       br: '6'
@@ -68,20 +68,20 @@ layers:
       h: $$tabler:chevron-up$$
       tr: $$tabler:arrow-right$$
       br: +
-    - t: $$tabler:letter-z$$
-      tl: $$square-f10$$
-    - t: $$tabler:letter-x$$
-      tl: $$tabler:square-f1$$
-    - t: $$tabler:letter-c$$
+    - t: Z
+      tl: F10
+    - t: X
+      tl: F1
+    - t: C
       bl: '['
-      tl: $$tabler:square-f2$$
-    - t: $$tabler:letter-v$$
+      tl: F2
+    - t: V
       bl: ']'
-      tl: $$tabler:square-f3$$
-    - t: $$tabler:letter-b$$
-    - t: $$tabler:letter-n$$
+      tl: F3
+    - t: B
+    - t: N
       br: '0'
-    - t: $$tabler:letter-m$$
+    - t: M
       br: '1'
       tl: '!'
     - t: ','
