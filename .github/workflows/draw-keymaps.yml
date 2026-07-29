@@ -11,15 +11,18 @@ on:
 # reproduced here in CI so nothing needs to be installed/run locally):
 #   - base.svg:     every layer drawn on its own, plus a virtual "Combos" layer
 #   - overview.svg: NAV/NUM/BRAC folded into BASE as per-key corner labels
-#                    (tr=NAV, br=NUM, bl=BRAC, tl=synthetic "NUM+Shift" symbol
-#                    - FUN is intentionally left out of the overview but still
-#                    fully shown in base.svg). A corner is dropped whenever it
-#                    would just repeat the key's own tap/hold (e.g. the
-#                    modifier row that's mirrored onto NAV/NUM/BRAC for
-#                    consistency on A/S/D/F) - G/H (14/15) are hardcoded to
-#                    show no corners at all since their Hyper hold is
-#                    abbreviated to "✦" and wouldn't text-match the
-#                    spelled-out chord on NAV/NUM/BRAC.
+#                    (tr=NAV, br=NUM, bl=BRAC, tl=FUN where FUN has a real
+#                    F-key, else a synthetic "NUM+Shift" symbol on the digit
+#                    positions - FUN and the NUM+Shift symbol never land on
+#                    the same physical key, since FUN's F-keys are on the
+#                    left hand and the NUM digits are on the right hand). A
+#                    corner is dropped whenever it would just repeat the
+#                    key's own tap/hold (e.g. the modifier row mirrored onto
+#                    NAV/NUM/BRAC/FUN for consistency on A/S/D/F and
+#                    H/J/K/L/;) - G/H (14/15) are hardcoded to show no
+#                    corners at all since their Hyper hold is abbreviated to
+#                    "✦" and would not text-match the spelled-out chord on
+#                    NAV/NUM/BRAC/FUN.
 
 jobs:
   draw:
@@ -76,7 +79,7 @@ jobs:
 
             .layers = {
               BASE: [
-                [.layers.BASE, .layers.NAV, .layers.NUM, .layers.BRAC] | transpose | to_entries[] |
+                [.layers.BASE, .layers.NAV, .layers.NUM, .layers.BRAC, .layers.FUN] | transpose | to_entries[] |
                 .key as $pos |
                 (.value[0] | if type == "string" then {t: .} else . end) as $base |
                 ($base | base_values) as $base_vals |
@@ -89,13 +92,18 @@ jobs:
                 (.value[2] | if is_transparent then null else extract_label end) as $num_label |
                 # G (14): NUM there is just the Hyper chord already shown as "✦" on the hold - drop it
                 (if $num_label == null or $pos == 14 or ($base_vals | index($num_label)) then null else $num_label end) as $num |
-                # NUM+Shift symbol, top-left (never fires on A/S/D/F/G/H since their NUM value is a
-                # modifier/chord, not a digit, so it is naturally absent there without special-casing)
-                (if $num_label == null or ((shift_map | has($num_label)) | not)
-                 then null else shift_map[$num_label] end) as $tl |
                 # H (15): BRAC there is just the Hyper chord already shown as "✦" on the hold - drop it
                 (.value[3] | if is_transparent or $pos == 15 then null else extract_label end) as $brac_raw |
                 (if $brac_raw == null or ($base_vals | index($brac_raw)) then null else $brac_raw end) as $brac |
+                # FUN, top-left, dropped on G/H (14/15) and wherever it repeats the tap/hold already
+                # shown (the modifier row mirrored onto FUN for consistency on H/J/K/L/;)
+                (.value[4] | if is_transparent or $pos == 14 or $pos == 15 then null else extract_label end) as $fun_raw |
+                (if $fun_raw == null or ($base_vals | index($fun_raw)) then null else $fun_raw end) as $fun |
+                # top-left is FUN where FUN has a real F-key (left hand), else the synthetic
+                # NUM+Shift symbol on the digit positions (right hand) - the two never collide
+                (if $fun != null and $fun != "" then $fun
+                 elif $num_label == null or ((shift_map | has($num_label)) | not) then null
+                 else shift_map[$num_label] end) as $tl |
                 $base
                 + (if $nav  == null or $nav  == "" then {} else {tr: $nav}  end)
                 + (if $num  == null or $num  == "" then {} else {br: $num}  end)
