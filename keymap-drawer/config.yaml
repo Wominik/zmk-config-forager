@@ -69,6 +69,37 @@ parse_config:
 
     # --- symbols added on top of the defaults above ---
 
+    # letters - safe to convert everywhere: the only modifier+letter combos in
+    # the keymap (LG(C)/LG(V)/LG(X)/LG(Z)/LG(LS(Z))) are already fully
+    # overridden by raw_binding_map below, so none of these ever get combined
+    # with a modifier glyph in the same legend field.
+    A: "$$tabler:letter-a$$"
+    B: "$$tabler:letter-b$$"
+    C: "$$tabler:letter-c$$"
+    D: "$$tabler:letter-d$$"
+    E: "$$tabler:letter-e$$"
+    F: "$$tabler:letter-f$$"
+    G: "$$tabler:letter-g$$"
+    H: "$$tabler:letter-h$$"
+    I: "$$tabler:letter-i$$"
+    J: "$$tabler:letter-j$$"
+    K: "$$tabler:letter-k$$"
+    L: "$$tabler:letter-l$$"
+    M: "$$tabler:letter-m$$"
+    N: "$$tabler:letter-n$$"
+    O: "$$tabler:letter-o$$"
+    P: "$$tabler:letter-p$$"
+    Q: "$$tabler:letter-q$$"
+    R: "$$tabler:letter-r$$"
+    S: "$$tabler:letter-s$$"
+    T: "$$tabler:letter-t$$"
+    U: "$$tabler:letter-u$$"
+    V: "$$tabler:letter-v$$"
+    W: "$$tabler:letter-w$$"
+    X: "$$tabler:letter-x$$"
+    Y: "$$tabler:letter-y$$"
+    Z: "$$tabler:letter-z$$"
+
     # modifiers - Tabler icons, safe here since these only ever appear as a
     # single bare keycode (e.g. a home-row-mod hold). Modifiers combined in
     # LC()/LS()/etc-wrapped combos go through modifier_fn_map instead (below),
@@ -78,9 +109,9 @@ parse_config:
     LGUI: "$$tabler:command$$"
     RGUI: "$$tabler:command$$"
     GUI: "$$tabler:command$$"
-    LALT: "$$tabler:alt$$"
-    RALT: "$$tabler:alt$$"
-    ALT: "$$tabler:alt$$"
+    LALT: "$$tabler:option$$"
+    RALT: "$$tabler:option$$"
+    ALT: "$$tabler:option$$"
     LCTRL: "$$tabler:chevron-up$$"
     RCTRL: "$$tabler:chevron-up$$"
     CTRL: "$$tabler:chevron-up$$"
@@ -128,8 +159,8 @@ parse_config:
   # full combo again under G and H is redundant, so collapse it to a single
   # glyph there instead.
   raw_binding_map:
-    "&hml LS(LA(LC(LGUI))) G": { t: G, h: "$$tabler:diamonds$$" }
-    "&hmr RS(RA(RC(RGUI))) H": { t: H, h: "$$tabler:diamonds$$" }
+    "&hml LS(LA(LC(LGUI))) G": { t: "$$tabler:letter-g$$", h: "$$tabler:diamonds$$" }
+    "&hmr RS(RA(RC(RGUI))) H": { t: "$$tabler:letter-h$$", h: "$$tabler:diamonds$$" }
 
     # named actions on the combo diagram: show what they do, not the raw shortcut
     "&kp LG(C)": "$$tabler:copy$$"
@@ -143,6 +174,14 @@ parse_config:
     "&kp LC(RIGHT)": "$$tabler:arrow-bar-to-right$$"
     "&kp LS(LC(LG(N4)))": "$$tabler:screenshot$$"
     "&studio_unlock": "$$tabler:lock-open$$"
+
+    # esc/tab/ent/bspc combos also carry a modifier hold, but on the combo
+    # diagram just the tap is what matters - drop the "h" field so the mod
+    # doesn't render at all instead of showing a possibly-misleading glyph.
+    "&mt LC(LALT) ESC": { t: "$$tabler:arrow-down-from-arc$$" }
+    "&mt LS(LGUI) TAB": { t: "$$tabler:arrow-bar-to-right$$" }
+    "&mt RS(RGUI) ENTER": { t: "$$tabler:corner-down-left$$" }
+    "&mt RS(RALT) BSPC": { t: "$$tabler:backspace$$" }
     "&clipboard_manager": "$$tabler:clipboard$$"
 
   # Nudge combo boxes apart where several combos' key-positions overlap and
