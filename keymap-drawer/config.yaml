@@ -69,37 +69,6 @@ parse_config:
 
     # --- symbols added on top of the defaults above ---
 
-    # letters - safe to convert everywhere: the only modifier+letter combos in
-    # the keymap (LG(C)/LG(V)/LG(X)/LG(Z)/LG(LS(Z))) are already fully
-    # overridden by raw_binding_map below, so none of these ever get combined
-    # with a modifier glyph in the same legend field.
-    A: "$$tabler:letter-a$$"
-    B: "$$tabler:letter-b$$"
-    C: "$$tabler:letter-c$$"
-    D: "$$tabler:letter-d$$"
-    E: "$$tabler:letter-e$$"
-    F: "$$tabler:letter-f$$"
-    G: "$$tabler:letter-g$$"
-    H: "$$tabler:letter-h$$"
-    I: "$$tabler:letter-i$$"
-    J: "$$tabler:letter-j$$"
-    K: "$$tabler:letter-k$$"
-    L: "$$tabler:letter-l$$"
-    M: "$$tabler:letter-m$$"
-    N: "$$tabler:letter-n$$"
-    O: "$$tabler:letter-o$$"
-    P: "$$tabler:letter-p$$"
-    Q: "$$tabler:letter-q$$"
-    R: "$$tabler:letter-r$$"
-    S: "$$tabler:letter-s$$"
-    T: "$$tabler:letter-t$$"
-    U: "$$tabler:letter-u$$"
-    V: "$$tabler:letter-v$$"
-    W: "$$tabler:letter-w$$"
-    X: "$$tabler:letter-x$$"
-    Y: "$$tabler:letter-y$$"
-    Z: "$$tabler:letter-z$$"
-
     # modifiers - Tabler icons, safe here since these only ever appear as a
     # single bare keycode (e.g. a home-row-mod hold). Modifiers combined in
     # LC()/LS()/etc-wrapped combos go through modifier_fn_map instead (below),
@@ -138,22 +107,6 @@ parse_config:
     ENTER: "$$tabler:corner-down-left$$"
     ESC: "$$tabler:arrow-down-from-arc$$"
 
-    # function keys - F1-F9 are real Tabler icons; F10-F12 don't exist in the
-    # library so they're hand-built in draw_config.glyphs below, reusing the
-    # exact digit paths from square-f0/f1/f2 so they match the family style.
-    F1: "$$tabler:square-f1$$"
-    F2: "$$tabler:square-f2$$"
-    F3: "$$tabler:square-f3$$"
-    F4: "$$tabler:square-f4$$"
-    F5: "$$tabler:square-f5$$"
-    F6: "$$tabler:square-f6$$"
-    F7: "$$tabler:square-f7$$"
-    F8: "$$tabler:square-f8$$"
-    F9: "$$tabler:square-f9$$"
-    F10: "$$square-f10$$"
-    F11: "$$square-f11$$"
-    F12: "$$square-f12$$"
-
   # symbols for modifiers wrapped in modifier functions, e.g. LC(LALT), LG(V)
   modifier_fn_map:
     left_ctrl: "⌃"
@@ -175,8 +128,8 @@ parse_config:
   # full combo again under G and H is redundant, so collapse it to a single
   # glyph there instead.
   raw_binding_map:
-    "&hml LS(LA(LC(LGUI))) G": { t: "$$tabler:letter-g$$", h: "$$tabler:diamonds$$" }
-    "&hmr RS(RA(RC(RGUI))) H": { t: "$$tabler:letter-h$$", h: "$$tabler:diamonds$$" }
+    "&hml LS(LA(LC(LGUI))) G": { t: G, h: "$$tabler:diamonds$$" }
+    "&hmr RS(RA(RC(RGUI))) H": { t: H, h: "$$tabler:diamonds$$" }
 
     # named actions on the combo diagram: show what they do, not the raw shortcut
     "&kp LG(C)": "$$tabler:copy$$"
@@ -246,17 +199,3 @@ draw_config:
       src: url(data:font/woff;base64,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) format("woff");
     }
     svg.keymap { font-family: "Nunito", sans-serif; }
-
-  # F10/F11/F12 don't exist in Tabler - built from the exact digit paths used
-  # in the real square-f0/f1/f2 icons, repositioned via <g transform> (not
-  # hand-redrawn, so the digit shapes are pixel-identical to the library).
-  # Scale is (sx,1) - height is never touched, so digits stay exactly as tall
-  # as the F. The whole "F + digit + digit" cluster is centered in the square,
-  # which is what shifts F slightly left compared to the single-digit icons.
-  glyphs:
-    square-f10: |
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14" /><g transform="translate(-1.45,0)"><path d="M8 12h2" /><path d="M10 9h-2v6" /></g><g transform="translate(-1.95,0)"><path d="M13 11l2 -2v6" /></g><g transform="translate(3.35,0) scale(0.9,1)"><path d="M13 10.5v3a1.5 1.5 0 0 0 3 0v-3a1.5 1.5 0 0 0 -3 0" /></g></svg>
-    square-f11: |
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14" /><g transform="translate(-1.25,0)"><path d="M8 12h2" /><path d="M10 9h-2v6" /></g><g transform="translate(-1.75,0)"><path d="M13 11l2 -2v6" /></g><g transform="translate(2.25,0)"><path d="M13 11l2 -2v6" /></g></svg>
-    square-f12: |
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14" /><g transform="translate(-1.45,0)"><path d="M8 12h2" /><path d="M10 9h-2v6" /></g><g transform="translate(-1.95,0)"><path d="M13 11l2 -2v6" /></g><g transform="translate(4.65,0) scale(0.8,1)"><path d="M13 9h2a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-1a1 1 0 0 0 -1 1v1a1 1 0 0 0 1 1h2" /></g></svg>
