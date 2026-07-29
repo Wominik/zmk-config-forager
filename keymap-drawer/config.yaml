@@ -69,38 +69,43 @@ parse_config:
 
     # --- symbols added on top of the defaults above ---
 
-    # modifiers
-    LGUI: "⌘"
-    RGUI: "⌘"
-    GUI: "⌘"
-    LALT: "⌥"
-    RALT: "⌥"
-    ALT: "⌥"
-    LCTRL: "⌃"
-    RCTRL: "⌃"
-    CTRL: "⌃"
-    LSHFT: "⇧"
-    RSHFT: "⇧"
-    SHIFT: "⇧"
+    # modifiers - Tabler icons, safe here since these only ever appear as a
+    # single bare keycode (e.g. a home-row-mod hold). Modifiers combined in
+    # LC()/LS()/etc-wrapped combos go through modifier_fn_map instead (below),
+    # which is left as plain unicode: keymap-drawer only supports one $$..$$
+    # glyph per legend field, and mod_combiner concatenates multiple mods into
+    # one field, so those can't be converted without breaking the render.
+    LGUI: "$$tabler:command$$"
+    RGUI: "$$tabler:command$$"
+    GUI: "$$tabler:command$$"
+    LALT: "$$tabler:alt$$"
+    RALT: "$$tabler:alt$$"
+    ALT: "$$tabler:alt$$"
+    LCTRL: "$$tabler:chevron-up$$"
+    RCTRL: "$$tabler:chevron-up$$"
+    CTRL: "$$tabler:chevron-up$$"
+    LSHFT: "$$tabler:arrow-big-up$$"
+    RSHFT: "$$tabler:arrow-big-up$$"
+    SHIFT: "$$tabler:arrow-big-up$$"
 
     # arrows / navigation
-    LEFT: "←"
-    RIGHT: "→"
-    UP: "↑"
-    DOWN: "↓"
+    LEFT: "$$tabler:arrow-left$$"
+    RIGHT: "$$tabler:arrow-right$$"
+    UP: "$$tabler:arrow-up$$"
+    DOWN: "$$tabler:arrow-down$$"
     HOME: "⇱"
     END: "⇲"
     PG_UP: "⇞"
     PG_DN: "⇟"
 
     # editing
-    TAB: "⇥"
-    SPACE: "␣"
-    BSPC: "⌫"
-    DEL: "⌦"
-    RET: "⏎"
-    ENTER: "⏎"
-    ESC: "⎋"
+    TAB: "$$tabler:arrow-bar-to-right$$"
+    SPACE: "$$tabler:space$$"
+    BSPC: "$$tabler:backspace$$"
+    DEL: "$$tabler:eraser$$"
+    RET: "$$tabler:corner-down-left$$"
+    ENTER: "$$tabler:corner-down-left$$"
+    ESC: "$$tabler:arrow-down-from-arc$$"
 
   # symbols for modifiers wrapped in modifier functions, e.g. LC(LALT), LG(V)
   modifier_fn_map:
@@ -121,24 +126,24 @@ parse_config:
   # HPR_G / HPR_H (the Hyper hold on the G/H keys) are the same 4-mod chord
   # spelled out on every key already via modifier_fn_map above; showing that
   # full combo again under G and H is redundant, so collapse it to a single
-  # glyph there and explain it once in the footer instead (see draw_config).
+  # glyph there instead.
   raw_binding_map:
-    "&hml LS(LA(LC(LGUI))) G": { t: G, h: "✦" }
-    "&hmr RS(RA(RC(RGUI))) H": { t: H, h: "✦" }
+    "&hml LS(LA(LC(LGUI))) G": { t: G, h: "$$tabler:diamonds$$" }
+    "&hmr RS(RA(RC(RGUI))) H": { t: H, h: "$$tabler:diamonds$$" }
 
     # named actions on the combo diagram: show what they do, not the raw shortcut
-    "&kp LG(C)": Copy
-    "&kp LG(V)": Paste
-    "&kp LG(X)": Cut
-    "&kp LG(Z)": Undo
-    "&kp LG(LS(Z))": Redo
-    "&kp LG(LS(LBKT))": Back
-    "&kp LG(LS(RBKT))": Forward
-    "&kp LC(LEFT)": ← □
-    "&kp LC(RIGHT)": □ →
-    "&kp LS(LC(LG(N4)))": Screenshot
-    "&studio_unlock": Studio
-    "&clipboard_manager": Clipboard
+    "&kp LG(C)": "$$tabler:copy$$"
+    "&kp LG(V)": "$$tabler:clipboard-text$$"
+    "&kp LG(X)": "$$tabler:cut$$"
+    "&kp LG(Z)": "$$tabler:arrow-back-up$$"
+    "&kp LG(LS(Z))": "$$tabler:arrow-forward-up$$"
+    "&kp LG(LS(LBKT))": "$$tabler:arrow-back$$"
+    "&kp LG(LS(RBKT))": "$$tabler:arrow-forward$$"
+    "&kp LC(LEFT)": "$$tabler:arrow-bar-to-left$$"
+    "&kp LC(RIGHT)": "$$tabler:arrow-bar-to-right$$"
+    "&kp LS(LC(LG(N4)))": "$$tabler:screenshot$$"
+    "&studio_unlock": "$$tabler:lock-open$$"
+    "&clipboard_manager": "$$tabler:clipboard$$"
 
   # Nudge combo boxes apart where several combos' key-positions overlap and
   # their default (centroid) placement would otherwise collide - see
