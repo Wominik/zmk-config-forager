@@ -165,10 +165,10 @@ parse_config:
     # combo_copy: { align: bottom, offset: 0.1 }
     combo_paste: { align: bottom, offset: 0.6 }
     combo_redo: { align: bottom, offset: 0.6 }
-    combo_clipboard_manager: { align: bottom, offset: 0.1, slide: -0.3 }
+    combo_clipboard_manager: { align: bottom, offset: 0.1, slide: -0.4  }
     # combo_left_screen: { align: bottom, offset: 0.1 }
     # combo_right_screen: { align: bottom, offset: 0.1 }
-    combo_screenshot: { align: bottom, offset: 0.6 }
+    combo_screenshot: { align: bottom, offset: 0.3, slide: 0.3 }
 
 draw_config:
   footer_text: ""
