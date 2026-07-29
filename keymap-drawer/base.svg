@@ -1401,10 +1401,10 @@ svg.keymap { font-family: "Nunito", sans-serif; }
 <use href="#tabler:copy" xlink:href="#tabler:copy" x="161" y="138" height="14" width="14.0" class="combo tap glyph tabler:copy"/>
 </g>
 <g class="combo combopos-9">
-<path d="M140,218 h-50 a6.0,6.0 0 0 1 -6.0,-6.0 v-38" class="combo"/>
-<path d="M140,218 h50 a6.0,6.0 0 0 0 6.0,-6.0 v-44" class="combo"/>
-<rect rx="6" ry="6" x="126" y="205" width="28" height="26" class="combo"/>
-<use href="#tabler:clipboard" xlink:href="#tabler:clipboard" x="133" y="211" height="14" width="14.0" class="combo tap glyph tabler:clipboard"/>
+<path d="M118,218 h-28 a6.0,6.0 0 0 1 -6.0,-6.0 v-38" class="combo"/>
+<path d="M118,218 h72 a6.0,6.0 0 0 0 6.0,-6.0 v-44" class="combo"/>
+<rect rx="6" ry="6" x="104" y="205" width="28" height="26" class="combo"/>
+<use href="#tabler:clipboard" xlink:href="#tabler:clipboard" x="111" y="211" height="14" width="14.0" class="combo tap glyph tabler:clipboard"/>
 </g>
 <g class="combo combopos-10">
 <rect rx="6" ry="6" x="98" y="135" width="28" height="26" class="combo"/>
@@ -1429,18 +1429,18 @@ svg.keymap { font-family: "Nunito", sans-serif; }
 <text x="644" y="109" class="combo tap">&#x27;</text>
 </g>
 <g class="combo combopos-15">
-<path d="M118,190 h-28 a6.0,6.0 0 0 1 -6.0,-6.0 v-10" class="combo"/>
-<path d="M118,190 h16 a6.0,6.0 0 0 0 6.0,-6.0 v-26" class="combo"/>
-<path d="M118,190 h72 a6.0,6.0 0 0 0 6.0,-6.0 v-16" class="combo"/>
-<rect rx="6" ry="6" x="104" y="177" width="28" height="26" class="combo"/>
-<use href="#tabler:clipboard-text" xlink:href="#tabler:clipboard-text" x="111" y="183" height="14" width="14.0" class="combo tap glyph tabler:clipboard-text"/>
+<path d="M162,190 h-72 a6.0,6.0 0 0 1 -6.0,-6.0 v-10" class="combo"/>
+<path d="M162,190 h-16 a6.0,6.0 0 0 1 -6.0,-6.0 v-26" class="combo"/>
+<path d="M162,190 h28 a6.0,6.0 0 0 0 6.0,-6.0 v-16" class="combo"/>
+<rect rx="6" ry="6" x="148" y="177" width="28" height="26" class="combo"/>
+<use href="#tabler:clipboard-text" xlink:href="#tabler:clipboard-text" x="155" y="183" height="14" width="14.0" class="combo tap glyph tabler:clipboard-text"/>
 </g>
 <g class="combo combopos-16">
-<path d="M543,201 h-33 a6.0,6.0 0 0 1 -6.0,-6.0 v-27" class="combo"/>
-<path d="M543,201 h11 a6.0,6.0 0 0 0 6.0,-6.0 v-37" class="combo"/>
-<path d="M543,201 h67 a6.0,6.0 0 0 0 6.0,-6.0 v-21" class="combo"/>
-<rect rx="6" ry="6" x="529" y="188" width="28" height="26" class="combo"/>
-<use href="#tabler:screenshot" xlink:href="#tabler:screenshot" x="536" y="194" height="14" width="14.0" class="combo tap glyph tabler:screenshot"/>
+<path d="M560,185 h-50 a6.0,6.0 0 0 1 -6.0,-6.0 v-10" class="combo"/>
+<path d="M560,185 l0,-26" class="combo"/>
+<path d="M560,185 h50 a6.0,6.0 0 0 0 6.0,-6.0 v-4" class="combo"/>
+<rect rx="6" ry="6" x="546" y="172" width="28" height="26" class="combo"/>
+<use href="#tabler:screenshot" xlink:href="#tabler:screenshot" x="553" y="178" height="14" width="14.0" class="combo tap glyph tabler:screenshot"/>
 </g>
 </g>
 </g>

@@ -218,6 +218,7 @@ combos:
     k: $$tabler:clipboard$$
     a: bottom
     o: 0.6
+    s: -0.4
     l:
       - Combos
   - p: [21, 22]
@@ -245,10 +246,8 @@ combos:
     l: [Combos]
     a: bottom
     o: 0.1
-    s: -0.4
+    s: 0.4
   - p: [26, 27, 28]
     k: $$tabler:screenshot$$
     l: [Combos]
     a: bottom
-    o: 0.3
-    s: 0.3
