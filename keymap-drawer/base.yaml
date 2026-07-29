@@ -215,10 +215,9 @@ combos:
     l:
       - Combos
   - p: [21, 23]
-    k: $$tabler:clipboard-text$$
+    k: $$tabler:clipboard$$
     a: bottom
-    o: 0.1
-    s: -0.3
+    o: 0.6
     l:
       - Combos
   - p: [21, 22]
@@ -242,10 +241,11 @@ combos:
     l:
       - Combos
   - p: [21, 22, 23]
-    k: $$tabler:clipboard$$
+    k: $$tabler:clipboard-text$$
     l: [Combos]
     a: bottom
-    o: 0.6
+    o: 0.1
+    s: -0.3
   - p: [26, 27, 28]
     k: $$tabler:screenshot$$
     l: [Combos]
