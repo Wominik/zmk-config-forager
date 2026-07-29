@@ -1220,8 +1220,8 @@ path.combo {
 
 text.footer { text-anchor: middle; }
 /* uniform stroke weight for every glyph (fetched Tabler icons and the
-   hand-built F10/F11/F12 below) - the nested <svg> is what carries the
-   glyph's own stroke-width, see keymap-drawer's get_glyph_defs() */
+   hand-built F10/F11/F12 below) - the nested svg element is what carries
+   the glyph's own stroke-width, see keymap-drawer's get_glyph_defs() */
 defs svg svg { stroke-width: 1.25 !important; }
 </style>
 <g transform="translate(30, 0)" class="layer-BASE">
