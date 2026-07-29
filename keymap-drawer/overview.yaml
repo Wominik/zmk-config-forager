@@ -3,11 +3,15 @@ layout:
 layers:
   BASE:
     - t: $$tabler:letter-q$$
+      tl: $$square-f12$$
     - t: $$tabler:letter-w$$
+      tl: $$tabler:square-f7$$
     - t: $$tabler:letter-e$$
       bl: (
+      tl: $$tabler:square-f8$$
     - t: $$tabler:letter-r$$
       bl: )
+      tl: $$tabler:square-f9$$
     - t: $$tabler:letter-t$$
     - t: $$tabler:letter-y$$
     - t: $$tabler:letter-u$$
@@ -28,15 +32,19 @@ layers:
     - t: $$tabler:letter-a$$
       h: $$tabler:chevron-up$$
       bl: <
+      tl: $$square-f11$$
     - t: $$tabler:letter-s$$
       h: $$tabler:option$$
       bl: '>'
+      tl: $$tabler:square-f4$$
     - t: $$tabler:letter-d$$
       h: $$tabler:command$$
       bl: '{'
+      tl: $$tabler:square-f5$$
     - t: $$tabler:letter-f$$
       h: $$tabler:arrow-big-up$$
       bl: '}'
+      tl: $$tabler:square-f6$$
     - t: $$tabler:letter-g$$
       h: $$tabler:diamonds$$
     - t: $$tabler:letter-h$$
@@ -61,11 +69,15 @@ layers:
       tr: $$tabler:arrow-right$$
       br: +
     - t: $$tabler:letter-z$$
+      tl: $$square-f10$$
     - t: $$tabler:letter-x$$
+      tl: $$tabler:square-f1$$
     - t: $$tabler:letter-c$$
       bl: '['
+      tl: $$tabler:square-f2$$
     - t: $$tabler:letter-v$$
       bl: ']'
+      tl: $$tabler:square-f3$$
     - t: $$tabler:letter-b$$
     - t: $$tabler:letter-n$$
       br: '0'

@@ -141,30 +141,30 @@ layers:
     - ''
     - {type: held}
   FUN:
-    - F12
-    - F7
-    - F8
-    - F9
+    - $$square-f12$$
+    - $$tabler:square-f7$$
+    - $$tabler:square-f8$$
+    - $$tabler:square-f9$$
     - ''
     - ''
     - ''
     - ''
     - ''
     - ''
-    - F11
-    - F4
-    - F5
-    - F6
+    - $$square-f11$$
+    - $$tabler:square-f4$$
+    - $$tabler:square-f5$$
+    - $$tabler:square-f6$$
     - ''
     - (RA(RC(RGUI)))
     - $$tabler:arrow-big-up$$
     - $$tabler:command$$
     - $$tabler:option$$
     - $$tabler:chevron-up$$
-    - F10
-    - F1
-    - F2
-    - F3
+    - $$square-f10$$
+    - $$tabler:square-f1$$
+    - $$tabler:square-f2$$
+    - $$tabler:square-f3$$
     - ''
     - ''
     - ''

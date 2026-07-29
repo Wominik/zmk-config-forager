@@ -1,5 +1,17 @@
 <svg width="760" height="758" viewBox="0 0 760 758" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>/* start glyphs */
+<svg id="square-f10">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14" /><g transform="translate(-1.45,0)"><path d="M8 12h2" /><path d="M10 9h-2v6" /></g><g transform="translate(-1.95,0)"><path d="M13 11l2 -2v6" /></g><g transform="translate(3.35,0) scale(0.9,1)"><path d="M13 10.5v3a1.5 1.5 0 0 0 3 0v-3a1.5 1.5 0 0 0 -3 0" /></g></svg>
+
+</svg>
+<svg id="square-f11">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14" /><g transform="translate(-1.25,0)"><path d="M8 12h2" /><path d="M10 9h-2v6" /></g><g transform="translate(-1.75,0)"><path d="M13 11l2 -2v6" /></g><g transform="translate(2.25,0)"><path d="M13 11l2 -2v6" /></g></svg>
+
+</svg>
+<svg id="square-f12">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14" /><g transform="translate(-1.45,0)"><path d="M8 12h2" /><path d="M10 9h-2v6" /></g><g transform="translate(-1.95,0)"><path d="M13 11l2 -2v6" /></g><g transform="translate(4.65,0) scale(0.8,1)"><path d="M13 9h2a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-1a1 1 0 0 0 -1 1v1a1 1 0 0 0 1 1h2" /></g></svg>
+
+</svg>
 <svg id="tabler:arrow-back">
 <svg
   xmlns="http://www.w3.org/2000/svg"
@@ -899,6 +911,187 @@
   <path d="M4 10v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1 -1v-3" />
 </svg>
 </svg>
+<svg id="tabler:square-f1">
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-square-f1"
+>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14" />
+  <path d="M13 11l2 -2v6" />
+  <path d="M8 12h2" />
+  <path d="M10 9h-2v6" />
+</svg>
+</svg>
+<svg id="tabler:square-f2">
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-square-f2"
+>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14" />
+  <path d="M13 9h2a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-1a1 1 0 0 0 -1 1v1a1 1 0 0 0 1 1h2" />
+  <path d="M8 12h2" />
+  <path d="M10 9h-2v6" />
+</svg>
+</svg>
+<svg id="tabler:square-f3">
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-square-f3"
+>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14" />
+  <path d="M13 9.5a.5 .5 0 0 1 .5 -.5h1a1.5 1.5 0 0 1 0 3h-.5h.5a1.5 1.5 0 0 1 0 3h-1a.5 .5 0 0 1 -.5 -.5" />
+  <path d="M8 12h2" />
+  <path d="M10 9h-2v6" />
+</svg>
+</svg>
+<svg id="tabler:square-f4">
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-square-f4"
+>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14" />
+  <path d="M13 9v2a1 1 0 0 0 1 1h1" />
+  <path d="M16 9v6" />
+  <path d="M8 12h2" />
+  <path d="M10 9h-2v6" />
+</svg>
+</svg>
+<svg id="tabler:square-f5">
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-square-f5"
+>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14" />
+  <path d="M13 14.25c0 .414 .336 .75 .75 .75h1.25a1 1 0 0 0 1 -1v-1a1 1 0 0 0 -1 -1h-2v-3h3" />
+  <path d="M8 12h2" />
+  <path d="M10 9h-2v6" />
+</svg>
+</svg>
+<svg id="tabler:square-f6">
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-square-f6"
+>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14" />
+  <path d="M16 9.75a.75 .75 0 0 0 -.75 -.75h-1.25a1 1 0 0 0 -1 1v4a1 1 0 0 0 1 1h1a1 1 0 0 0 1 -1v-1a1 1 0 0 0 -1 -1h-2" />
+  <path d="M8 12h2" />
+  <path d="M10 9h-2v6" />
+</svg>
+</svg>
+<svg id="tabler:square-f7">
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-square-f7"
+>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14" />
+  <path d="M13 9h3l-1.5 6" />
+  <path d="M8 12h2" />
+  <path d="M10 9h-2v6" />
+</svg>
+</svg>
+<svg id="tabler:square-f8">
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-square-f8"
+>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14" />
+  <path d="M14.5 12h-.5a1 1 0 0 1 -1 -1v-1a1 1 0 0 1 1 -1h1a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-1a1 1 0 0 0 -1 1v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1 -1v-1a1 1 0 0 0 -1 -1" />
+  <path d="M8 12h2" />
+  <path d="M10 9h-2v6" />
+</svg>
+</svg>
+<svg id="tabler:square-f9">
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-square-f9"
+>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14" />
+  <path d="M13 14.25c0 .414 .336 .75 .75 .75h1.5a.75 .75 0 0 0 .75 -.75v-4.5a.75 .75 0 0 0 -.75 -.75h-1.5a.75 .75 0 0 0 -.75 .75v1.5c0 .414 .336 .75 .75 .75h2.25" />
+  <path d="M8 12h2" />
+  <path d="M10 9h-2v6" />
+</svg>
+</svg>
 </defs>/* end glyphs */
 <style>/* inherit to force styles through use tags */
 svg path {
@@ -1026,25 +1219,33 @@ path.combo {
 /* End Tabler Icons Cleanup */
 
 text.footer { text-anchor: middle; }
+/* uniform stroke weight for every glyph (fetched Tabler icons and the
+   hand-built F10/F11/F12 below) - the nested <svg> is what carries the
+   glyph's own stroke-width, see keymap-drawer's get_glyph_defs() */
+defs svg svg { stroke-width: 1.25 !important; }
 </style>
 <g transform="translate(30, 0)" class="layer-BASE">
 <g transform="translate(0, 56)">
 <g transform="translate(28, 62)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#tabler:letter-q" xlink:href="#tabler:letter-q" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:letter-q"/>
+<use href="#square-f12" xlink:href="#square-f12" x="-24" y="-24" height="10" width="10.0" class="key tl glyph square-f12"/>
 </g>
 <g transform="translate(84, 44)" class="key keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#tabler:letter-w" xlink:href="#tabler:letter-w" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:letter-w"/>
+<use href="#tabler:square-f7" xlink:href="#tabler:square-f7" x="-24" y="-24" height="10" width="10.0" class="key tl glyph tabler:square-f7"/>
 </g>
 <g transform="translate(140, 28)" class="key keypos-2">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#tabler:letter-e" xlink:href="#tabler:letter-e" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:letter-e"/>
+<use href="#tabler:square-f8" xlink:href="#tabler:square-f8" x="-24" y="-24" height="10" width="10.0" class="key tl glyph tabler:square-f8"/>
 <text x="-24" y="24" class="key bl">(</text>
 </g>
 <g transform="translate(196, 38)" class="key keypos-3">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#tabler:letter-r" xlink:href="#tabler:letter-r" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:letter-r"/>
+<use href="#tabler:square-f9" xlink:href="#tabler:square-f9" x="-24" y="-24" height="10" width="10.0" class="key tl glyph tabler:square-f9"/>
 <text x="-24" y="24" class="key bl">)</text>
 </g>
 <g transform="translate(252, 44)" class="key keypos-4">
@@ -1086,24 +1287,28 @@ text.footer { text-anchor: middle; }
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#tabler:letter-a" xlink:href="#tabler:letter-a" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:letter-a"/>
 <use href="#tabler:chevron-up" xlink:href="#tabler:chevron-up" x="-6" y="12" height="12" width="12.0" class="key hold glyph tabler:chevron-up"/>
+<use href="#square-f11" xlink:href="#square-f11" x="-24" y="-24" height="10" width="10.0" class="key tl glyph square-f11"/>
 <text x="-24" y="24" class="key bl">&lt;</text>
 </g>
 <g transform="translate(84, 100)" class="key keypos-11">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#tabler:letter-s" xlink:href="#tabler:letter-s" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:letter-s"/>
 <use href="#tabler:option" xlink:href="#tabler:option" x="-6" y="12" height="12" width="12.0" class="key hold glyph tabler:option"/>
+<use href="#tabler:square-f4" xlink:href="#tabler:square-f4" x="-24" y="-24" height="10" width="10.0" class="key tl glyph tabler:square-f4"/>
 <text x="-24" y="24" class="key bl">&gt;</text>
 </g>
 <g transform="translate(140, 84)" class="key keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#tabler:letter-d" xlink:href="#tabler:letter-d" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:letter-d"/>
 <use href="#tabler:command" xlink:href="#tabler:command" x="-6" y="12" height="12" width="12.0" class="key hold glyph tabler:command"/>
+<use href="#tabler:square-f5" xlink:href="#tabler:square-f5" x="-24" y="-24" height="10" width="10.0" class="key tl glyph tabler:square-f5"/>
 <text x="-24" y="24" class="key bl">{</text>
 </g>
 <g transform="translate(196, 94)" class="key keypos-13">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#tabler:letter-f" xlink:href="#tabler:letter-f" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:letter-f"/>
 <use href="#tabler:arrow-big-up" xlink:href="#tabler:arrow-big-up" x="-6" y="12" height="12" width="12.0" class="key hold glyph tabler:arrow-big-up"/>
+<use href="#tabler:square-f6" xlink:href="#tabler:square-f6" x="-24" y="-24" height="10" width="10.0" class="key tl glyph tabler:square-f6"/>
 <text x="-24" y="24" class="key bl">}</text>
 </g>
 <g transform="translate(252, 100)" class="key keypos-14">
@@ -1150,19 +1355,23 @@ text.footer { text-anchor: middle; }
 <g transform="translate(28, 174)" class="key keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#tabler:letter-z" xlink:href="#tabler:letter-z" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:letter-z"/>
+<use href="#square-f10" xlink:href="#square-f10" x="-24" y="-24" height="10" width="10.0" class="key tl glyph square-f10"/>
 </g>
 <g transform="translate(84, 156)" class="key keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#tabler:letter-x" xlink:href="#tabler:letter-x" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:letter-x"/>
+<use href="#tabler:square-f1" xlink:href="#tabler:square-f1" x="-24" y="-24" height="10" width="10.0" class="key tl glyph tabler:square-f1"/>
 </g>
 <g transform="translate(140, 140)" class="key keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#tabler:letter-c" xlink:href="#tabler:letter-c" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:letter-c"/>
+<use href="#tabler:square-f2" xlink:href="#tabler:square-f2" x="-24" y="-24" height="10" width="10.0" class="key tl glyph tabler:square-f2"/>
 <text x="-24" y="24" class="key bl">[</text>
 </g>
 <g transform="translate(196, 150)" class="key keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#tabler:letter-v" xlink:href="#tabler:letter-v" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:letter-v"/>
+<use href="#tabler:square-f3" xlink:href="#tabler:square-f3" x="-24" y="-24" height="10" width="10.0" class="key tl glyph tabler:square-f3"/>
 <text x="-24" y="24" class="key bl">]</text>
 </g>
 <g transform="translate(252, 156)" class="key keypos-24">
