@@ -162,7 +162,7 @@
         combo_bspc {
             timeout-ms = <50>;
             key-positions = <RM2 RM3>;
-            bindings = <&mt RS(RGUI) BSPC>;
+            bindings = <&mt RS(RALT) BSPC>;
         };
         combo_left_screen {
             timeout-ms = <50>;
