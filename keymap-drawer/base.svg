@@ -894,9 +894,9 @@ text.footer { text-anchor: middle; }
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="42" y="96" width="28" height="26" class="combo"/>
-<text x="56" y="109" class="combo tap">⎋</text>
-<text x="56" y="120" class="combo hold">⌃⌥</text>
+<rect rx="6" ry="6" x="98" y="79" width="28" height="26" class="combo"/>
+<text x="112" y="92" class="combo tap">⎋</text>
+<text x="112" y="103" class="combo hold">⌃⌥</text>
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="154" y="76" width="28" height="26" class="combo"/>
@@ -965,8 +965,8 @@ text.footer { text-anchor: middle; }
 <text x="350" y="44" class="combo tap">Studio</text>
 </g>
 <g class="combo combopos-14">
-<rect rx="6" ry="6" x="42" y="40" width="28" height="26" class="combo"/>
-<text x="56" y="53" class="combo tap">`</text>
+<rect rx="6" ry="6" x="42" y="96" width="28" height="26" class="combo"/>
+<text x="56" y="109" class="combo tap">`</text>
 </g>
 <g class="combo combopos-15">
 <rect rx="6" ry="6" x="630" y="96" width="28" height="26" class="combo"/>
