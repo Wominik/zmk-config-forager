@@ -126,8 +126,8 @@ layers:
     - ''
 combos:
   - p:
-      - 10
       - 11
+      - 12
     k:
       t: ⎋
       h: ⌃⌥
@@ -224,14 +224,14 @@ combos:
     l:
       - Combos
   - p:
-      - 0
-      - 1
+      - 10
+      - 11
     k: '`'
     l:
       - Combos
   - p:
-      - 8
-      - 9
+      - 18
+      - 19
     k: ''''
     l:
       - Combos

@@ -144,9 +144,9 @@
 
     combos {
         compatible = "zmk,combos";
-        combo_esc_1 {
+        combo_esc {
             timeout-ms = <50>;
-            key-positions = <LM4 LM3>;
+            key-positions = <LM3 LM2>;
             bindings = <&mt LC(LALT) ESC>;
         };
         combo_tab {
@@ -216,12 +216,12 @@
         };
         combo_grave {
             timeout-ms = <50>;
-            key-positions = <LT4 LT3>;
+            key-positions = <LM4 LM3>;
             bindings = <&kp GRAVE>;
         };
         combo_apos {
             timeout-ms = <50>;
-            key-positions = <RT3 RT4>;
+            key-positions = <RM3 RM4>;
             bindings = <&kp APOS>;
         };
         combo_clipboard_manager {
