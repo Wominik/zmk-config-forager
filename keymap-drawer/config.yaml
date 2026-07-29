@@ -133,7 +133,7 @@ parse_config:
 
     # named actions on the combo diagram: show what they do, not the raw shortcut
     "&kp LG(C)": "$$tabler:copy$$"
-    "&kp LG(V)": "$$tabler:clipboard-text$$"
+    "&kp LG(V)": "$$tabler:clipboard$$"
     "&kp LG(X)": "$$tabler:cut$$"
     "&kp LG(Z)": "$$tabler:arrow-back-up$$"
     "&kp LG(LS(Z))": "$$tabler:arrow-forward-up$$"
@@ -151,7 +151,7 @@ parse_config:
     "&mt LS(LGUI) TAB": { t: "$$tabler:arrow-bar-to-right$$" }
     "&mt RS(RGUI) ENTER": { t: "$$tabler:corner-down-left$$" }
     "&mt RS(RALT) BSPC": { t: "$$tabler:backspace$$" }
-    "&clipboard_manager": "$$tabler:clipboard$$"
+    "&clipboard_manager": "$$tabler:clipboard-text$$"
 
   # Nudge combo boxes apart where several combos' key-positions overlap and
   # their default (centroid) placement would otherwise collide - see
@@ -163,9 +163,9 @@ parse_config:
     # combo_undo: { align: bottom, offset: 0.1 }
     # combo_cut: { align: bottom, offset: 0.1 }
     # combo_copy: { align: bottom, offset: 0.1 }
-    combo_paste: { align: bottom, offset: 0.1, slide: -0.3 }
+    combo_paste: { align: bottom, offset: 0.6 }
     combo_redo: { align: bottom, offset: 0.6 }
-    combo_clipboard_manager: { align: bottom, offset: 0.6 }
+    combo_clipboard_manager: { align: bottom, offset: 0.1, slide: -0.3 }
     # combo_left_screen: { align: bottom, offset: 0.1 }
     # combo_right_screen: { align: bottom, offset: 0.1 }
     combo_screenshot: { align: bottom, offset: 0.6 }
