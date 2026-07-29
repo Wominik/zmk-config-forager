@@ -26,39 +26,39 @@ layers:
       br: '-'
       tl: _
     - t: A
-      h: ⌃
+      h: $$tabler:chevron-up$$
       bl: <
     - t: S
-      h: ⌥
+      h: $$tabler:alt$$
       bl: '>'
     - t: D
-      h: ⌘
+      h: $$tabler:command$$
       bl: '{'
     - t: F
-      h: ⇧
+      h: $$tabler:arrow-big-up$$
       bl: '}'
     - t: G
-      h: ✦
+      h: $$tabler:diamonds$$
     - t: H
-      h: ✦
+      h: $$tabler:diamonds$$
     - t: J
-      h: ⇧
-      tr: ←
+      h: $$tabler:arrow-big-up$$
+      tr: $$tabler:arrow-left$$
       br: '4'
       tl: $
     - t: K
-      h: ⌘
-      tr: ↓
+      h: $$tabler:command$$
+      tr: $$tabler:arrow-down$$
       br: '5'
       tl: '%'
     - t: L
-      h: ⌥
-      tr: ↑
+      h: $$tabler:alt$$
+      tr: $$tabler:arrow-up$$
       br: '6'
       tl: ^
     - t: ;
-      h: ⌃
-      tr: →
+      h: $$tabler:chevron-up$$
+      tr: $$tabler:arrow-right$$
       br: +
     - t: Z
     - t: X
@@ -81,13 +81,13 @@ layers:
     - t: /
       br: \
       tl: '|'
-    - t: ␣
+    - t: $$tabler:space$$
       h: NAV
-    - t: ⇥
+    - t: $$tabler:arrow-bar-to-right$$
       h: NUM
-    - t: ⌫
+    - t: $$tabler:backspace$$
       h: FUN
-    - t: ␣
+    - t: $$tabler:space$$
       h: BRAC
   Combos:
     - ''
@@ -129,68 +129,68 @@ combos:
       - 11
       - 12
     k:
-      t: ⎋
-      h: ⌃⌥
+      t: $$tabler:arrow-down-from-arc$$
+      h: ⌃$$tabler:alt$$
     l:
       - Combos
   - p:
       - 12
       - 13
     k:
-      t: ⇥
-      h: ⇧⌘
+      t: $$tabler:arrow-bar-to-right$$
+      h: ⇧$$tabler:command$$
     l:
       - Combos
   - p:
       - 16
       - 17
     k:
-      t: ⏎
-      h: ⇧⌘
+      t: $$tabler:corner-down-left$$
+      h: ⇧$$tabler:command$$
     l:
       - Combos
   - p:
       - 17
       - 18
     k:
-      t: ⌫
-      h: ⇧⌘
+      t: $$tabler:backspace$$
+      h: ⇧$$tabler:command$$
     l:
       - Combos
   - p:
       - 26
       - 27
-    k: ← □
+    k: $$tabler:arrow-bar-to-left$$
     l:
       - Combos
   - p:
       - 27
       - 28
-    k: □ →
+    k: $$tabler:arrow-bar-to-right$$
     l:
       - Combos
   - p:
       - 6
       - 7
-    k: Back
+    k: $$tabler:arrow-back$$
     l:
       - Combos
   - p:
       - 7
       - 8
-    k: Forward
+    k: $$tabler:arrow-forward$$
     l:
       - Combos
   - p:
       - 22
       - 23
-    k: Copy
+    k: $$tabler:copy$$
     l:
       - Combos
   - p:
       - 21
       - 23
-    k: Paste
+    k: $$tabler:clipboard-text$$
     a: bottom
     o: 0.1
     s: -0.3
@@ -199,20 +199,20 @@ combos:
   - p:
       - 21
       - 22
-    k: Cut
+    k: $$tabler:cut$$
     l:
       - Combos
   - p:
       - 20
       - 21
-    k: Undo
+    k: $$tabler:arrow-back-up$$
     l:
       - Combos
   - p:
       - 20
       - 21
       - 22
-    k: Redo
+    k: $$tabler:arrow-forward-up$$
     a: bottom
     o: 0.6
     l:
@@ -220,7 +220,7 @@ combos:
   - p:
       - 4
       - 5
-    k: Studio
+    k: $$tabler:lock-open$$
     l:
       - Combos
   - p:
@@ -239,7 +239,7 @@ combos:
       - 21
       - 22
       - 23
-    k: Clipboard
+    k: $$tabler:clipboard$$
     l:
       - Combos
     a: bottom
@@ -248,7 +248,7 @@ combos:
       - 26
       - 27
       - 28
-    k: Screenshot
+    k: $$tabler:screenshot$$
     l:
       - Combos
     a: bottom
