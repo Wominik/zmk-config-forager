@@ -245,9 +245,10 @@ combos:
     l: [Combos]
     a: bottom
     o: 0.1
-    s: -0.3
+    s: -0.4
   - p: [26, 27, 28]
     k: $$tabler:screenshot$$
     l: [Combos]
     a: bottom
-    o: 0.6
+    o: 0.3
+    s: 0.3
