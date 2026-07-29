@@ -1,0 +1,107 @@
+/*                   KEY POSITIONS
+    ╭──────────────────────┬──────────────────────╮
+    │  LT4 LT3 LT2 LT1 LT0 │ RT0 RT1 RT2 RT3 RT4  │
+    │  LM4 LM3 LM2 LM1 LM0 │ RM0 RM1 RM2 RM3 RM4  │
+    │  LB4 LB3 LB2 LB1 LB0 │ RB0 RB1 RB2 RB3 RB4  │
+    ╰───────────╮  LH1 LH0 │ RH0 RH1  ╭───────────╯
+                ╰──────────┴──────────╯
+
+*/
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <LM3 LM2>;
+            bindings = <&mt LC(LALT) ESC>;
+        };
+        combo_tab {
+            timeout-ms = <50>;
+            key-positions = <LM2 LM1>;
+            bindings = <&mt LS(LGUI) TAB>;
+        };
+        combo_ent {
+            timeout-ms = <50>;
+            key-positions = <RM1 RM2>;
+            bindings = <&mt RS(RGUI) ENTER>;
+        };
+        combo_bspc {
+            timeout-ms = <50>;
+            key-positions = <RM2 RM3>;
+            bindings = <&mt RS(RALT) BSPC>;
+        };
+        combo_left_screen {
+            timeout-ms = <50>;
+            key-positions = <RB1 RB2>;
+            bindings = <&kp LC(LEFT)>;
+        };
+        combo_right_screen {
+            timeout-ms = <50>;
+            key-positions = <RB2 RB3>;
+            bindings = <&kp LC(RIGHT)>;
+        };
+        combo_go_back {
+            timeout-ms = <50>;
+            key-positions = <RT1 RT2>;
+            bindings = <&kp LG(LS(LBKT))>;
+        };
+        combo_go_forward {
+            timeout-ms = <50>;
+            key-positions = <RT2 RT3>;
+            bindings = <&kp LG(LS(RBKT))>;
+        };
+        combo_copy {
+            timeout-ms = <50>;
+            key-positions = <LB2 LB1>;
+            bindings = <&kp LG(C)>;
+        };
+        combo_paste {
+            timeout-ms = <50>;
+            key-positions = <LB3 LB1>;
+            bindings = <&kp LG(V)>;
+        };
+        combo_cut {
+            timeout-ms = <50>;
+            key-positions = <LB3 LB2>;
+            bindings = <&kp LG(X)>;
+        };
+        combo_undo {
+            timeout-ms = <50>;
+            key-positions = <LB4 LB3>;
+            bindings = <&kp LG(Z)>;
+        };
+        // combo_redo {
+        //     timeout-ms = <50>;
+        //     key-positions = <LB4 LB3 LB2>;
+        //     bindings = <&kp LG(LS(Z))>;
+        // };
+        combo_studio {
+            timeout-ms = <50>;
+            key-positions = <LT0 RT0>;
+            bindings = <&studio_unlock>;
+        };
+        combo_grave {
+            timeout-ms = <50>;
+            key-positions = <LM4 LM3>;
+            bindings = <&kp GRAVE>;
+        };
+        combo_apos {
+            timeout-ms = <50>;
+            key-positions = <RM3 RM4>;
+            bindings = <&kp APOS>;
+        };
+        combo_clipboard_manager {
+            timeout-ms = <50>;
+            key-positions = <LB3 LB2 LB1>;
+            bindings = <&clipboard_manager>;
+            layers = <BASE>;
+        };
+        combo_screenshot {
+            timeout-ms = <50>;
+            key-positions = <RB1 RB2 RB3>;
+            bindings = <&kp LS(LC(LG(N4)))>;
+            layers = <BASE>;
+        };
+    };
+};

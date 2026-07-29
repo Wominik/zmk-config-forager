@@ -4,6 +4,7 @@ on:
   push: # automatically run on changes to following paths
     paths:
       - "config/*.keymap"
+      - "config/*.dtsi"
       - "keymap-drawer/config.yaml"
 
 # Produces two diagrams in keymap-drawer/, following the approach used by
