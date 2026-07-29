@@ -204,11 +204,11 @@
             key-positions = <LB4 LB3>;
             bindings = <&kp LG(Z)>;
         };
-        combo_redo {
-            timeout-ms = <50>;
-            key-positions = <LB4 LB3 LB2>;
-            bindings = <&kp LG(LS(Z))>;
-        };
+        // combo_redo {
+        //     timeout-ms = <50>;
+        //     key-positions = <LB4 LB3 LB2>;
+        //     bindings = <&kp LG(LS(Z))>;
+        // };
         combo_studio {
             timeout-ms = <50>;
             key-positions = <LT0 RT0>;
@@ -316,4 +316,11 @@
             >;
         };
     };
+};
+
+// Tap-then-hold repeats the tap instead of activating the hold (layer) -
+// e.g. tap Backspace once, hold right after to keep deleting via NUM_TAB/
+// FUN_BSPC/etc. without losing the layer-hold on a genuine cold hold.
+&lt {
+    quick-tap-ms = <200>;
 };
