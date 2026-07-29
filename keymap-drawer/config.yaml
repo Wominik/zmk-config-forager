@@ -138,6 +138,22 @@ parse_config:
     ENTER: "$$tabler:corner-down-left$$"
     ESC: "$$tabler:arrow-down-from-arc$$"
 
+    # function keys - F1-F9 are real Tabler icons; F10-F12 don't exist in the
+    # library so they're hand-built in draw_config.glyphs below, reusing the
+    # exact digit paths from square-f0/f1/f2 so they match the family style.
+    F1: "$$tabler:square-f1$$"
+    F2: "$$tabler:square-f2$$"
+    F3: "$$tabler:square-f3$$"
+    F4: "$$tabler:square-f4$$"
+    F5: "$$tabler:square-f5$$"
+    F6: "$$tabler:square-f6$$"
+    F7: "$$tabler:square-f7$$"
+    F8: "$$tabler:square-f8$$"
+    F9: "$$tabler:square-f9$$"
+    F10: "$$square-f10$$"
+    F11: "$$square-f11$$"
+    F12: "$$square-f12$$"
+
   # symbols for modifiers wrapped in modifier functions, e.g. LC(LALT), LG(V)
   modifier_fn_map:
     left_ctrl: "⌃"
@@ -205,3 +221,21 @@ draw_config:
   footer_text: ""
   svg_extra_style: |
     text.footer { text-anchor: middle; }
+    /* uniform stroke weight for every glyph (fetched Tabler icons and the
+       hand-built F10/F11/F12 below) - the nested <svg> is what carries the
+       glyph's own stroke-width, see keymap-drawer's get_glyph_defs() */
+    defs svg svg { stroke-width: 1.25 !important; }
+
+  # F10/F11/F12 don't exist in Tabler - built from the exact digit paths used
+  # in the real square-f0/f1/f2 icons, repositioned via <g transform> (not
+  # hand-redrawn, so the digit shapes are pixel-identical to the library).
+  # Scale is (sx,1) - height is never touched, so digits stay exactly as tall
+  # as the F. The whole "F + digit + digit" cluster is centered in the square,
+  # which is what shifts F slightly left compared to the single-digit icons.
+  glyphs:
+    square-f10: |
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14" /><g transform="translate(-1.45,0)"><path d="M8 12h2" /><path d="M10 9h-2v6" /></g><g transform="translate(-1.95,0)"><path d="M13 11l2 -2v6" /></g><g transform="translate(3.35,0) scale(0.9,1)"><path d="M13 10.5v3a1.5 1.5 0 0 0 3 0v-3a1.5 1.5 0 0 0 -3 0" /></g></svg>
+    square-f11: |
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14" /><g transform="translate(-1.25,0)"><path d="M8 12h2" /><path d="M10 9h-2v6" /></g><g transform="translate(-1.75,0)"><path d="M13 11l2 -2v6" /></g><g transform="translate(2.25,0)"><path d="M13 11l2 -2v6" /></g></svg>
+    square-f12: |
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14" /><g transform="translate(-1.45,0)"><path d="M8 12h2" /><path d="M10 9h-2v6" /></g><g transform="translate(-1.95,0)"><path d="M13 11l2 -2v6" /></g><g transform="translate(4.65,0) scale(0.8,1)"><path d="M13 9h2a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-1a1 1 0 0 0 -1 1v1a1 1 0 0 0 1 1h2" /></g></svg>
