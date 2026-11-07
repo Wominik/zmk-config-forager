@@ -40,5 +40,86 @@
             bindings = <&kp N0>, <&fat_arrow>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        // RH0 (was plain "&lt FUN BSPC"): tap = Backspace, Shift+tap = Delete,
+        // hold = FUN (unchanged), double-tap = delete word forward (Option is
+        // the Mac-native "delete word" modifier for Forward Delete).
+        bspc_del_morph: bspc_del_morph {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp BSPC>, <&kp DEL>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        fun_bspc: fun_bspc {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            bindings = <&mo>, <&bspc_del_morph>;
+        };
+
+        // Narrow tapping-term to keep the double-tap detection window (and
+        // therefore the delay added to every single Backspace tap) as short
+        // as reasonably possible.
+        bspc_dance: bspc_dance {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <150>;
+            bindings = <&fun_bspc FUN 0>, <&kp LA(DEL)>;
+        };
+
+        // NAV cluster long-press: tap = arrow, long-tap = jump. flavor =
+        // tap-preferred means only timing decides hold vs tap - pressing
+        // another key (e.g. Shift held from the other hand for select-to-
+        // line-start) never forces an early/wrong resolution, unlike
+        // "balanced". quick-tap-ms preserves holding-to-repeat: tap once,
+        // then hold again right after to keep moving instead of jumping.
+        nav_mt: nav_mt {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <220>;
+            quick-tap-ms = <220>;
+            bindings = <&kp>, <&kp>;
+        };
+
+        // Left/Right long-tap should jump to start/end of *line* (Home/End),
+        // not accidentally start/end of *document* (Ctrl+Home/End) if Ctrl
+        // happens to already be held from elsewhere (e.g. a home-row-mod on
+        // the other hand) - mask it away so these two always send plain
+        // Home/End no matter what.
+        masked_home: masked_home {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp HOME>, <&kp HOME>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        masked_end: masked_end {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp END>, <&kp END>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        nav_left: nav_left {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <220>;
+            quick-tap-ms = <220>;
+            bindings = <&masked_home>, <&kp>;
+        };
+
+        nav_right: nav_right {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <220>;
+            quick-tap-ms = <220>;
+            bindings = <&masked_end>, <&kp>;
+        };
     };
 };
