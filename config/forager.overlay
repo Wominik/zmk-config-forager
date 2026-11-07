@@ -1,0 +1,18 @@
+/*
+ * ESB (Enhanced ShockBurst) split transport addresses, see
+ * https://github.com/badjeff/zmk-feature-split-esb
+ *
+ * ZMK picks this file up for forager_left, forager_right *and*
+ * forager_central_dongle (all match the "forager" config prefix), which is
+ * exactly what's needed - every device in the set must share these. The base
+ * addresses are randomly generated (not the module's defaults) so this set
+ * doesn't talk to someone else's ESB keyboard nearby.
+ */
+/ {
+    esb_split {
+        compatible = "zmk,esb-split";
+        base-addr-0 = <0xC6 0xDF 0x8A 0xCD>;
+        base-addr-1 = <0x3E 0x18 0xDB 0x22>;
+        addr-prefix = <0xE7 0xC2 0xC3 0xC4 0xC5 0xC6 0xC7 0xC8>;
+    };
+};

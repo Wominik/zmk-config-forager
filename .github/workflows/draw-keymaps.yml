@@ -45,7 +45,7 @@ jobs:
       - name: Fetch west modules (needed to resolve the forager physical layout)
         run: |
           west init -l config
-          west config --local manifest.project-filter " -zmk,-zephyr"
+          west config --local manifest.project-filter " -zmk,-zephyr,-sdk-nrf,-nrfxlib"
           west update --fetch-opt=--filter=tree:0
 
       - name: Draw base.svg (all layers + virtual Combos layer)

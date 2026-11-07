@@ -6,6 +6,12 @@ manifest:
       url-base: https://github.com/carrefinho     
     - name: caksoylar  
       url-base: https://github.com/caksoylar      
+    - name: badjeff
+      url-base: https://github.com/badjeff
+    - name: nrfconnect
+      url-base: https://github.com/nrfconnect
+    - name: wominik
+      url-base: https://github.com/Wominik
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -18,7 +24,24 @@ manifest:
       remote: caksoylar
       revision: e6b467792a1dabef8cfa5c9fd26bfefc9c16662b
     - name: prospector-zmk-module
-      remote: carrefinho
-      revision: ed98221f3b52b7066dbb10ba3af8a29150b93a5a
+      # Fork of carrefinho/prospector-zmk-module @ feat/new-status-screens
+      # (ed98221) + one commit making it build without BLE, which the ESB
+      # split transport requires.
+      remote: wominik
+      revision: 5d53c1de159c717530a714bec0cedcf861b298e1
+    # ESB split transport + the Nordic SDK pieces it needs (NCS 3.1, patched
+    # by the module author to pass ZMK 0.4 / Zephyr 4.1 CMake validation)
+    - name: zmk-feature-split-esb
+      remote: badjeff
+      revision: 314c7cbaf4a74e1add1d6ffc8249de3e29965b8c # main, 2026-08-11
+    - name: sdk-nrf
+      remote: badjeff
+      revision: 9b3d2623fdcd9c0fd0284f860beea924568c9826 # v3.1-branch+zmk-fixes
+      path: nrf
+    - name: nrfxlib
+      remote: nrfconnect
+      repo-path: sdk-nrfxlib
+      revision: dfadf17305d8f000eda9aa74a5b9ff1c5647a23e # v3.1-branch
+      path: nrfxlib
   self:
     path: config

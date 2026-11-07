@@ -21,15 +21,16 @@
 include:
   - board: xiao_ble/nrf52840/zmk
     shield: forager_left rgbled_adapter
-    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n -DCONFIG_ZMK_BLE_EXPERIMENTAL_CONN=y
+    # ESB peripheral ID (unique per half, < CONFIG_ZMK_SPLIT_ESB_PERIPHERAL_COUNT)
+    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n -DCONFIG_ZMK_SPLIT_ESB_PERIPHERAL_ID=0
     artifact-name: forager_left
   - board: xiao_ble/nrf52840/zmk
     shield: forager_right rgbled_adapter
-    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n -DCONFIG_ZMK_BLE_EXPERIMENTAL_CONN=y
+    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n -DCONFIG_ZMK_SPLIT_ESB_PERIPHERAL_ID=1
     artifact-name: forager_right
   - board: xiao_ble/nrf52840/zmk
     shield: forager_central_dongle prospector_adapter
-    cmake-args: -DCONFIG_ZMK_STUDIO=n -DCONFIG_ZMK_BLE_EXPERIMENTAL_CONN=y
+    cmake-args: -DCONFIG_ZMK_STUDIO=n
     artifact-name: forager_dongle
   - board: xiao_ble/nrf52840/zmk
     shield: settings_reset
