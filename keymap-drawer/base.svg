@@ -744,10 +744,8 @@ svg.keymap { font-family: "Nunito", sans-serif; }
 </a></g>
 <g transform="translate(402, 258) rotate(-25.0)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#tabler:backspace" xlink:href="#tabler:backspace" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:backspace"/>
-<a href="#FUN">
-<text x="0" y="24" class="key hold layer-activator">FUN</text>
-</a></g>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;bspc_dance</tspan></text>
+</g>
 <g transform="translate(448, 224) rotate(-25.0)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#tabler:space" xlink:href="#tabler:space" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:space"/>
@@ -779,19 +777,15 @@ svg.keymap { font-family: "Nunito", sans-serif; }
 </g>
 <g transform="translate(504, 38)" class="key keypos-6">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">⇱</text>
 </g>
 <g transform="translate(560, 28)" class="key keypos-7">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">⇟</text>
 </g>
 <g transform="translate(616, 44)" class="key keypos-8">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">⇞</text>
 </g>
 <g transform="translate(672, 62)" class="key keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">⇲</text>
 </g>
 <g transform="translate(28, 118)" class="key keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -819,18 +813,22 @@ svg.keymap { font-family: "Nunito", sans-serif; }
 <g transform="translate(504, 94)" class="key keypos-16">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#tabler:arrow-left" xlink:href="#tabler:arrow-left" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:arrow-left"/>
+<text x="0" y="24" class="key hold">⇱</text>
 </g>
 <g transform="translate(560, 84)" class="key keypos-17">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#tabler:arrow-down" xlink:href="#tabler:arrow-down" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:arrow-down"/>
+<text x="0" y="24" class="key hold">⌃⇲</text>
 </g>
 <g transform="translate(616, 100)" class="key keypos-18">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#tabler:arrow-up" xlink:href="#tabler:arrow-up" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:arrow-up"/>
+<text x="0" y="24" class="key hold">⌃⇱</text>
 </g>
 <g transform="translate(672, 118)" class="key keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#tabler:arrow-right" xlink:href="#tabler:arrow-right" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:arrow-right"/>
+<text x="0" y="24" class="key hold">⇲</text>
 </g>
 <g transform="translate(28, 174)" class="key keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1251,8 +1249,8 @@ svg.keymap { font-family: "Nunito", sans-serif; }
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#tabler:arrow-bar-to-right" xlink:href="#tabler:arrow-bar-to-right" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:arrow-bar-to-right"/>
 </g>
-<g transform="translate(402, 258) rotate(-25.0)" class="key held keypos-32">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
+<g transform="translate(402, 258) rotate(-25.0)" class="key keypos-32">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
 <g transform="translate(448, 224) rotate(-25.0)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1401,10 +1399,10 @@ svg.keymap { font-family: "Nunito", sans-serif; }
 <use href="#tabler:copy" xlink:href="#tabler:copy" x="161" y="138" height="14" width="14.0" class="combo tap glyph tabler:copy"/>
 </g>
 <g class="combo combopos-9">
-<path d="M140,218 h-50 a6.0,6.0 0 0 1 -6.0,-6.0 v-38" class="combo"/>
-<path d="M140,218 h50 a6.0,6.0 0 0 0 6.0,-6.0 v-44" class="combo"/>
-<rect rx="6" ry="6" x="126" y="205" width="28" height="26" class="combo"/>
-<use href="#tabler:clipboard" xlink:href="#tabler:clipboard" x="133" y="211" height="14" width="14.0" class="combo tap glyph tabler:clipboard"/>
+<path d="M118,218 h-28 a6.0,6.0 0 0 1 -6.0,-6.0 v-38" class="combo"/>
+<path d="M118,218 h72 a6.0,6.0 0 0 0 6.0,-6.0 v-44" class="combo"/>
+<rect rx="6" ry="6" x="104" y="205" width="28" height="26" class="combo"/>
+<use href="#tabler:clipboard" xlink:href="#tabler:clipboard" x="111" y="211" height="14" width="14.0" class="combo tap glyph tabler:clipboard"/>
 </g>
 <g class="combo combopos-10">
 <rect rx="6" ry="6" x="98" y="135" width="28" height="26" class="combo"/>
@@ -1429,18 +1427,18 @@ svg.keymap { font-family: "Nunito", sans-serif; }
 <text x="644" y="109" class="combo tap">&#x27;</text>
 </g>
 <g class="combo combopos-15">
-<path d="M118,190 h-28 a6.0,6.0 0 0 1 -6.0,-6.0 v-10" class="combo"/>
-<path d="M118,190 h16 a6.0,6.0 0 0 0 6.0,-6.0 v-26" class="combo"/>
-<path d="M118,190 h72 a6.0,6.0 0 0 0 6.0,-6.0 v-16" class="combo"/>
-<rect rx="6" ry="6" x="104" y="177" width="28" height="26" class="combo"/>
-<use href="#tabler:clipboard-text" xlink:href="#tabler:clipboard-text" x="111" y="183" height="14" width="14.0" class="combo tap glyph tabler:clipboard-text"/>
+<path d="M162,190 h-72 a6.0,6.0 0 0 1 -6.0,-6.0 v-10" class="combo"/>
+<path d="M162,190 h-16 a6.0,6.0 0 0 1 -6.0,-6.0 v-26" class="combo"/>
+<path d="M162,190 h28 a6.0,6.0 0 0 0 6.0,-6.0 v-16" class="combo"/>
+<rect rx="6" ry="6" x="148" y="177" width="28" height="26" class="combo"/>
+<use href="#tabler:clipboard-text" xlink:href="#tabler:clipboard-text" x="155" y="183" height="14" width="14.0" class="combo tap glyph tabler:clipboard-text"/>
 </g>
 <g class="combo combopos-16">
-<path d="M543,201 h-33 a6.0,6.0 0 0 1 -6.0,-6.0 v-27" class="combo"/>
-<path d="M543,201 h11 a6.0,6.0 0 0 0 6.0,-6.0 v-37" class="combo"/>
-<path d="M543,201 h67 a6.0,6.0 0 0 0 6.0,-6.0 v-21" class="combo"/>
-<rect rx="6" ry="6" x="529" y="188" width="28" height="26" class="combo"/>
-<use href="#tabler:screenshot" xlink:href="#tabler:screenshot" x="536" y="194" height="14" width="14.0" class="combo tap glyph tabler:screenshot"/>
+<path d="M560,185 h-50 a6.0,6.0 0 0 1 -6.0,-6.0 v-10" class="combo"/>
+<path d="M560,185 l0,-26" class="combo"/>
+<path d="M560,185 h50 a6.0,6.0 0 0 0 6.0,-6.0 v-4" class="combo"/>
+<rect rx="6" ry="6" x="546" y="172" width="28" height="26" class="combo"/>
+<use href="#tabler:screenshot" xlink:href="#tabler:screenshot" x="553" y="178" height="14" width="14.0" class="combo tap glyph tabler:screenshot"/>
 </g>
 </g>
 </g>

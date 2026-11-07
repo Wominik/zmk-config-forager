@@ -6,7 +6,7 @@ layers:
     - E
     - R
     - T
-    - Y
+    - 'Y'
     - U
     - I
     - O
@@ -26,14 +26,14 @@ layers:
     - C
     - V
     - B
-    - N
+    - 'N'
     - M
     - ','
     - .
     - /
     - {t: '$$tabler:space$$', h: NAV}
     - {t: '$$tabler:arrow-bar-to-right$$', h: NUM}
-    - {t: '$$tabler:backspace$$', h: FUN}
+    - '&bspc_dance'
     - {t: '$$tabler:space$$', h: BRAC}
   NAV:
     - ''
@@ -42,20 +42,20 @@ layers:
     - ''
     - ''
     - ''
-    - ⇱
-    - ⇟
-    - ⇞
-    - ⇲
+    - ''
+    - ''
+    - ''
+    - ''
     - $$tabler:chevron-up$$
     - $$tabler:option$$
     - $$tabler:command$$
     - $$tabler:arrow-big-up$$
     - ⌃⌥⇧$$tabler:command$$
     - ''
-    - $$tabler:arrow-left$$
-    - $$tabler:arrow-down$$
-    - $$tabler:arrow-up$$
-    - $$tabler:arrow-right$$
+    - {t: '$$tabler:arrow-left$$', h: ⇱}
+    - {t: '$$tabler:arrow-down$$', h: ⌃⇲}
+    - {t: '$$tabler:arrow-up$$', h: ⌃⇱}
+    - {t: '$$tabler:arrow-right$$', h: ⇲}
     - ''
     - ''
     - ''
@@ -140,41 +140,10 @@ layers:
     - $$tabler:arrow-bar-to-right$$
     - ''
     - {type: held}
-  FUN:
-    - F12
-    - F7
-    - F8
-    - F9
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - F11
-    - F4
-    - F5
-    - F6
-    - ''
-    - (RA(RC(RGUI)))
-    - $$tabler:arrow-big-up$$
-    - $$tabler:command$$
-    - $$tabler:option$$
-    - $$tabler:chevron-up$$
-    - F10
-    - F1
-    - F2
-    - F3
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - $$tabler:space$$
-    - $$tabler:arrow-bar-to-right$$
-    - {type: held}
-    - ''
+  FUN: [F12, F7, F8, F9, '', '', '', '', '', '', F11, F4, F5, F6, '', (RA(RC(RGUI))),
+    '$$tabler:arrow-big-up$$', '$$tabler:command$$', '$$tabler:option$$', '$$tabler:chevron-up$$',
+    F10, F1, F2, F3, '', '', '', '', '', '', '$$tabler:space$$', '$$tabler:arrow-bar-to-right$$',
+    '', '']
   Combos: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
     '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
 combos:
@@ -218,6 +187,7 @@ combos:
     k: $$tabler:clipboard$$
     a: bottom
     o: 0.6
+    s: -0.4
     l:
       - Combos
   - p: [21, 22]
@@ -245,10 +215,8 @@ combos:
     l: [Combos]
     a: bottom
     o: 0.1
-    s: -0.4
+    s: 0.4
   - p: [26, 27, 28]
     k: $$tabler:screenshot$$
     l: [Combos]
     a: bottom
-    o: 0.3
-    s: 0.3

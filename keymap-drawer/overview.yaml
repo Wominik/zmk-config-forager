@@ -13,20 +13,16 @@ layers:
       bl: )
       tl: F9
     - t: T
-    - t: Y
+    - t: 'Y'
     - t: U
-      tr: ⇱
       br: '7'
       tl: '&'
     - t: I
-      tr: ⇟
       br: '8'
       tl: '*'
     - t: O
-      tr: ⇞
       br: '9'
     - t: P
-      tr: ⇲
       br: '-'
       tl: _
     - t: A
@@ -79,7 +75,7 @@ layers:
       bl: ']'
       tl: F3
     - t: B
-    - t: N
+    - t: 'N'
       br: '0'
     - t: M
       br: '1'
@@ -97,8 +93,9 @@ layers:
       h: NAV
     - t: $$tabler:arrow-bar-to-right$$
       h: NUM
-    - t: $$tabler:backspace$$
-      h: FUN
+    - t: '&bspc_dance'
+      tr: $$tabler:backspace$$
+      br: $$tabler:backspace$$
     - t: $$tabler:space$$
       h: BRAC
   Combos:
@@ -197,6 +194,7 @@ combos:
     k: $$tabler:clipboard$$
     a: bottom
     o: 0.6
+    s: -0.4
     l:
       - Combos
   - p:
@@ -238,7 +236,7 @@ combos:
       - Combos
     a: bottom
     o: 0.1
-    s: -0.4
+    s: 0.4
   - p:
       - 26
       - 27
@@ -247,5 +245,3 @@ combos:
     l:
       - Combos
     a: bottom
-    o: 0.3
-    s: 0.3
