@@ -12,7 +12,7 @@
 
 // Tap-then-hold repeats the tap instead of activating the hold (layer) -
 // e.g. tap Backspace once, hold right after to keep deleting via NUM_TAB/
-// FUN_BSPC/etc. without losing the layer-hold on a genuine cold hold.
+// &brac_bspc/etc. without losing the layer-hold on a genuine cold hold.
 &lt {
     quick-tap-ms = <200>;
 };

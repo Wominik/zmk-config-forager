@@ -61,4 +61,3 @@
 #define NAV 1
 #define NUM 2
 #define BRAC 3
-#define FUN 4

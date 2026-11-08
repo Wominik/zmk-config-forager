@@ -1,3 +1,14 @@
+// "#binding-cells" can't be written inside a function-like macro (# would
+// be the stringify operator), so it comes from this object-like macro.
+#define MOD_MORPH_CORE compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>
+
+#define BRAC_FN(name, tap, fkey)                                               \
+    name: name {                                                               \
+        MOD_MORPH_CORE;                                                        \
+        bindings = <tap>, <&kp fkey>;                                          \
+        mods = <(MOD_LSFT|MOD_RSFT)>;                                          \
+    };
+
 / {
     behaviors {
         hml: home_row_mod_left {
@@ -41,9 +52,8 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        // RH0 (was plain "&lt FUN BSPC"): tap = Backspace, Shift+tap = Delete,
-        // hold = FUN (unchanged), double-tap = delete word forward (Option is
-        // the Mac-native "delete word" modifier for Forward Delete).
+        // RH0: tap = Backspace, Shift+tap = Delete, hold = BRAC (the F-keys
+        // live on BRAC+Shift, see brac_f* below).
         bspc_del_morph: bspc_del_morph {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -51,7 +61,7 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        fun_bspc: fun_bspc {
+        brac_bspc: brac_bspc {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
@@ -60,15 +70,37 @@
             bindings = <&mo>, <&bspc_del_morph>;
         };
 
-        // Narrow tapping-term to keep the double-tap detection window (and
-        // therefore the delay added to every single Backspace tap) as short
-        // as reasonably possible.
-        bspc_dance: bspc_dance {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <150>;
-            bindings = <&fun_bspc FUN 0>, <&kp LA(DEL)>;
+        // RH1: tap = Space, hold = Option/Alt. A typing streak (another key
+        // within require-prior-idle-ms) always resolves to Space, so fast
+        // "word<space>word" rolls never turn into Alt+letter; a deliberate
+        // Alt chord usually starts after a short pause anyway. RALT rather
+        // than LALT so AltGr-based layouts (e.g. Polish on Windows) work too.
+        thumb_mt: thumb_mt {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            bindings = <&kp>, <&kp>;
         };
+
+        // BRAC + Shift = former FUN layer. Each left-hand BRAC key is a
+        // mod-morph: plain press = bracket (or nothing), Shift = F-key. Shift
+        // is masked from the F-key (no keep-mods), so it sends a bare Fn;
+        // other mods (e.g. Ctrl from BRAC's right-hand row) pass through.
+        BRAC_FN(brac_f12, &none,     F12)
+        BRAC_FN(brac_f7,  &none,     F7)
+        BRAC_FN(brac_f8,  &none,     F8)
+        BRAC_FN(brac_f9,  &kp LPAR,  F9)
+        BRAC_FN(brac_f11, &none,     F11)
+        BRAC_FN(brac_f4,  &kp LT,    F4)
+        BRAC_FN(brac_f5,  &kp GT,    F5)
+        BRAC_FN(brac_f6,  &kp LBRC,  F6)
+        BRAC_FN(brac_f10, &none,     F10)
+        BRAC_FN(brac_f1,  &none,     F1)
+        BRAC_FN(brac_f2,  &none,     F2)
+        BRAC_FN(brac_f3,  &kp LBKT,  F3)
 
         // NAV cluster long-press: tap = arrow, long-tap = jump. flavor =
         // tap-preferred means only timing decides hold vs tap - pressing
