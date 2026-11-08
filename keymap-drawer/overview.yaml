@@ -7,12 +7,12 @@ layers:
     - t: W
       tl: F7
     - t: E
-      bl: (
       tl: F8
     - t: R
-      bl: )
+      bl: (
       tl: F9
     - t: T
+      bl: )
     - t: 'Y'
     - t: U
       br: '7'
@@ -27,22 +27,22 @@ layers:
       tl: _
     - t: A
       h: $$tabler:chevron-up$$
-      bl: <
       tl: F11
     - t: S
       h: $$tabler:option$$
-      bl: '>'
+      bl: <
       tl: F4
     - t: D
       h: $$tabler:command$$
-      bl: '{'
+      bl: '>'
       tl: F5
     - t: F
       h: $$tabler:arrow-big-up$$
-      bl: '}'
+      bl: '{'
       tl: F6
     - t: G
       h: $$tabler:diamonds$$
+      bl: '}'
     - t: H
       h: $$tabler:diamonds$$
     - t: J
@@ -69,12 +69,12 @@ layers:
     - t: X
       tl: F1
     - t: C
-      bl: '['
       tl: F2
     - t: V
-      bl: ']'
+      bl: '['
       tl: F3
     - t: B
+      bl: ']'
     - t: 'N'
       br: '0'
     - t: M
@@ -93,11 +93,11 @@ layers:
       h: NAV
     - t: $$tabler:arrow-bar-to-right$$
       h: NUM
-    - t: '&bspc_dance'
-      tr: $$tabler:backspace$$
-      br: $$tabler:backspace$$
-    - t: $$tabler:space$$
+    - t: $$tabler:backspace$$
       h: BRAC
+      s: $$tabler:eraser$$
+    - t: $$tabler:space$$
+      h: $$tabler:option$$
   Combos:
     - ''
     - ''

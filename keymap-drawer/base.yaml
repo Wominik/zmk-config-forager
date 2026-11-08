@@ -33,8 +33,8 @@ layers:
     - /
     - {t: '$$tabler:space$$', h: NAV}
     - {t: '$$tabler:arrow-bar-to-right$$', h: NUM}
-    - '&bspc_dance'
-    - {t: '$$tabler:space$$', h: BRAC}
+    - {t: '$$tabler:backspace$$', h: BRAC, s: '$$tabler:eraser$$'}
+    - {t: '$$tabler:space$$', h: '$$tabler:option$$'}
   NAV:
     - ''
     - ''
@@ -106,31 +106,31 @@ layers:
     - $$tabler:backspace$$
     - $$tabler:space$$
   BRAC:
-    - ''
-    - ''
-    - (
+    - {s: F12}
+    - {s: F7}
+    - {s: F8}
+    - {t: (, s: F9}
     - )
     - ''
     - ''
     - ''
     - ''
     - ''
-    - ''
-    - <
-    - '>'
-    - '{'
+    - {s: F11}
+    - {t: <, s: F4}
+    - {t: '>', s: F5}
+    - {t: '{', s: F6}
     - '}'
-    - ''
     - (RA(RC(RGUI)))
     - $$tabler:arrow-big-up$$
     - $$tabler:command$$
     - $$tabler:option$$
     - $$tabler:chevron-up$$
-    - ''
-    - ''
-    - '['
+    - {s: F10}
+    - {s: F1}
+    - {s: F2}
+    - {t: '[', s: F3}
     - ']'
-    - ''
     - ''
     - ''
     - ''
@@ -138,12 +138,8 @@ layers:
     - ''
     - $$tabler:space$$
     - $$tabler:arrow-bar-to-right$$
-    - ''
     - {type: held}
-  FUN: [F12, F7, F8, F9, '', '', '', '', '', '', F11, F4, F5, F6, '', (RA(RC(RGUI))),
-    '$$tabler:arrow-big-up$$', '$$tabler:command$$', '$$tabler:option$$', '$$tabler:chevron-up$$',
-    F10, F1, F2, F3, '', '', '', '', '', '', '$$tabler:space$$', '$$tabler:arrow-bar-to-right$$',
-    '', '']
+    - ''
   Combos: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
     '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
 combos:
