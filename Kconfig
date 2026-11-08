@@ -1,0 +1,15 @@
+config FORAGER_BATTERY_RESEND
+    bool "Re-send this half's battery level to the dongle on key press"
+    default y
+    depends on ZMK_SPLIT && !ZMK_SPLIT_ROLE_CENTRAL && ZMK_BATTERY_REPORTING
+    help
+      ZMK only sends a peripheral's battery level when the level changes
+      (and once at boot). Over BLE the central fetches it on connect, but
+      ESB is connectionless, so a dongle powered on after the halves would
+      show no battery until the level next changes. This re-sends the
+      current level on a key press when the last send is old enough.
+
+config FORAGER_BATTERY_RESEND_MIN_GAP_S
+    int "Re-send on key press if the last send is at least this many seconds old"
+    default 60
+    depends on FORAGER_BATTERY_RESEND
