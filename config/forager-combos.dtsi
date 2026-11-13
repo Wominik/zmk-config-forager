@@ -8,66 +8,92 @@
 
 */
 
+// A combo only fires if no other key was pressed this shortly before it, so
+// fast rolls over two neighbouring keys ("io", "ui", "xc", ...) type letters
+// instead of triggering it. Too high and a combo pressed right after a word
+// types its two letters instead; too low and rolls trigger combos again.
+#define COMBO_IDLE_MS 125
+
 / {
     combos {
         compatible = "zmk,combos";
         combo_esc {
             timeout-ms = <50>;
+            require-prior-idle-ms = <COMBO_IDLE_MS>;
+            slow-release;
             key-positions = <LM3 LM2>;
             bindings = <&mt LC(LALT) ESC>;
         };
         combo_tab {
             timeout-ms = <50>;
+            require-prior-idle-ms = <COMBO_IDLE_MS>;
+            slow-release;
             key-positions = <LM2 LM1>;
             bindings = <&mt LS(LGUI) TAB>;
         };
+        // Not on NAV: there J+K scrolls instead (combo_scroll_down).
+        // slow-release (here and on esc/tab/bspc): the modifier of the hold
+        // stays until both keys are up, not just the first.
         combo_ent {
             timeout-ms = <50>;
+            require-prior-idle-ms = <COMBO_IDLE_MS>;
+            slow-release;
             key-positions = <RM1 RM2>;
             bindings = <&mt RS(RGUI) ENTER>;
+            layers = <BASE NUM BRAC>;
         };
         combo_bspc {
             timeout-ms = <50>;
+            require-prior-idle-ms = <COMBO_IDLE_MS>;
+            slow-release;
             key-positions = <RM2 RM3>;
             bindings = <&mt RS(RALT) BSPC>;
         };
         combo_left_screen {
             timeout-ms = <50>;
+            require-prior-idle-ms = <COMBO_IDLE_MS>;
             key-positions = <RB1 RB2>;
             bindings = <&kp LC(LEFT)>;
         };
         combo_right_screen {
             timeout-ms = <50>;
+            require-prior-idle-ms = <COMBO_IDLE_MS>;
             key-positions = <RB2 RB3>;
             bindings = <&kp LC(RIGHT)>;
         };
         combo_go_back {
             timeout-ms = <50>;
+            require-prior-idle-ms = <COMBO_IDLE_MS>;
             key-positions = <RT1 RT2>;
             bindings = <&kp LG(LS(LBKT))>;
         };
         combo_go_forward {
             timeout-ms = <50>;
+            require-prior-idle-ms = <COMBO_IDLE_MS>;
             key-positions = <RT2 RT3>;
             bindings = <&kp LG(LS(RBKT))>;
         };
         combo_copy {
             timeout-ms = <50>;
+            require-prior-idle-ms = <COMBO_IDLE_MS>;
             key-positions = <LB2 LB1>;
             bindings = <&kp LG(C)>;
         };
         combo_paste {
             timeout-ms = <50>;
+            require-prior-idle-ms = <COMBO_IDLE_MS>;
             key-positions = <LB3 LB1>;
             bindings = <&kp LG(V)>;
         };
         combo_cut {
             timeout-ms = <50>;
+            require-prior-idle-ms = <COMBO_IDLE_MS>;
             key-positions = <LB3 LB2>;
             bindings = <&kp LG(X)>;
         };
         combo_undo {
             timeout-ms = <50>;
+            require-prior-idle-ms = <COMBO_IDLE_MS>;
             key-positions = <LB4 LB3>;
             bindings = <&kp LG(Z)>;
         };
@@ -78,27 +104,57 @@
         // };
         combo_studio {
             timeout-ms = <50>;
+            require-prior-idle-ms = <COMBO_IDLE_MS>;
             key-positions = <LT0 RT0>;
             bindings = <&studio_unlock>;
         };
         combo_grave {
             timeout-ms = <50>;
+            require-prior-idle-ms = <COMBO_IDLE_MS>;
             key-positions = <LM4 LM3>;
             bindings = <&kp GRAVE>;
         };
+        // Not on NAV: there L+; scrolls instead (combo_scroll_up)
         combo_apos {
             timeout-ms = <50>;
+            require-prior-idle-ms = <COMBO_IDLE_MS>;
             key-positions = <RM3 RM4>;
             bindings = <&kp APOS>;
+            layers = <BASE NUM BRAC>;
+        };
+        // NAV only: hold the two keys to keep scrolling, let go of either
+        // to stop. Needs CONFIG_ZMK_POINTING on the dongle.
+        combo_scroll_down {
+            timeout-ms = <50>;
+            key-positions = <RM1 RM2>;
+            bindings = <&msc SCRL_DOWN>;
+            layers = <NAV>;
+        };
+        combo_scroll_up {
+            timeout-ms = <50>;
+            key-positions = <RM3 RM4>;
+            bindings = <&msc SCRL_UP>;
+            layers = <NAV>;
+        };
+        // SYS only (both layer thumbs held, see forager-layers.dtsi). A combo
+        // always runs a reset behavior on the central, i.e. the dongle;
+        // the halves have their own keys on SYS.
+        combo_dongle_bootloader {
+            timeout-ms = <50>;
+            key-positions = <LB0 RB0>;
+            bindings = <&bootloader>;
+            layers = <SYS>;
         };
         combo_clipboard_manager {
             timeout-ms = <50>;
+            require-prior-idle-ms = <COMBO_IDLE_MS>;
             key-positions = <LB3 LB2 LB1>;
             bindings = <&clipboard_manager>;
             layers = <BASE>;
         };
         combo_screenshot {
             timeout-ms = <50>;
+            require-prior-idle-ms = <COMBO_IDLE_MS>;
             key-positions = <RB1 RB2 RB3>;
             bindings = <&kp LS(LC(LG(N4)))>;
             layers = <BASE>;

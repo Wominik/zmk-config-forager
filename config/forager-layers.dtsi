@@ -61,5 +61,33 @@
 //                                                                 ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
+
+        // Reached by holding both layer thumbs (NUM + BRAC), see
+        // conditional_layers below - deliberately hard to hit by accident.
+        // &bootloader runs on the half the key is on: Q puts the left half
+        // into UF2 flashing mode, P the right one. For the dongle see
+        // combo_dongle_bootloader (B + N).
+        sys_layer {
+            label = "SYS";
+            bindings = <
+//                       ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+                           &bootloader   XXX           XXX           XXX           XXX               XXX           XXX           XXX           XXX           &bootloader
+//                       ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+                           XXX           XXX           XXX           XXX           XXX               XXX           XXX           XXX           XXX           XXX
+//                       ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+                           XXX           XXX           XXX           XXX           XXX               XXX           XXX           XXX           XXX           XXX
+//                       ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
+                                                                     XXX           XXX               XXX           XXX
+//                                                                 ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+            >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        sys_tri_layer {
+            if-layers = <NUM BRAC>;
+            then-layer = <SYS>;
+        };
     };
 };

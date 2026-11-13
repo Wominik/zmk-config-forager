@@ -143,6 +143,9 @@ parse_config:
     "&kp LC(RIGHT)": "$$tabler:arrow-bar-to-right$$"
     "&kp LS(LC(LG(N4)))": "$$tabler:screenshot$$"
     "&studio_unlock": "$$tabler:lock-open$$"
+    "&msc SCRL_DOWN": "$$tabler:chevrons-down$$"
+    "&msc SCRL_UP": "$$tabler:chevrons-up$$"
+    "&bootloader": BOOT
 
     # esc/tab/ent/bspc combos also carry a modifier hold, but on the combo
     # diagram just the tap is what matters - drop the "h" field so the mod
@@ -169,6 +172,10 @@ parse_config:
     # combo_left_screen: { align: bottom, offset: 0.1 }
     # combo_right_screen: { align: bottom, offset: 0.1 }
     combo_screenshot: { align: bottom }
+    # NAV-only scroll combos share J+K / L+; with enter / apostrophe: draw
+    # them above the home row so the boxes do not sit on top of each other
+    combo_scroll_down: { align: top }
+    combo_scroll_up: { align: top }
 
 draw_config:
   footer_text: ""
