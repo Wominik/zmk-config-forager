@@ -1,0 +1,2 @@
+# The ESB link key (tools/esb_key.py). Secret - must never be committed.
+esb-key*.uf2

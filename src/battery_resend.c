@@ -4,11 +4,14 @@
  * ZMK raises zmk_battery_state_changed - and therefore sends the level over
  * the split transport - only when the level changes. With BLE the central
  * reads the level itself on connect; ESB has no connection, so a dongle that
- * boots after the halves would never learn it. On a key press, if nothing
- * was sent for CONFIG_FORAGER_BATTERY_RESEND_MIN_GAP_S seconds, this sends
- * the current level directly over the split transport (not by re-raising the
- * battery event, so local listeners such as the RGB LED widget are not
- * re-triggered).
+ * boots after the halves would never learn it.
+ *
+ * So the level is sent again once typing on this half pauses for
+ * CONFIG_FORAGER_BATTERY_RESEND_QUIET_MS, at most once every
+ * CONFIG_FORAGER_BATTERY_RESEND_MIN_GAP_S seconds. Waiting for a pause keeps
+ * this packet out of the way of key events. It goes directly over the split
+ * transport (not by re-raising the battery event, so local listeners such as
+ * the RGB LED widget are not re-triggered).
  */
 
 #include <zephyr/kernel.h>
@@ -22,10 +25,13 @@
 
 LOG_MODULE_REGISTER(forager_battery_resend, CONFIG_ZMK_LOG_LEVEL);
 
+#define QUIET K_MSEC(CONFIG_FORAGER_BATTERY_RESEND_QUIET_MS)
 #define MIN_GAP_MS (CONFIG_FORAGER_BATTERY_RESEND_MIN_GAP_S * 1000LL)
 
 static int64_t last_sent_ms;
 static bool sent_once;
+
+static bool resend_due(void) { return !sent_once || k_uptime_get() - last_sent_ms >= MIN_GAP_MS; }
 
 static void resend_work_cb(struct k_work *work) {
     uint8_t level = zmk_battery_state_of_charge();
@@ -49,15 +55,12 @@ static void resend_work_cb(struct k_work *work) {
     sent_once = true;
 }
 
-static K_WORK_DEFINE(resend_work, resend_work_cb);
+static K_WORK_DELAYABLE_DEFINE(resend_work, resend_work_cb);
 
 static int battery_resend_listener(const zmk_event_t *eh) {
-    const struct zmk_position_state_changed *ev = as_zmk_position_state_changed(eh);
-
-    if (ev != NULL && ev->state &&
-        (!sent_once || k_uptime_get() - last_sent_ms >= MIN_GAP_MS)) {
-        /* run from the work queue, not inside the key event */
-        k_work_submit(&resend_work);
+    if (as_zmk_position_state_changed(eh) != NULL && resend_due()) {
+        /* Every key event (press or release) pushes the send further out */
+        k_work_reschedule(&resend_work, QUIET);
     }
 
     return ZMK_EV_EVENT_BUBBLE;

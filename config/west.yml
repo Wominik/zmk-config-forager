@@ -32,8 +32,11 @@ manifest:
     # ESB split transport + the Nordic SDK pieces it needs (NCS 3.1, patched
     # by the module author to pass ZMK 0.4 / Zephyr 4.1 CMake validation)
     - name: zmk-feature-split-esb
-      remote: badjeff
-      revision: 314c7cbaf4a74e1add1d6ffc8249de3e29965b8c # main, 2026-08-11
+      # Fork of badjeff/zmk-feature-split-esb @ main (314c7cb) + one commit:
+      # fixed TX retry bookkeeping (lost key releases = stuck layers) and
+      # optional link encryption (CONFIG_ZMK_SPLIT_ESB_CRYPTO).
+      remote: wominik
+      revision: 4c0cf884362c6a20155a4d22c9a8fef4a5c0ad30 # forager-fixes
     - name: sdk-nrf
       remote: badjeff
       revision: 9b3d2623fdcd9c0fd0284f860beea924568c9826 # v3.1-branch+zmk-fixes
