@@ -239,6 +239,42 @@
   <path d="M6 15l6 -6l6 6" />
 </svg>
 </svg>
+<svg id="tabler:chevrons-down">
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-chevrons-down"
+>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M7 7l5 5l5 -5" />
+  <path d="M7 13l5 5l5 -5" />
+</svg>
+</svg>
+<svg id="tabler:chevrons-up">
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-chevrons-up"
+>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M7 11l5 -5l5 5" />
+  <path d="M7 17l5 -5l5 5" />
+</svg>
+</svg>
 <svg id="tabler:clipboard">
 <svg
   xmlns="http://www.w3.org/2000/svg"
@@ -986,13 +1022,31 @@ svg.keymap { font-family: "Nunito", sans-serif; }
 <text x="644" y="109" class="combo tap">&#x27;</text>
 </g>
 <g class="combo combopos-15">
+<path d="M532,55 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v14" class="combo"/>
+<path d="M532,55 h22 a6.0,6.0 0 0 1 6.0,6.0 v4" class="combo"/>
+<rect rx="6" ry="6" x="518" y="42" width="28" height="26" class="combo"/>
+<use href="#tabler:chevrons-down" xlink:href="#tabler:chevrons-down" x="525" y="48" height="14" width="14.0" class="combo tap glyph tabler:chevrons-down"/>
+</g>
+<g class="combo combopos-16">
+<path d="M644,71 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v4" class="combo"/>
+<path d="M644,71 h22 a6.0,6.0 0 0 1 6.0,6.0 v23" class="combo"/>
+<rect rx="6" ry="6" x="630" y="58" width="28" height="26" class="combo"/>
+<use href="#tabler:chevrons-up" xlink:href="#tabler:chevrons-up" x="637" y="64" height="14" width="14.0" class="combo tap glyph tabler:chevrons-up"/>
+</g>
+<g class="combo combopos-17">
+<path d="M350,156 l-79,0" class="combo"/>
+<path d="M350,156 l79,0" class="combo"/>
+<rect rx="6" ry="6" x="336" y="143" width="28" height="26" class="combo"/>
+<text x="350" y="156" class="combo tap">BOOT</text>
+</g>
+<g class="combo combopos-18">
 <path d="M162,190 h-72 a6.0,6.0 0 0 1 -6.0,-6.0 v-10" class="combo"/>
 <path d="M162,190 h-16 a6.0,6.0 0 0 1 -6.0,-6.0 v-26" class="combo"/>
 <path d="M162,190 h28 a6.0,6.0 0 0 0 6.0,-6.0 v-16" class="combo"/>
 <rect rx="6" ry="6" x="148" y="177" width="28" height="26" class="combo"/>
 <use href="#tabler:clipboard-text" xlink:href="#tabler:clipboard-text" x="155" y="183" height="14" width="14.0" class="combo tap glyph tabler:clipboard-text"/>
 </g>
-<g class="combo combopos-16">
+<g class="combo combopos-19">
 <path d="M560,185 h-50 a6.0,6.0 0 0 1 -6.0,-6.0 v-10" class="combo"/>
 <path d="M560,185 l0,-26" class="combo"/>
 <path d="M560,185 h50 a6.0,6.0 0 0 0 6.0,-6.0 v-4" class="combo"/>

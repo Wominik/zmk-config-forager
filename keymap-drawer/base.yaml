@@ -140,6 +140,41 @@ layers:
     - $$tabler:arrow-bar-to-right$$
     - {type: held}
     - ''
+  SYS:
+    - BOOT
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - BOOT
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - {type: held}
+    - {type: held}
+    - ''
   Combos: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
     '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
 combos:
@@ -153,8 +188,7 @@ combos:
       - Combos
   - p: [16, 17]
     k: $$tabler:corner-down-left$$
-    l:
-      - Combos
+    l: [Combos]
   - p: [17, 18]
     k: $$tabler:backspace$$
     l:
@@ -204,8 +238,18 @@ combos:
       - Combos
   - p: [18, 19]
     k: ''''
-    l:
-      - Combos
+    l: [Combos]
+  - p: [16, 17]
+    k: $$tabler:chevrons-down$$
+    l: [Combos]
+    a: top
+  - p: [18, 19]
+    k: $$tabler:chevrons-up$$
+    l: [Combos]
+    a: top
+  - p: [24, 25]
+    k: BOOT
+    l: [Combos]
   - p: [21, 22, 23]
     k: $$tabler:clipboard-text$$
     l: [Combos]

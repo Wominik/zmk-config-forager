@@ -228,6 +228,26 @@ combos:
     l:
       - Combos
   - p:
+      - 16
+      - 17
+    k: $$tabler:chevrons-down$$
+    l:
+      - Combos
+    a: top
+  - p:
+      - 18
+      - 19
+    k: $$tabler:chevrons-up$$
+    l:
+      - Combos
+    a: top
+  - p:
+      - 24
+      - 25
+    k: BOOT
+    l:
+      - Combos
+  - p:
       - 21
       - 22
       - 23
