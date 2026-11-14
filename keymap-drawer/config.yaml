@@ -151,8 +151,8 @@ parse_config:
     "&kp LG(GRAVE)": "$$tabler:app-window$$"
     "&kp LC(UP)": "$$tabler:layout-grid$$"
     "&kp LC(DOWN)": "$$tabler:layout-rows$$"
-    "&kp LA(BSPC)": { t: "$$tabler:backspace$$", h: word }
-    "&kp LG(BSPC)": { t: "$$tabler:backspace$$", h: line }
+    "&kp LA(BSPC)": "$$tabler:strikethrough$$"
+    "&kp LG(BSPC)": "$$tabler:clear-all$$"
     "&caps_word": "$$tabler:letter-case-upper$$"
     "&kp LC(LG(SPACE))": "$$tabler:mood-smile$$"
     "&kp LC(LG(Q))": "$$tabler:lock$$"
@@ -173,32 +173,52 @@ parse_config:
   # are supersets of them (redo, clipboard manager, screenshot) are pushed
   # further out so they land on a second, further-out line instead of on top.
   zmk_combos:
-    # combo_undo: { align: bottom, offset: 0.1 }
-    # combo_cut: { align: bottom, offset: 0.1 }
-    # combo_copy: { align: bottom, offset: 0.1 }
+    # Where each combo box is drawn. Two neighbouring keys: on the border
+    # between them (the default, nothing to configure). Everything else is
+    # pulled out to a free spot with lines to its keys:
+    #   - bottom row combos hang below the keyboard, top row ones sit above it
+    #   - home row "skip" pairs (S+F, J+L, K+;) go on the edge of their row,
+    #     over the key they skip
+    # align/offset/slide are keymap-drawer ComboSpec fields; offset is in key
+    # heights away from the keys, slide moves the box sideways (-1 .. 1).
+
+    # below the left bottom row
+    combo_clipboard_manager: { align: bottom, offset: 0.1, slide: 0.4 }
     combo_paste: { align: bottom, offset: 0.6, slide: -0.4 }
     combo_redo: { align: bottom, offset: 0.6 }
-    combo_clipboard_manager: { align: bottom, offset: 0.1, slide: 0.4  }
-    # combo_left_screen: { align: bottom, offset: 0.1 }
-    # combo_right_screen: { align: bottom, offset: 0.1 }
-    combo_screenshot: { align: bottom }
-    # NAV-only scroll combos share J+K / L+; with enter / apostrophe: draw
-    # them above the home row so the boxes do not sit on top of each other
-    combo_scroll_down: { align: top }
-    combo_scroll_up: { align: top }
-    # three-key combos over two-key ones on the top row: lift them above it
-    combo_close_tab: { align: top }
-    combo_reopen_tab: { align: top }
-    combo_del_word: { align: top }
-    combo_del_line: { align: top }
-    # F+J and G+H would both land in the middle of the home row, and Q+P
-    # (lock) sits right above it: caps word goes below
-    combo_caps_word: { align: bottom }
+    # below the right bottom row, mirrored
+    combo_screenshot: { align: bottom, offset: 0.1, slide: -0.4 }
+    combo_mission_control: { align: bottom, offset: 0.6, slide: 0.4 }
+    combo_app_windows: { align: bottom, offset: 0.6 }
+    # above the left top row
+    combo_next_window: { align: top, offset: 0.4, slide: 0.5 }
+    combo_del_line: { align: top, offset: 0.75, slide: -0.5 }
+    # above the right top row, mirrored
+    combo_new_tab: { align: top, offset: 0.4, slide: -0.5 }
+    combo_close_tab: { align: top, offset: 0.75, slide: 0.5 }
+    # home row skip pairs
+    combo_prev_app: { align: top }
+    combo_del_word: { align: bottom }
+    combo_reopen_tab: { align: bottom }
+    # NAV-only combos share their keys with enter / apostrophe: own spot and
+    # own colour (type becomes a CSS class, see svg_extra_style)
+    combo_scroll_down: { align: top, slide: 1, type: nav }
+    combo_scroll_up: { align: top, type: nav }
+    # across both hands: lock (Q+P) runs over the top of everything, caps
+    # word (F+J) just under the emoji box (G+H)
+    combo_lock: { align: top, offset: 1.8 }
+    combo_caps_word: { align: bottom, offset: 0.2 }
 
 draw_config:
-  footer_text: ""
+  footer_text: "Combos: blue = typing layers, green = only while NAV is held"
+  # Slightly smaller than the default 28x26, so a box on the border between
+  # two keys and one over the middle of a key never touch
+  combo_w: 24
+  combo_h: 22
   svg_extra_style: |
     text.footer { text-anchor: middle; }
+    /* combos that only exist on NAV (type: nav in zmk_combos) */
+    rect.combo.nav { fill: #bfe8c5; }
     /* uniform stroke weight for every glyph (fetched Tabler icons and the
        hand-built F10/F11/F12 below) - the nested svg element is what carries
        the glyph's own stroke-width, see keymap-drawer's get_glyph_defs() */

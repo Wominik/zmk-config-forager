@@ -148,6 +148,9 @@
         };
 
         // ---- macOS helpers, BASE only ----
+        // None of them pairs an inner-column key (T G B / Y H N) with its
+        // neighbour: that would mean pressing an index-finger key with the
+        // middle finger. "Skip" pairs (index + ring, e.g. U+O) are used instead.
 
         // W+E. "we" is a common roll, hence the shorter window.
         combo_minus {
@@ -157,12 +160,12 @@
             bindings = <&kp MINUS>;
             layers = <BASE>;
         };
-        // Tabs, next to prev/next tab on U+I / I+O:
-        // Y+U new, U+I+O close, Y+U+I reopen closed
+        // Tabs, around prev/next tab on U+I / I+O: U+O new, U+I+O close,
+        // K+; reopen closed. "ou" is a common roll: shorter window for U+O.
         combo_new_tab {
-            timeout-ms = <50>;
+            timeout-ms = <35>;
             require-prior-idle-ms = <COMBO_IDLE_MS>;
-            key-positions = <RT0 RT1>;
+            key-positions = <RT1 RT3>;
             bindings = <&kp LG(T)>;
             layers = <BASE>;
         };
@@ -176,45 +179,47 @@
         combo_reopen_tab {
             timeout-ms = <50>;
             require-prior-idle-ms = <COMBO_IDLE_MS>;
-            key-positions = <RT0 RT1 RT2>;
+            key-positions = <RM2 RM4>;
             bindings = <&kp LG(LS(T))>;
             layers = <BASE>;
         };
-        // Windows, inner columns: F+G previous app, V+B next window of this app,
-        // H+J Mission Control, N+M this app's windows
+        // Apps and windows, index + ring on the left: S+F previous app,
+        // W+R next window of this app ("wr" as in "write": shorter window)
         combo_prev_app {
             timeout-ms = <50>;
             require-prior-idle-ms = <COMBO_IDLE_MS>;
-            key-positions = <LM1 LM0>;
+            key-positions = <LM3 LM1>;
             bindings = <&kp LG(TAB)>;
             layers = <BASE>;
         };
         combo_next_window {
-            timeout-ms = <50>;
+            timeout-ms = <35>;
             require-prior-idle-ms = <COMBO_IDLE_MS>;
-            key-positions = <LB1 LB0>;
+            key-positions = <LT3 LT1>;
             bindings = <&kp LG(GRAVE)>;
             layers = <BASE>;
         };
+        // Next to the desktop switching on M+, / ,+. :
+        // M+. Mission Control, ,+.+/ this app's windows
         combo_mission_control {
             timeout-ms = <50>;
             require-prior-idle-ms = <COMBO_IDLE_MS>;
-            key-positions = <RM0 RM1>;
+            key-positions = <RB1 RB3>;
             bindings = <&kp LC(UP)>;
             layers = <BASE>;
         };
         combo_app_windows {
             timeout-ms = <50>;
             require-prior-idle-ms = <COMBO_IDLE_MS>;
-            key-positions = <RB0 RB1>;
+            key-positions = <RB2 RB3 RB4>;
             bindings = <&kp LC(DOWN)>;
             layers = <BASE>;
         };
-        // Deleting, three fingers on the left top row: E+R+T word, W+E+R to line start
+        // Deleting: J+L word (around backspace on K+L), W+E+R to line start
         combo_del_word {
             timeout-ms = <50>;
             require-prior-idle-ms = <COMBO_IDLE_MS>;
-            key-positions = <LT2 LT1 LT0>;
+            key-positions = <RM1 RM3>;
             bindings = <&kp LA(BSPC)>;
             layers = <BASE>;
         };
