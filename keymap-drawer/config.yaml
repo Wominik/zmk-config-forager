@@ -142,10 +142,20 @@ parse_config:
     "&kp LC(LEFT)": "$$tabler:arrow-bar-to-left$$"
     "&kp LC(RIGHT)": "$$tabler:arrow-bar-to-right$$"
     "&kp LS(LC(LG(N4)))": "$$tabler:screenshot$$"
-    "&studio_unlock": "$$tabler:lock-open$$"
     "&msc SCRL_DOWN": "$$tabler:chevrons-down$$"
     "&msc SCRL_UP": "$$tabler:chevrons-up$$"
-    "&bootloader": BOOT
+    "&kp LG(T)": "$$tabler:square-plus$$"
+    "&kp LG(W)": "$$tabler:square-x$$"
+    "&kp LG(LS(T))": "$$tabler:restore$$"
+    "&kp LG(TAB)": "$$tabler:switch-horizontal$$"
+    "&kp LG(GRAVE)": "$$tabler:app-window$$"
+    "&kp LC(UP)": "$$tabler:layout-grid$$"
+    "&kp LC(DOWN)": "$$tabler:layout-rows$$"
+    "&kp LA(BSPC)": { t: "$$tabler:backspace$$", h: word }
+    "&kp LG(BSPC)": { t: "$$tabler:backspace$$", h: line }
+    "&caps_word": "$$tabler:letter-case-upper$$"
+    "&kp LC(LG(SPACE))": "$$tabler:mood-smile$$"
+    "&kp LC(LG(Q))": "$$tabler:lock$$"
 
     # esc/tab/ent/bspc combos also carry a modifier hold, but on the combo
     # diagram just the tap is what matters - drop the "h" field so the mod
@@ -176,6 +186,13 @@ parse_config:
     # them above the home row so the boxes do not sit on top of each other
     combo_scroll_down: { align: top }
     combo_scroll_up: { align: top }
+    # three-key combos over two-key ones on the top row: lift them above it
+    combo_close_tab: { align: top }
+    combo_reopen_tab: { align: top }
+    combo_del_word: { align: top }
+    combo_del_line: { align: top }
+    # F+J and G+H would both land in the middle of the home row
+    combo_caps_word: { align: top }
 
 draw_config:
   footer_text: ""
