@@ -1294,10 +1294,10 @@ svg.keymap { font-family: "Nunito", sans-serif; }
 <text x="140" y="10" class="combo hold">line</text>
 </g>
 <g class="combo combopos-29">
-<path d="M350,65 h-148 a6.0,6.0 0 0 0 -6.0,6.0 v4" class="combo"/>
-<path d="M350,65 h148 a6.0,6.0 0 0 1 6.0,6.0 v4" class="combo"/>
-<rect rx="6" ry="6" x="336" y="52" width="28" height="26" class="combo"/>
-<use href="#tabler:letter-case-upper" xlink:href="#tabler:letter-case-upper" x="343" y="58" height="14" width="14.0" class="combo tap glyph tabler:letter-case-upper"/>
+<path d="M350,123 h-148 a6.0,6.0 0 0 1 -6.0,-6.0 v-4" class="combo"/>
+<path d="M350,123 h148 a6.0,6.0 0 0 0 6.0,-6.0 v-4" class="combo"/>
+<rect rx="6" ry="6" x="336" y="110" width="28" height="26" class="combo"/>
+<use href="#tabler:letter-case-upper" xlink:href="#tabler:letter-case-upper" x="343" y="116" height="14" width="14.0" class="combo tap glyph tabler:letter-case-upper"/>
 </g>
 <g class="combo combopos-30">
 <path d="M350,100 l-79,0" class="combo"/>

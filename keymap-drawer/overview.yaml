@@ -340,7 +340,7 @@ combos:
     k: $$tabler:letter-case-upper$$
     l:
       - Combos
-    a: top
+    a: bottom
   - p:
       - 14
       - 15

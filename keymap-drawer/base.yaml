@@ -260,7 +260,7 @@ combos:
   - p: [13, 16]
     k: $$tabler:letter-case-upper$$
     l: [Combos]
-    a: top
+    a: bottom
   - p: [14, 15]
     k: $$tabler:mood-smile$$
     l: [Combos]
