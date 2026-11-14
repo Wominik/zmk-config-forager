@@ -191,8 +191,9 @@ parse_config:
     combo_reopen_tab: { align: top }
     combo_del_word: { align: top }
     combo_del_line: { align: top }
-    # F+J and G+H would both land in the middle of the home row
-    combo_caps_word: { align: top }
+    # F+J and G+H would both land in the middle of the home row, and Q+P
+    # (lock) sits right above it: caps word goes below
+    combo_caps_word: { align: bottom }
 
 draw_config:
   footer_text: ""
