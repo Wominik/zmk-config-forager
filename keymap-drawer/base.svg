@@ -1613,11 +1613,11 @@ svg.keymap { font-family: "Nunito", sans-serif; }
 <use href="#tabler:clipboard-text" xlink:href="#tabler:clipboard-text" x="155" y="183" height="14" width="14.0" class="combo tap glyph tabler:clipboard-text"/>
 </g>
 <g class="combo combopos-18">
-<path d="M582,190 h-72 a6.0,6.0 0 0 1 -6.0,-6.0 v-16" class="combo"/>
-<path d="M582,190 h-16 a6.0,6.0 0 0 1 -6.0,-6.0 v-26" class="combo"/>
-<path d="M582,190 h28 a6.0,6.0 0 0 0 6.0,-6.0 v-10" class="combo"/>
-<rect rx="6" ry="6" x="570" y="179" width="24" height="22" class="combo"/>
-<use href="#tabler:screenshot" xlink:href="#tabler:screenshot" x="575" y="183" height="14" width="14.0" class="combo tap glyph tabler:screenshot"/>
+<path d="M538,190 h-28 a6.0,6.0 0 0 1 -6.0,-6.0 v-16" class="combo"/>
+<path d="M538,190 h16 a6.0,6.0 0 0 0 6.0,-6.0 v-26" class="combo"/>
+<path d="M538,190 h72 a6.0,6.0 0 0 0 6.0,-6.0 v-10" class="combo"/>
+<rect rx="6" ry="6" x="526" y="179" width="24" height="22" class="combo"/>
+<use href="#tabler:screenshot" xlink:href="#tabler:screenshot" x="531" y="183" height="14" width="14.0" class="combo tap glyph tabler:screenshot"/>
 </g>
 <g class="combo combopos-19">
 <rect rx="6" ry="6" x="100" y="25" width="24" height="22" class="combo"/>
@@ -1630,11 +1630,11 @@ svg.keymap { font-family: "Nunito", sans-serif; }
 <use href="#tabler:square-plus" xlink:href="#tabler:square-plus" x="525" y="-21" height="14" width="14.0" class="combo tap glyph tabler:square-plus"/>
 </g>
 <g class="combo combopos-21">
-<path d="M532,-43 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v56" class="combo"/>
-<path d="M532,-43 h22 a6.0,6.0 0 0 1 6.0,6.0 v46" class="combo"/>
-<path d="M532,-43 h78 a6.0,6.0 0 0 1 6.0,6.0 v62" class="combo"/>
-<rect rx="6" ry="6" x="520" y="-54" width="24" height="22" class="combo"/>
-<use href="#tabler:square-x" xlink:href="#tabler:square-x" x="525" y="-50" height="14" width="14.0" class="combo tap glyph tabler:square-x"/>
+<path d="M588,-43 h-78 a6.0,6.0 0 0 0 -6.0,6.0 v56" class="combo"/>
+<path d="M588,-43 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v46" class="combo"/>
+<path d="M588,-43 h22 a6.0,6.0 0 0 1 6.0,6.0 v62" class="combo"/>
+<rect rx="6" ry="6" x="576" y="-54" width="24" height="22" class="combo"/>
+<use href="#tabler:square-x" xlink:href="#tabler:square-x" x="581" y="-50" height="14" width="14.0" class="combo tap glyph tabler:square-x"/>
 </g>
 <g class="combo combopos-22">
 <path d="M616,147 h-50 a6.0,6.0 0 0 1 -6.0,-6.0 v-38" class="combo"/>

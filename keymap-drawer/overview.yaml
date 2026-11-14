@@ -266,7 +266,7 @@ combos:
       - Combos
     a: bottom
     o: 0.1
-    s: -0.4
+    s: 0.4
   - p:
       - 1
       - 2
@@ -291,7 +291,7 @@ combos:
       - Combos
     a: top
     o: 0.75
-    s: 0.5
+    s: -0.5
   - p:
       - 17
       - 19
