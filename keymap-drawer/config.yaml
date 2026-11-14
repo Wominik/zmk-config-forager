@@ -181,13 +181,17 @@ parse_config:
     #     over the key they skip
     # align/offset/slide are keymap-drawer ComboSpec fields; offset is in key
     # heights away from the keys, slide moves the box sideways (-1 .. 1).
+    # Slide direction: for two keys, from the first key towards the second.
+    # For three, from the key farthest from their centre towards the next
+    # farthest - which, with this column stagger, is the opposite way round
+    # on the two hands (hence the same sign for mirrored boxes below).
 
     # below the left bottom row
     combo_clipboard_manager: { align: bottom, offset: 0.1, slide: 0.4 }
     combo_paste: { align: bottom, offset: 0.6, slide: -0.4 }
     combo_redo: { align: bottom, offset: 0.6 }
     # below the right bottom row, mirrored
-    combo_screenshot: { align: bottom, offset: 0.1, slide: -0.4 }
+    combo_screenshot: { align: bottom, offset: 0.1, slide: 0.4 }
     combo_mission_control: { align: bottom, offset: 0.6, slide: 0.4 }
     combo_app_windows: { align: bottom, offset: 0.6 }
     # above the left top row
@@ -195,7 +199,7 @@ parse_config:
     combo_del_line: { align: top, offset: 0.75, slide: -0.5 }
     # above the right top row, mirrored
     combo_new_tab: { align: top, offset: 0.4, slide: -0.5 }
-    combo_close_tab: { align: top, offset: 0.75, slide: 0.5 }
+    combo_close_tab: { align: top, offset: 0.75, slide: -0.5 }
     # home row skip pairs
     combo_prev_app: { align: top }
     combo_del_word: { align: bottom }
