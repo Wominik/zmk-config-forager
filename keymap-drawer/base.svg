@@ -1,5 +1,24 @@
-<svg width="760" height="2162" viewBox="0 0 760 2162" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="760" height="1825" viewBox="0 0 760 1825" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>/* start glyphs */
+<svg id="tabler:app-window">
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-app-window"
+>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
+  <path d="M6 8h.01" />
+  <path d="M9 8h.01" />
+</svg>
+</svg>
 <svg id="tabler:arrow-back">
 <svg
   xmlns="http://www.w3.org/2000/svg"
@@ -145,6 +164,24 @@
 >
   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
   <path d="M15 11l4 4l-4 4m4 -4h-11a4 4 0 0 1 0 -8h1" />
+</svg>
+</svg>
+<svg id="tabler:arrow-forward-up">
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-forward-up"
+>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M15 14l4 -4l-4 -4" />
+  <path d="M19 10h-11a4 4 0 1 0 0 8h1" />
 </svg>
 </svg>
 <svg id="tabler:arrow-left">
@@ -420,7 +457,7 @@
   <path d="M18 13.3l-6.3 -6.3" />
 </svg>
 </svg>
-<svg id="tabler:lock-open">
+<svg id="tabler:layout-grid">
 <svg
   xmlns="http://www.w3.org/2000/svg"
  
@@ -431,12 +468,90 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-lock-open"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-layout-grid"
 >
   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M5 13a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2l0 -6" />
-  <path d="M11 16a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
-  <path d="M8 11v-5a4 4 0 0 1 8 0" />
+  <path d="M4 5a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -4" />
+  <path d="M14 5a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -4" />
+  <path d="M4 15a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -4" />
+  <path d="M14 15a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -4" />
+</svg>
+</svg>
+<svg id="tabler:layout-rows">
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-layout-rows"
+>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M4 6a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2l0 -12" />
+  <path d="M4 12l16 0" />
+</svg>
+</svg>
+<svg id="tabler:letter-case-upper">
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-letter-case-upper"
+>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M3 19v-10.5a3.5 3.5 0 0 1 7 0v10.5" />
+  <path d="M3 13h7" />
+  <path d="M14 19v-10.5a3.5 3.5 0 0 1 7 0v10.5" />
+  <path d="M14 13h7" />
+</svg>
+</svg>
+<svg id="tabler:lock">
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-lock"
+>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M5 13a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-6" />
+  <path d="M11 16a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
+  <path d="M8 11v-4a4 4 0 1 1 8 0v4" />
+</svg>
+</svg>
+<svg id="tabler:mood-smile">
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-mood-smile"
+>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+  <path d="M9 10l.01 0" />
+  <path d="M15 10l.01 0" />
+  <path d="M9.5 15a3.5 3.5 0 0 0 5 0" />
 </svg>
 </svg>
 <svg id="tabler:option">
@@ -454,6 +569,25 @@
 >
   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
   <path d="M14 6h5m0 12h-5l-5 -12h-4" />
+</svg>
+</svg>
+<svg id="tabler:restore">
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-restore"
+>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M3.06 13a9 9 0 1 0 .49 -4.087" />
+  <path d="M3 4.001v5h5" />
+  <path d="M11 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
 </svg>
 </svg>
 <svg id="tabler:screenshot">
@@ -496,6 +630,63 @@
 >
   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
   <path d="M4 10v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1 -1v-3" />
+</svg>
+</svg>
+<svg id="tabler:square-plus">
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-square-plus"
+>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M9 12h6" />
+  <path d="M12 9v6" />
+  <path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14" />
+</svg>
+</svg>
+<svg id="tabler:square-x">
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-square-x"
+>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14" />
+  <path d="M9 9l6 6m0 -6l-6 6" />
+</svg>
+</svg>
+<svg id="tabler:switch-horizontal">
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-switch-horizontal"
+>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M16 3l4 4l-4 4" />
+  <path d="M10 7l10 0" />
+  <path d="M8 13l-4 4l4 4" />
+  <path d="M4 17l9 0" />
 </svg>
 </svg>
 </defs>/* end glyphs */
@@ -869,22 +1060,18 @@ svg.keymap { font-family: "Nunito", sans-serif; }
 <g transform="translate(504, 94)" class="key keypos-16">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#tabler:arrow-left" xlink:href="#tabler:arrow-left" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:arrow-left"/>
-<text x="0" y="24" class="key hold">⇱</text>
 </g>
 <g transform="translate(560, 84)" class="key keypos-17">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#tabler:arrow-down" xlink:href="#tabler:arrow-down" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:arrow-down"/>
-<text x="0" y="24" class="key hold">⌃⇲</text>
 </g>
 <g transform="translate(616, 100)" class="key keypos-18">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#tabler:arrow-up" xlink:href="#tabler:arrow-up" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:arrow-up"/>
-<text x="0" y="24" class="key hold">⌃⇱</text>
 </g>
 <g transform="translate(672, 118)" class="key keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#tabler:arrow-right" xlink:href="#tabler:arrow-right" x="-7" y="-7" height="14" width="14.0" class="key tap glyph tabler:arrow-right"/>
-<text x="0" y="24" class="key hold">⇲</text>
 </g>
 <g transform="translate(28, 174)" class="key keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1197,118 +1384,9 @@ svg.keymap { font-family: "Nunito", sans-serif; }
 </g>
 </g>
 </g>
-<g transform="translate(30, 1404)" class="layer-SYS">
-<text x="0" y="28" class="label" id="SYS">SYS:</text>
-<g transform="translate(0, 56)">
-<g transform="translate(28, 62)" class="key keypos-0">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">BOOT</text>
-</g>
-<g transform="translate(84, 44)" class="key keypos-1">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-</g>
-<g transform="translate(140, 28)" class="key keypos-2">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-</g>
-<g transform="translate(196, 38)" class="key keypos-3">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-</g>
-<g transform="translate(252, 44)" class="key keypos-4">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-</g>
-<g transform="translate(448, 44)" class="key keypos-5">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-</g>
-<g transform="translate(504, 38)" class="key keypos-6">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-</g>
-<g transform="translate(560, 28)" class="key keypos-7">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-</g>
-<g transform="translate(616, 44)" class="key keypos-8">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-</g>
-<g transform="translate(672, 62)" class="key keypos-9">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">BOOT</text>
-</g>
-<g transform="translate(28, 118)" class="key keypos-10">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-</g>
-<g transform="translate(84, 100)" class="key keypos-11">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-</g>
-<g transform="translate(140, 84)" class="key keypos-12">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-</g>
-<g transform="translate(196, 94)" class="key keypos-13">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-</g>
-<g transform="translate(252, 100)" class="key keypos-14">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-</g>
-<g transform="translate(448, 100)" class="key keypos-15">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-</g>
-<g transform="translate(504, 94)" class="key keypos-16">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-</g>
-<g transform="translate(560, 84)" class="key keypos-17">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-</g>
-<g transform="translate(616, 100)" class="key keypos-18">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-</g>
-<g transform="translate(672, 118)" class="key keypos-19">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-</g>
-<g transform="translate(28, 174)" class="key keypos-20">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-</g>
-<g transform="translate(84, 156)" class="key keypos-21">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-</g>
-<g transform="translate(140, 140)" class="key keypos-22">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-</g>
-<g transform="translate(196, 150)" class="key keypos-23">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-</g>
-<g transform="translate(252, 156)" class="key keypos-24">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-</g>
-<g transform="translate(448, 156)" class="key keypos-25">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-</g>
-<g transform="translate(504, 150)" class="key keypos-26">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-</g>
-<g transform="translate(560, 140)" class="key keypos-27">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-</g>
-<g transform="translate(616, 156)" class="key keypos-28">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-</g>
-<g transform="translate(672, 174)" class="key keypos-29">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-</g>
-<g transform="translate(252, 224) rotate(25.0)" class="key keypos-30">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-</g>
-<g transform="translate(298, 258) rotate(25.0)" class="key held keypos-31">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
-</g>
-<g transform="translate(402, 258) rotate(-25.0)" class="key held keypos-32">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
-</g>
-<g transform="translate(448, 224) rotate(-25.0)" class="key keypos-33">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-</g>
-</g>
-</g>
-<g transform="translate(30, 1755)" class="layer-Combos">
+<g transform="translate(30, 1404)" class="layer-Combos">
 <text x="0" y="28" class="label" id="Combos">Combos:</text>
-<g transform="translate(0, 56)">
+<g transform="translate(0, 70)">
 <g transform="translate(28, 62)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
@@ -1462,10 +1540,11 @@ svg.keymap { font-family: "Nunito", sans-serif; }
 <use href="#tabler:arrow-back-up" xlink:href="#tabler:arrow-back-up" x="49" y="158" height="14" width="14.0" class="combo tap glyph tabler:arrow-back-up"/>
 </g>
 <g class="combo combopos-12">
-<path d="M350,44 l-79,0" class="combo"/>
-<path d="M350,44 l79,0" class="combo"/>
-<rect rx="6" ry="6" x="336" y="31" width="28" height="26" class="combo"/>
-<use href="#tabler:lock-open" xlink:href="#tabler:lock-open" x="343" y="37" height="14" width="14.0" class="combo tap glyph tabler:lock-open"/>
+<path d="M84,237 h-50 a6.0,6.0 0 0 1 -6.0,-6.0 v-38" class="combo"/>
+<path d="M84,237 l0,-62" class="combo"/>
+<path d="M84,237 h50 a6.0,6.0 0 0 0 6.0,-6.0 v-72" class="combo"/>
+<rect rx="6" ry="6" x="70" y="224" width="28" height="26" class="combo"/>
+<use href="#tabler:arrow-forward-up" xlink:href="#tabler:arrow-forward-up" x="77" y="230" height="14" width="14.0" class="combo tap glyph tabler:arrow-forward-up"/>
 </g>
 <g class="combo combopos-13">
 <rect rx="6" ry="6" x="42" y="96" width="28" height="26" class="combo"/>
@@ -1488,24 +1567,90 @@ svg.keymap { font-family: "Nunito", sans-serif; }
 <use href="#tabler:chevrons-up" xlink:href="#tabler:chevrons-up" x="637" y="64" height="14" width="14.0" class="combo tap glyph tabler:chevrons-up"/>
 </g>
 <g class="combo combopos-17">
-<path d="M350,156 l-79,0" class="combo"/>
-<path d="M350,156 l79,0" class="combo"/>
-<rect rx="6" ry="6" x="336" y="143" width="28" height="26" class="combo"/>
-<text x="350" y="156" class="combo tap">BOOT</text>
-</g>
-<g class="combo combopos-18">
 <path d="M162,190 h-72 a6.0,6.0 0 0 1 -6.0,-6.0 v-10" class="combo"/>
 <path d="M162,190 h-16 a6.0,6.0 0 0 1 -6.0,-6.0 v-26" class="combo"/>
 <path d="M162,190 h28 a6.0,6.0 0 0 0 6.0,-6.0 v-16" class="combo"/>
 <rect rx="6" ry="6" x="148" y="177" width="28" height="26" class="combo"/>
 <use href="#tabler:clipboard-text" xlink:href="#tabler:clipboard-text" x="155" y="183" height="14" width="14.0" class="combo tap glyph tabler:clipboard-text"/>
 </g>
-<g class="combo combopos-19">
+<g class="combo combopos-18">
 <path d="M560,185 h-50 a6.0,6.0 0 0 1 -6.0,-6.0 v-10" class="combo"/>
 <path d="M560,185 l0,-26" class="combo"/>
 <path d="M560,185 h50 a6.0,6.0 0 0 0 6.0,-6.0 v-4" class="combo"/>
 <rect rx="6" ry="6" x="546" y="172" width="28" height="26" class="combo"/>
 <use href="#tabler:screenshot" xlink:href="#tabler:screenshot" x="553" y="178" height="14" width="14.0" class="combo tap glyph tabler:screenshot"/>
+</g>
+<g class="combo combopos-19">
+<rect rx="6" ry="6" x="98" y="23" width="28" height="26" class="combo"/>
+<text x="112" y="36" class="combo tap">-</text>
+</g>
+<g class="combo combopos-20">
+<rect rx="6" ry="6" x="462" y="28" width="28" height="26" class="combo"/>
+<use href="#tabler:square-plus" xlink:href="#tabler:square-plus" x="469" y="34" height="14" width="14.0" class="combo tap glyph tabler:square-plus"/>
+</g>
+<g class="combo combopos-21">
+<path d="M560,-1 h-50 a6.0,6.0 0 0 0 -6.0,6.0 v14" class="combo"/>
+<path d="M560,-1 l0,18" class="combo"/>
+<path d="M560,-1 h50 a6.0,6.0 0 0 1 6.0,6.0 v20" class="combo"/>
+<rect rx="6" ry="6" x="546" y="-14" width="28" height="26" class="combo"/>
+<use href="#tabler:square-x" xlink:href="#tabler:square-x" x="553" y="-8" height="14" width="14.0" class="combo tap glyph tabler:square-x"/>
+</g>
+<g class="combo combopos-22">
+<path d="M504,-1 h-50 a6.0,6.0 0 0 0 -6.0,6.0 v20" class="combo"/>
+<path d="M504,-1 l0,20" class="combo"/>
+<path d="M504,-1 h50 a6.0,6.0 0 0 1 6.0,6.0 v4" class="combo"/>
+<rect rx="6" ry="6" x="490" y="-14" width="28" height="26" class="combo"/>
+<use href="#tabler:restore" xlink:href="#tabler:restore" x="497" y="-8" height="14" width="14.0" class="combo tap glyph tabler:restore"/>
+</g>
+<g class="combo combopos-23">
+<rect rx="6" ry="6" x="210" y="84" width="28" height="26" class="combo"/>
+<use href="#tabler:switch-horizontal" xlink:href="#tabler:switch-horizontal" x="217" y="90" height="14" width="14.0" class="combo tap glyph tabler:switch-horizontal"/>
+</g>
+<g class="combo combopos-24">
+<rect rx="6" ry="6" x="210" y="140" width="28" height="26" class="combo"/>
+<use href="#tabler:app-window" xlink:href="#tabler:app-window" x="217" y="146" height="14" width="14.0" class="combo tap glyph tabler:app-window"/>
+</g>
+<g class="combo combopos-25">
+<rect rx="6" ry="6" x="462" y="84" width="28" height="26" class="combo"/>
+<use href="#tabler:layout-grid" xlink:href="#tabler:layout-grid" x="469" y="90" height="14" width="14.0" class="combo tap glyph tabler:layout-grid"/>
+</g>
+<g class="combo combopos-26">
+<rect rx="6" ry="6" x="462" y="140" width="28" height="26" class="combo"/>
+<use href="#tabler:layout-rows" xlink:href="#tabler:layout-rows" x="469" y="146" height="14" width="14.0" class="combo tap glyph tabler:layout-rows"/>
+</g>
+<g class="combo combopos-27">
+<path d="M196,-1 h-50 a6.0,6.0 0 0 0 -6.0,6.0 v4" class="combo"/>
+<path d="M196,-1 l0,20" class="combo"/>
+<path d="M196,-1 h50 a6.0,6.0 0 0 1 6.0,6.0 v20" class="combo"/>
+<rect rx="6" ry="6" x="182" y="-14" width="28" height="26" class="combo"/>
+<use href="#tabler:backspace" xlink:href="#tabler:backspace" x="189" y="-8" height="14" width="14.0" class="combo tap glyph tabler:backspace"/>
+<text x="196" y="10" class="combo hold">word</text>
+</g>
+<g class="combo combopos-28">
+<path d="M140,-1 h-50 a6.0,6.0 0 0 0 -6.0,6.0 v20" class="combo"/>
+<path d="M140,-1 l0,18" class="combo"/>
+<path d="M140,-1 h50 a6.0,6.0 0 0 1 6.0,6.0 v14" class="combo"/>
+<rect rx="6" ry="6" x="126" y="-14" width="28" height="26" class="combo"/>
+<use href="#tabler:backspace" xlink:href="#tabler:backspace" x="133" y="-8" height="14" width="14.0" class="combo tap glyph tabler:backspace"/>
+<text x="140" y="10" class="combo hold">line</text>
+</g>
+<g class="combo combopos-29">
+<path d="M350,65 h-148 a6.0,6.0 0 0 0 -6.0,6.0 v4" class="combo"/>
+<path d="M350,65 h148 a6.0,6.0 0 0 1 6.0,6.0 v4" class="combo"/>
+<rect rx="6" ry="6" x="336" y="52" width="28" height="26" class="combo"/>
+<use href="#tabler:letter-case-upper" xlink:href="#tabler:letter-case-upper" x="343" y="58" height="14" width="14.0" class="combo tap glyph tabler:letter-case-upper"/>
+</g>
+<g class="combo combopos-30">
+<path d="M350,100 l-79,0" class="combo"/>
+<path d="M350,100 l79,0" class="combo"/>
+<rect rx="6" ry="6" x="336" y="87" width="28" height="26" class="combo"/>
+<use href="#tabler:mood-smile" xlink:href="#tabler:mood-smile" x="343" y="93" height="14" width="14.0" class="combo tap glyph tabler:mood-smile"/>
+</g>
+<g class="combo combopos-31">
+<path d="M350,62 l-303,0" class="combo"/>
+<path d="M350,62 l303,0" class="combo"/>
+<rect rx="6" ry="6" x="336" y="49" width="28" height="26" class="combo"/>
+<use href="#tabler:lock" xlink:href="#tabler:lock" x="343" y="55" height="14" width="14.0" class="combo tap glyph tabler:lock"/>
 </g>
 </g>
 </g>

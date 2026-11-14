@@ -210,11 +210,14 @@ combos:
     l:
       - Combos
   - p:
-      - 4
-      - 5
-    k: $$tabler:lock-open$$
+      - 20
+      - 21
+      - 22
+    k: $$tabler:arrow-forward-up$$
     l:
       - Combos
+    a: bottom
+    o: 0.6
   - p:
       - 10
       - 11
@@ -242,12 +245,6 @@ combos:
       - Combos
     a: top
   - p:
-      - 24
-      - 25
-    k: BOOT
-    l:
-      - Combos
-  - p:
       - 21
       - 22
       - 23
@@ -265,3 +262,94 @@ combos:
     l:
       - Combos
     a: bottom
+  - p:
+      - 1
+      - 2
+    k: '-'
+    l:
+      - Combos
+  - p:
+      - 5
+      - 6
+    k: $$tabler:square-plus$$
+    l:
+      - Combos
+  - p:
+      - 6
+      - 7
+      - 8
+    k: $$tabler:square-x$$
+    l:
+      - Combos
+    a: top
+  - p:
+      - 5
+      - 6
+      - 7
+    k: $$tabler:restore$$
+    l:
+      - Combos
+    a: top
+  - p:
+      - 13
+      - 14
+    k: $$tabler:switch-horizontal$$
+    l:
+      - Combos
+  - p:
+      - 23
+      - 24
+    k: $$tabler:app-window$$
+    l:
+      - Combos
+  - p:
+      - 15
+      - 16
+    k: $$tabler:layout-grid$$
+    l:
+      - Combos
+  - p:
+      - 25
+      - 26
+    k: $$tabler:layout-rows$$
+    l:
+      - Combos
+  - p:
+      - 2
+      - 3
+      - 4
+    k:
+      t: $$tabler:backspace$$
+      h: word
+    l:
+      - Combos
+    a: top
+  - p:
+      - 1
+      - 2
+      - 3
+    k:
+      t: $$tabler:backspace$$
+      h: line
+    l:
+      - Combos
+    a: top
+  - p:
+      - 13
+      - 16
+    k: $$tabler:letter-case-upper$$
+    l:
+      - Combos
+    a: top
+  - p:
+      - 14
+      - 15
+    k: $$tabler:mood-smile$$
+    l:
+      - Combos
+  - p:
+      - 0
+      - 9
+    k: $$tabler:lock$$
+    l:
+      - Combos
