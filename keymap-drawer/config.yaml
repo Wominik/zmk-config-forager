@@ -203,7 +203,7 @@ parse_config:
     # home row skip pairs
     combo_prev_app: { align: top }
     combo_del_word: { align: bottom }
-    combo_reopen_tab: { align: bottom }
+    combo_reopen_tab: { align: bottom, slide: 0.5 }
     # NAV-only combos share their keys with enter / apostrophe: own spot and
     # own colour (type becomes a CSS class, see svg_extra_style)
     combo_scroll_down: { align: top, slide: 1, type: nav }
