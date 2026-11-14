@@ -247,6 +247,7 @@ combos:
     k: $$tabler:restore$$
     l: [Combos]
     a: bottom
+    s: 0.5
   - p: [11, 13]
     k: $$tabler:switch-horizontal$$
     l: [Combos]

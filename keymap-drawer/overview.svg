@@ -1296,10 +1296,10 @@ svg.keymap { font-family: "Nunito", sans-serif; }
 <use href="#tabler:square-x" xlink:href="#tabler:square-x" x="581" y="-50" height="14" width="14.0" class="combo tap glyph tabler:square-x"/>
 </g>
 <g class="combo combopos-22">
-<path d="M616,147 h-50 a6.0,6.0 0 0 1 -6.0,-6.0 v-38" class="combo"/>
-<path d="M616,147 h50 a6.0,6.0 0 0 0 6.0,-6.0 v-4" class="combo"/>
-<rect rx="6" ry="6" x="604" y="136" width="24" height="22" class="combo"/>
-<use href="#tabler:restore" xlink:href="#tabler:restore" x="609" y="140" height="14" width="14.0" class="combo tap glyph tabler:restore"/>
+<path d="M644,147 h-78 a6.0,6.0 0 0 1 -6.0,-6.0 v-38" class="combo"/>
+<path d="M644,147 h22 a6.0,6.0 0 0 0 6.0,-6.0 v-4" class="combo"/>
+<rect rx="6" ry="6" x="632" y="136" width="24" height="22" class="combo"/>
+<use href="#tabler:restore" xlink:href="#tabler:restore" x="637" y="140" height="14" width="14.0" class="combo tap glyph tabler:restore"/>
 </g>
 <g class="combo combopos-23">
 <path d="M140,65 h-50 a6.0,6.0 0 0 0 -6.0,6.0 v10" class="combo"/>
