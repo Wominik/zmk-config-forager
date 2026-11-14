@@ -237,6 +237,8 @@ combos:
     l:
       - Combos
     a: top
+    s: 1.0
+    type: nav
   - p:
       - 18
       - 19
@@ -244,6 +246,7 @@ combos:
     l:
       - Combos
     a: top
+    type: nav
   - p:
       - 21
       - 22
@@ -262,6 +265,8 @@ combos:
     l:
       - Combos
     a: bottom
+    o: 0.1
+    s: -0.4
   - p:
       - 1
       - 2
@@ -269,11 +274,14 @@ combos:
     l:
       - Combos
   - p:
-      - 5
       - 6
+      - 8
     k: $$tabler:square-plus$$
     l:
       - Combos
+    a: top
+    o: 0.4
+    s: -0.5
   - p:
       - 6
       - 7
@@ -282,58 +290,66 @@ combos:
     l:
       - Combos
     a: top
+    o: 0.75
+    s: 0.5
   - p:
-      - 5
-      - 6
-      - 7
+      - 17
+      - 19
     k: $$tabler:restore$$
     l:
       - Combos
-    a: top
+    a: bottom
   - p:
+      - 11
       - 13
-      - 14
     k: $$tabler:switch-horizontal$$
-    l:
-      - Combos
-  - p:
-      - 23
-      - 24
-    k: $$tabler:app-window$$
-    l:
-      - Combos
-  - p:
-      - 15
-      - 16
-    k: $$tabler:layout-grid$$
-    l:
-      - Combos
-  - p:
-      - 25
-      - 26
-    k: $$tabler:layout-rows$$
-    l:
-      - Combos
-  - p:
-      - 2
-      - 3
-      - 4
-    k:
-      t: $$tabler:backspace$$
-      h: word
     l:
       - Combos
     a: top
   - p:
       - 1
-      - 2
       - 3
-    k:
-      t: $$tabler:backspace$$
-      h: line
+    k: $$tabler:app-window$$
     l:
       - Combos
     a: top
+    o: 0.4
+    s: 0.5
+  - p:
+      - 26
+      - 28
+    k: $$tabler:layout-grid$$
+    l:
+      - Combos
+    a: bottom
+    o: 0.6
+    s: 0.4
+  - p:
+      - 27
+      - 28
+      - 29
+    k: $$tabler:layout-rows$$
+    l:
+      - Combos
+    a: bottom
+    o: 0.6
+  - p:
+      - 16
+      - 18
+    k: $$tabler:strikethrough$$
+    l:
+      - Combos
+    a: bottom
+  - p:
+      - 1
+      - 2
+      - 3
+    k: $$tabler:clear-all$$
+    l:
+      - Combos
+    a: top
+    o: 0.75
+    s: -0.5
   - p:
       - 13
       - 16
@@ -341,6 +357,7 @@ combos:
     l:
       - Combos
     a: bottom
+    o: 0.2
   - p:
       - 14
       - 15
@@ -353,3 +370,5 @@ combos:
     k: $$tabler:lock$$
     l:
       - Combos
+    a: top
+    o: 1.8
