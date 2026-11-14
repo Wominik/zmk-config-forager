@@ -214,7 +214,8 @@ parse_config:
     combo_caps_word: { align: bottom, offset: 0.2 }
 
 draw_config:
-  footer_text: "Combos: blue = typing layers, green = only while NAV is held"
+  # no footer: tools/combo_legend.py adds a full combo legend under the drawing
+  footer_text: ""
   # Slightly smaller than the default 28x26, so a box on the border between
   # two keys and one over the middle of a key never touch
   combo_w: 24
@@ -223,6 +224,17 @@ draw_config:
     text.footer { text-anchor: middle; }
     /* combos that only exist on NAV (type: nav in zmk_combos) */
     rect.combo.nav { fill: #bfe8c5; }
+    /* corner legends (NAV/NUM/BRAC folded onto BASE in the overview) sit
+       2px from the key border by default, text right on it - move them in
+       to about where the hold glyphs end up */
+    text.tl { transform: translate(3px, 3px); }
+    text.tr { transform: translate(-3px, 3px); }
+    text.bl { transform: translate(3px, -5px); }
+    text.br { transform: translate(-3px, -5px); }
+    use.tl { transform: translate(2px, 2px); }
+    use.tr { transform: translate(-2px, 2px); }
+    use.bl { transform: translate(2px, -2px); }
+    use.br { transform: translate(-2px, -2px); }
     /* uniform stroke weight for every glyph (fetched Tabler icons and the
        hand-built F10/F11/F12 below) - the nested svg element is what carries
        the glyph's own stroke-width, see keymap-drawer's get_glyph_defs() */
