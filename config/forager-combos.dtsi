@@ -24,16 +24,9 @@
             key-positions = <LM3 LM2>;
             bindings = <&mt LC(LALT) ESC>;
         };
-        combo_tab {
-            timeout-ms = <50>;
-            require-prior-idle-ms = <COMBO_IDLE_MS>;
-            slow-release;
-            key-positions = <LM2 LM1>;
-            bindings = <&mt LS(LGUI) TAB>;
-        };
         // Not on NAV: there J+K scrolls instead (combo_scroll_down).
-        // slow-release (here and on esc/tab/bspc): the modifier of the hold
-        // stays until both keys are up, not just the first.
+        // slow-release (here and on esc): the modifier of the hold stays
+        // until both keys are up, not just the first.
         combo_ent {
             timeout-ms = <50>;
             require-prior-idle-ms = <COMBO_IDLE_MS>;
@@ -41,37 +34,6 @@
             key-positions = <RM1 RM2>;
             bindings = <&mt RS(RGUI) ENTER>;
             layers = <BASE NUM BRAC>;
-        };
-        combo_bspc {
-            timeout-ms = <50>;
-            require-prior-idle-ms = <COMBO_IDLE_MS>;
-            slow-release;
-            key-positions = <RM2 RM3>;
-            bindings = <&mt RS(RALT) BSPC>;
-        };
-        combo_left_screen {
-            timeout-ms = <50>;
-            require-prior-idle-ms = <COMBO_IDLE_MS>;
-            key-positions = <RB1 RB2>;
-            bindings = <&kp LC(LEFT)>;
-        };
-        combo_right_screen {
-            timeout-ms = <50>;
-            require-prior-idle-ms = <COMBO_IDLE_MS>;
-            key-positions = <RB2 RB3>;
-            bindings = <&kp LC(RIGHT)>;
-        };
-        combo_go_back {
-            timeout-ms = <50>;
-            require-prior-idle-ms = <COMBO_IDLE_MS>;
-            key-positions = <RT1 RT2>;
-            bindings = <&kp LG(LS(LBKT))>;
-        };
-        combo_go_forward {
-            timeout-ms = <50>;
-            require-prior-idle-ms = <COMBO_IDLE_MS>;
-            key-positions = <RT2 RT3>;
-            bindings = <&kp LG(LS(RBKT))>;
         };
         combo_copy {
             timeout-ms = <50>;
@@ -150,84 +112,61 @@
         // ---- macOS helpers, BASE only ----
         // None of them pairs an inner-column key (T G B / Y H N) with its
         // neighbour: that would mean pressing an index-finger key with the
-        // middle finger. "Skip" pairs (index + ring, e.g. U+O) are used instead.
+        // middle finger. Pairs that are common letter rolls ("we", "er",
+        // "wr", "kl") get a shorter window.
 
-        // W+E. "we" is a common roll, hence the shorter window.
+        // K+L
         combo_minus {
             timeout-ms = <35>;
             require-prior-idle-ms = <COMBO_IDLE_MS>;
-            key-positions = <LT3 LT2>;
+            key-positions = <RM2 RM3>;
             bindings = <&kp MINUS>;
             layers = <BASE>;
         };
-        // Tabs, around prev/next tab on U+I / I+O: U+O new, U+I+O close,
-        // K+; reopen closed. "ou" is a common roll: shorter window for U+O.
-        combo_new_tab {
+        // Tabs on the left top row: W+E close, E+R new, W+R reopen closed
+        combo_close_tab {
             timeout-ms = <35>;
             require-prior-idle-ms = <COMBO_IDLE_MS>;
-            key-positions = <RT1 RT3>;
-            bindings = <&kp LG(T)>;
-            layers = <BASE>;
-        };
-        combo_close_tab {
-            timeout-ms = <50>;
-            require-prior-idle-ms = <COMBO_IDLE_MS>;
-            key-positions = <RT1 RT2 RT3>;
+            key-positions = <LT3 LT2>;
             bindings = <&kp LG(W)>;
             layers = <BASE>;
         };
+        combo_new_tab {
+            timeout-ms = <35>;
+            require-prior-idle-ms = <COMBO_IDLE_MS>;
+            key-positions = <LT2 LT1>;
+            bindings = <&kp LG(T)>;
+            layers = <BASE>;
+        };
         combo_reopen_tab {
-            timeout-ms = <50>;
-            require-prior-idle-ms = <COMBO_IDLE_MS>;
-            key-positions = <RM2 RM4>;
-            bindings = <&kp LG(LS(T))>;
-            layers = <BASE>;
-        };
-        // Apps and windows, index + ring on the left: S+F previous app,
-        // W+R next window of this app ("wr" as in "write": shorter window)
-        combo_prev_app {
-            timeout-ms = <50>;
-            require-prior-idle-ms = <COMBO_IDLE_MS>;
-            key-positions = <LM3 LM1>;
-            bindings = <&kp LG(TAB)>;
-            layers = <BASE>;
-        };
-        combo_next_window {
             timeout-ms = <35>;
             require-prior-idle-ms = <COMBO_IDLE_MS>;
             key-positions = <LT3 LT1>;
-            bindings = <&kp LG(GRAVE)>;
+            bindings = <&kp LG(LS(T))>;
             layers = <BASE>;
         };
-        // Next to the desktop switching on M+, / ,+. :
-        // M+. Mission Control, ,+.+/ this app's windows
-        combo_mission_control {
+        // ... and on the home row: A+D previous tab, S+F next tab. BASE only:
+        // on NAV these keys are held modifiers.
+        combo_prev_tab {
             timeout-ms = <50>;
             require-prior-idle-ms = <COMBO_IDLE_MS>;
-            key-positions = <RB1 RB3>;
-            bindings = <&kp LC(UP)>;
+            key-positions = <LM4 LM2>;
+            bindings = <&kp LG(LS(LBKT))>;
             layers = <BASE>;
         };
-        combo_app_windows {
+        combo_next_tab {
             timeout-ms = <50>;
             require-prior-idle-ms = <COMBO_IDLE_MS>;
-            key-positions = <RB2 RB3 RB4>;
-            bindings = <&kp LC(DOWN)>;
+            key-positions = <LM3 LM1>;
+            bindings = <&kp LG(LS(RBKT))>;
             layers = <BASE>;
         };
-        // Deleting: J+L word (around backspace on K+L), W+E+R to line start
+        // J+L delete word
         combo_del_word {
             timeout-ms = <50>;
             require-prior-idle-ms = <COMBO_IDLE_MS>;
             key-positions = <RM1 RM3>;
             bindings = <&kp LA(BSPC)>;
-            layers = <BASE>;
-        };
-        combo_del_line {
-            timeout-ms = <50>;
-            require-prior-idle-ms = <COMBO_IDLE_MS>;
-            key-positions = <LT3 LT2 LT1>;
-            bindings = <&kp LG(BSPC)>;
             layers = <BASE>;
         };
         // Across hands: F+J caps word, G+H emoji picker, Q+P lock screen
@@ -242,7 +181,7 @@
             timeout-ms = <50>;
             require-prior-idle-ms = <COMBO_IDLE_MS>;
             key-positions = <LM0 RM0>;
-            bindings = <&kp LC(LG(SPACE))>;
+            bindings = <&emoji_picker>;
             layers = <BASE>;
         };
         combo_lock {

@@ -12,6 +12,22 @@
                 ;
         };
 
+        // ⌃⌘Space, but as a real keyboard sends it: modifiers first, then a
+        // short tap of Space, then let go - no matter how long the combo is
+        // held. Sending all three at once and holding them while G+H is
+        // down left the emoji picker without focus in its search field.
+        emoji_picker: emoji_picker {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings
+                = <&macro_press &kp LCTRL &kp LGUI>
+                , <&macro_tap &kp SPACE>
+                , <&macro_release &kp LGUI &kp LCTRL>
+                ;
+        };
+
         fat_arrow: fat_arrow {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;

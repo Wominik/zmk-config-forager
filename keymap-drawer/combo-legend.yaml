@@ -3,13 +3,9 @@
 #   combo_name: text
 # Every combo needs a line here - the drawing workflow fails otherwise.
 combo_esc: Escape
-combo_tab: Tab
 combo_ent: Enter
-combo_bspc: Backspace
-combo_left_screen: Desktop to the left
-combo_right_screen: Desktop to the right
-combo_go_back: Previous tab
-combo_go_forward: Next tab
+combo_prev_tab: Previous tab
+combo_next_tab: Next tab
 combo_copy: Copy
 combo_paste: Paste
 combo_cut: Cut
@@ -25,12 +21,7 @@ combo_minus: Minus
 combo_new_tab: New tab
 combo_close_tab: Close tab
 combo_reopen_tab: Reopen closed tab
-combo_prev_app: Previous app
-combo_next_window: Next window of app
-combo_mission_control: Mission Control
-combo_app_windows: Windows of this app
 combo_del_word: Delete word
-combo_del_line: Delete to line start
 combo_caps_word: Caps word
 combo_emoji: Emoji picker
 combo_lock: Lock screen

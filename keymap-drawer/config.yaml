@@ -139,31 +139,22 @@ parse_config:
     "&kp LG(LS(Z))": "$$tabler:arrow-forward-up$$"
     "&kp LG(LS(LBKT))": "$$tabler:arrow-back$$"
     "&kp LG(LS(RBKT))": "$$tabler:arrow-forward$$"
-    "&kp LC(LEFT)": "$$tabler:arrow-bar-to-left$$"
-    "&kp LC(RIGHT)": "$$tabler:arrow-bar-to-right$$"
     "&kp LS(LC(LG(N4)))": "$$tabler:screenshot$$"
     "&msc SCRL_DOWN": "$$tabler:chevrons-down$$"
     "&msc SCRL_UP": "$$tabler:chevrons-up$$"
     "&kp LG(T)": "$$tabler:square-plus$$"
     "&kp LG(W)": "$$tabler:square-x$$"
     "&kp LG(LS(T))": "$$tabler:restore$$"
-    "&kp LG(TAB)": "$$tabler:switch-horizontal$$"
-    "&kp LG(GRAVE)": "$$tabler:app-window$$"
-    "&kp LC(UP)": "$$tabler:layout-grid$$"
-    "&kp LC(DOWN)": "$$tabler:layout-rows$$"
     "&kp LA(BSPC)": "$$tabler:strikethrough$$"
-    "&kp LG(BSPC)": "$$tabler:clear-all$$"
     "&caps_word": "$$tabler:letter-case-upper$$"
-    "&kp LC(LG(SPACE))": "$$tabler:mood-smile$$"
+    "&emoji_picker": "$$tabler:mood-smile$$"
     "&kp LC(LG(Q))": "$$tabler:lock$$"
 
     # esc/tab/ent/bspc combos also carry a modifier hold, but on the combo
     # diagram just the tap is what matters - drop the "h" field so the mod
     # doesn't render at all instead of showing a possibly-misleading glyph.
     "&mt LC(LALT) ESC": { t: "$$tabler:arrow-down-from-arc$$" }
-    "&mt LS(LGUI) TAB": { t: "$$tabler:arrow-bar-to-right$$" }
     "&mt RS(RGUI) ENTER": { t: "$$tabler:corner-down-left$$" }
-    "&mt RS(RALT) BSPC": { t: "$$tabler:backspace$$" }
     "&clipboard_manager": "$$tabler:clipboard-text$$"
 
   # Nudge combo boxes apart where several combos' key-positions overlap and
@@ -175,35 +166,24 @@ parse_config:
   zmk_combos:
     # Where each combo box is drawn. Two neighbouring keys: on the border
     # between them (the default, nothing to configure). Everything else is
-    # pulled out to a free spot with lines to its keys:
-    #   - bottom row combos hang below the keyboard, top row ones sit above it
-    #   - home row "skip" pairs (S+F, J+L, K+;) go on the edge of their row,
-    #     over the key they skip
+    # pulled out to a free spot with lines to its keys.
     # align/offset/slide are keymap-drawer ComboSpec fields; offset is in key
     # heights away from the keys, slide moves the box sideways (-1 .. 1).
     # Slide direction: for two keys, from the first key towards the second.
     # For three, from the key farthest from their centre towards the next
-    # farthest - which, with this column stagger, is the opposite way round
-    # on the two hands (hence the same sign for mirrored boxes below).
+    # farthest.
 
     # below the left bottom row
     combo_clipboard_manager: { align: bottom, offset: 0.1, slide: 0.4 }
     combo_paste: { align: bottom, offset: 0.6, slide: -0.4 }
     combo_redo: { align: bottom, offset: 0.6 }
-    # below the right bottom row, mirrored
-    combo_screenshot: { align: bottom, offset: 0.1, slide: 0.4 }
-    combo_mission_control: { align: bottom, offset: 0.6, slide: 0.4 }
-    combo_app_windows: { align: bottom, offset: 0.6 }
-    # above the left top row
-    combo_next_window: { align: top, offset: 0.4, slide: 0.5 }
-    combo_del_line: { align: top, offset: 0.75, slide: -0.5 }
-    # above the right top row, mirrored
-    combo_new_tab: { align: top, offset: 0.4, slide: -0.5 }
-    combo_close_tab: { align: top, offset: 0.75, slide: -0.5 }
-    # home row skip pairs
-    combo_prev_app: { align: top }
+    # below the right bottom row
+    combo_screenshot: { align: bottom, offset: 0.1 }
+    # skip pairs: above / below their row, over the key they skip
+    combo_reopen_tab: { align: top }
+    combo_prev_tab: { align: bottom, offset: 0.25 }
+    combo_next_tab: { align: top, offset: 0.25 }
     combo_del_word: { align: bottom }
-    combo_reopen_tab: { align: bottom, slide: 0.5 }
     # NAV-only combos share their keys with enter / apostrophe: own spot and
     # own colour (type becomes a CSS class, see svg_extra_style)
     combo_scroll_down: { align: top, slide: 1, type: nav }
