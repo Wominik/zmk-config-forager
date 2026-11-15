@@ -9,37 +9,38 @@ layers:
     - t: E
       tl: F8
     - t: R
-      bl: (
       tl: F9
+      bl: (
     - t: T
       bl: )
     - t: 'Y'
     - t: U
+      tr: '&'
       br: '7'
-      tl: '&'
     - t: I
+      tr: '*'
       br: '8'
-      tl: '*'
     - t: O
+      tr: '='
       br: '9'
     - t: P
+      tr: _
       br: '-'
-      tl: _
     - t: A
       h: $$tabler:chevron-up$$
       tl: F11
     - t: S
       h: $$tabler:option$$
-      bl: <
       tl: F4
+      bl: <
     - t: D
       h: $$tabler:command$$
-      bl: '>'
       tl: F5
+      bl: '>'
     - t: F
       h: $$tabler:arrow-big-up$$
-      bl: '{'
       tl: F6
+      bl: '{'
     - t: G
       h: $$tabler:diamonds$$
       bl: '}'
@@ -47,23 +48,23 @@ layers:
       h: $$tabler:diamonds$$
     - t: J
       h: $$tabler:arrow-big-up$$
-      tr: $$tabler:arrow-left$$
+      tr: $
       br: '4'
-      tl: $
+      bl: $$tabler:arrow-left$$
     - t: K
       h: $$tabler:command$$
-      tr: $$tabler:arrow-down$$
+      tr: '%'
       br: '5'
-      tl: '%'
+      bl: $$tabler:arrow-down$$
     - t: L
       h: $$tabler:option$$
-      tr: $$tabler:arrow-up$$
+      tr: ^
       br: '6'
-      tl: ^
+      bl: $$tabler:arrow-up$$
     - t: ;
       h: $$tabler:chevron-up$$
-      tr: $$tabler:arrow-right$$
       br: +
+      bl: $$tabler:arrow-right$$
     - t: Z
       tl: F10
     - t: X
@@ -71,24 +72,25 @@ layers:
     - t: C
       tl: F2
     - t: V
-      bl: '['
       tl: F3
+      bl: '['
     - t: B
       bl: ']'
     - t: 'N'
+      tr: =>
       br: '0'
     - t: M
+      tr: '!'
       br: '1'
-      tl: '!'
     - t: ','
+      tr: '@'
       br: '2'
-      tl: '@'
     - t: .
+      tr: '#'
       br: '3'
-      tl: '#'
     - t: /
+      tr: '|'
       br: \
-      tl: '|'
     - t: $$tabler:space$$
       h: NAV
     - t: $$tabler:arrow-bar-to-right$$
