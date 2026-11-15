@@ -137,8 +137,8 @@ parse_config:
     "&kp LG(X)": "$$tabler:cut$$"
     "&kp LG(Z)": "$$tabler:arrow-back-up$$"
     "&kp LG(LS(Z))": "$$tabler:arrow-forward-up$$"
-    "&kp LG(LS(LBKT))": "$$tabler:arrow-back$$"
-    "&kp LG(LS(RBKT))": "$$tabler:arrow-forward$$"
+    "&kp LG(LS(LBKT))": "$$tabler:square-chevron-left$$"
+    "&kp LG(LS(RBKT))": "$$tabler:square-chevron-right$$"
     "&kp LS(LC(LG(N4)))": "$$tabler:screenshot$$"
     "&msc SCRL_DOWN": "$$tabler:chevrons-down$$"
     "&msc SCRL_UP": "$$tabler:chevrons-up$$"
@@ -181,7 +181,8 @@ parse_config:
     combo_screenshot: { align: bottom, offset: 0.1 }
     # skip pairs: above / below their row, over the key they skip
     combo_reopen_tab: { align: top }
-    combo_prev_tab: { align: bottom, offset: 0.25 }
+    # A+D: off the left edge, out of the crowded undo/cut corner
+    combo_prev_tab: { align: left, offset: 0.1 }
     combo_next_tab: { align: top, offset: 0.25 }
     combo_del_word: { align: bottom }
     # NAV-only combos share their keys with enter / apostrophe: own spot and
