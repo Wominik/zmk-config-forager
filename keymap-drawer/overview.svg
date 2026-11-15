@@ -1,24 +1,5 @@
-<svg width="760" height="1179" viewBox="0 0 760 1179" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="760" height="1095" viewBox="0 0 760 1095" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>/* start glyphs */
-<svg id="tabler:app-window">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-app-window"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
-  <path d="M6 8h.01" />
-  <path d="M9 8h.01" />
-</svg>
-</svg>
 <svg id="tabler:arrow-back">
 <svg
   xmlns="http://www.w3.org/2000/svg"
@@ -52,26 +33,6 @@
   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
   <path d="M9 14l-4 -4l4 -4" />
   <path d="M5 10h11a4 4 0 1 1 0 8h-1" />
-</svg>
-</svg>
-<svg id="tabler:arrow-bar-to-left">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-bar-to-left"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M10 12l10 0" />
-  <path d="M10 12l4 4" />
-  <path d="M10 12l4 -4" />
-  <path d="M4 4l0 16" />
 </svg>
 </svg>
 <svg id="tabler:arrow-bar-to-right">
@@ -312,25 +273,6 @@
   <path d="M7 17l5 -5l5 5" />
 </svg>
 </svg>
-<svg id="tabler:clear-all">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-clear-all"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M8 6h12" />
-  <path d="M6 12h12" />
-  <path d="M4 18h12" />
-</svg>
-</svg>
 <svg id="tabler:clipboard">
 <svg
   xmlns="http://www.w3.org/2000/svg"
@@ -474,44 +416,6 @@
   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
   <path d="M19 20h-10.5l-4.21 -4.3a1 1 0 0 1 0 -1.41l10 -10a1 1 0 0 1 1.41 0l5 5a1 1 0 0 1 0 1.41l-9.2 9.3" />
   <path d="M18 13.3l-6.3 -6.3" />
-</svg>
-</svg>
-<svg id="tabler:layout-grid">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-layout-grid"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M4 5a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -4" />
-  <path d="M14 5a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -4" />
-  <path d="M4 15a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -4" />
-  <path d="M14 15a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -4" />
-</svg>
-</svg>
-<svg id="tabler:layout-rows">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-layout-rows"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M4 6a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2l0 -12" />
-  <path d="M4 12l16 0" />
 </svg>
 </svg>
 <svg id="tabler:letter-case-upper">
@@ -704,26 +608,6 @@
   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
   <path d="M5 12l14 0" />
   <path d="M16 6.5a4 2 0 0 0 -4 -1.5h-1a3.5 3.5 0 0 0 0 7h2a3.5 3.5 0 0 1 0 7h-1.5a4 2 0 0 1 -4 -1.5" />
-</svg>
-</svg>
-<svg id="tabler:switch-horizontal">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-switch-horizontal"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M16 3l4 4l-4 4" />
-  <path d="M10 7l10 0" />
-  <path d="M8 13l-4 4l4 4" />
-  <path d="M4 17l9 0" />
 </svg>
 </svg>
 </defs>/* end glyphs */
@@ -1203,166 +1087,117 @@ svg.keymap { font-family: "Nunito", sans-serif; }
 <use href="#tabler:arrow-down-from-arc" xlink:href="#tabler:arrow-down-from-arc" x="105" y="85" height="14" width="14.0" class="combo tap glyph tabler:arrow-down-from-arc"/>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="156" y="78" width="24" height="22" class="combo"/>
-<use href="#tabler:arrow-bar-to-right" xlink:href="#tabler:arrow-bar-to-right" x="161" y="82" height="14" width="14.0" class="combo tap glyph tabler:arrow-bar-to-right"/>
-</g>
-<g class="combo combopos-2">
 <rect rx="6" ry="6" x="520" y="78" width="24" height="22" class="combo"/>
 <use href="#tabler:corner-down-left" xlink:href="#tabler:corner-down-left" x="525" y="82" height="14" width="14.0" class="combo tap glyph tabler:corner-down-left"/>
 </g>
-<g class="combo combopos-3">
-<rect rx="6" ry="6" x="576" y="81" width="24" height="22" class="combo"/>
-<use href="#tabler:backspace" xlink:href="#tabler:backspace" x="581" y="85" height="14" width="14.0" class="combo tap glyph tabler:backspace"/>
-</g>
-<g class="combo combopos-4">
-<rect rx="6" ry="6" x="520" y="134" width="24" height="22" class="combo"/>
-<use href="#tabler:arrow-bar-to-left" xlink:href="#tabler:arrow-bar-to-left" x="525" y="138" height="14" width="14.0" class="combo tap glyph tabler:arrow-bar-to-left"/>
-</g>
-<g class="combo combopos-5">
-<rect rx="6" ry="6" x="576" y="137" width="24" height="22" class="combo"/>
-<use href="#tabler:arrow-bar-to-right" xlink:href="#tabler:arrow-bar-to-right" x="581" y="141" height="14" width="14.0" class="combo tap glyph tabler:arrow-bar-to-right"/>
-</g>
-<g class="combo combopos-6">
-<rect rx="6" ry="6" x="520" y="22" width="24" height="22" class="combo"/>
-<use href="#tabler:arrow-back" xlink:href="#tabler:arrow-back" x="525" y="26" height="14" width="14.0" class="combo tap glyph tabler:arrow-back"/>
-</g>
-<g class="combo combopos-7">
-<rect rx="6" ry="6" x="576" y="25" width="24" height="22" class="combo"/>
-<use href="#tabler:arrow-forward" xlink:href="#tabler:arrow-forward" x="581" y="29" height="14" width="14.0" class="combo tap glyph tabler:arrow-forward"/>
-</g>
-<g class="combo combopos-8">
+<g class="combo combopos-2">
 <rect rx="6" ry="6" x="156" y="134" width="24" height="22" class="combo"/>
 <use href="#tabler:copy" xlink:href="#tabler:copy" x="161" y="138" height="14" width="14.0" class="combo tap glyph tabler:copy"/>
 </g>
-<g class="combo combopos-9">
+<g class="combo combopos-3">
 <path d="M118,218 h-28 a6.0,6.0 0 0 1 -6.0,-6.0 v-38" class="combo"/>
 <path d="M118,218 h72 a6.0,6.0 0 0 0 6.0,-6.0 v-44" class="combo"/>
 <rect rx="6" ry="6" x="106" y="207" width="24" height="22" class="combo"/>
 <use href="#tabler:clipboard" xlink:href="#tabler:clipboard" x="111" y="211" height="14" width="14.0" class="combo tap glyph tabler:clipboard"/>
 </g>
-<g class="combo combopos-10">
+<g class="combo combopos-4">
 <rect rx="6" ry="6" x="100" y="137" width="24" height="22" class="combo"/>
 <use href="#tabler:cut" xlink:href="#tabler:cut" x="105" y="141" height="14" width="14.0" class="combo tap glyph tabler:cut"/>
 </g>
-<g class="combo combopos-11">
+<g class="combo combopos-5">
 <rect rx="6" ry="6" x="44" y="154" width="24" height="22" class="combo"/>
 <use href="#tabler:arrow-back-up" xlink:href="#tabler:arrow-back-up" x="49" y="158" height="14" width="14.0" class="combo tap glyph tabler:arrow-back-up"/>
 </g>
-<g class="combo combopos-12">
+<g class="combo combopos-6">
 <path d="M84,237 h-50 a6.0,6.0 0 0 1 -6.0,-6.0 v-38" class="combo"/>
 <path d="M84,237 l0,-62" class="combo"/>
 <path d="M84,237 h50 a6.0,6.0 0 0 0 6.0,-6.0 v-72" class="combo"/>
 <rect rx="6" ry="6" x="72" y="226" width="24" height="22" class="combo"/>
 <use href="#tabler:arrow-forward-up" xlink:href="#tabler:arrow-forward-up" x="77" y="230" height="14" width="14.0" class="combo tap glyph tabler:arrow-forward-up"/>
 </g>
-<g class="combo combopos-13">
+<g class="combo combopos-7">
 <rect rx="6" ry="6" x="44" y="98" width="24" height="22" class="combo"/>
 <text x="56" y="109" class="combo tap">`</text>
 </g>
-<g class="combo combopos-14">
+<g class="combo combopos-8">
 <rect rx="6" ry="6" x="632" y="98" width="24" height="22" class="combo"/>
 <text x="644" y="109" class="combo tap">&#x27;</text>
 </g>
-<g class="combo nav combopos-15">
+<g class="combo nav combopos-9">
 <path d="M560,55 h-50 a6.0,6.0 0 0 0 -6.0,6.0 v14" class="combo"/>
 <path d="M560,55 l0,18" class="combo"/>
 <rect rx="6" ry="6" x="548" y="44" width="24" height="22" class="combo nav"/>
 <use href="#tabler:chevrons-down" xlink:href="#tabler:chevrons-down" x="553" y="48" height="14" width="14.0" class="combo nav tap glyph tabler:chevrons-down"/>
 </g>
-<g class="combo nav combopos-16">
+<g class="combo nav combopos-10">
 <path d="M644,71 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v4" class="combo"/>
 <path d="M644,71 h22 a6.0,6.0 0 0 1 6.0,6.0 v23" class="combo"/>
 <rect rx="6" ry="6" x="632" y="60" width="24" height="22" class="combo nav"/>
 <use href="#tabler:chevrons-up" xlink:href="#tabler:chevrons-up" x="637" y="64" height="14" width="14.0" class="combo nav tap glyph tabler:chevrons-up"/>
 </g>
-<g class="combo combopos-17">
+<g class="combo combopos-11">
 <path d="M162,190 h-72 a6.0,6.0 0 0 1 -6.0,-6.0 v-10" class="combo"/>
 <path d="M162,190 h-16 a6.0,6.0 0 0 1 -6.0,-6.0 v-26" class="combo"/>
 <path d="M162,190 h28 a6.0,6.0 0 0 0 6.0,-6.0 v-16" class="combo"/>
 <rect rx="6" ry="6" x="150" y="179" width="24" height="22" class="combo"/>
 <use href="#tabler:clipboard-text" xlink:href="#tabler:clipboard-text" x="155" y="183" height="14" width="14.0" class="combo tap glyph tabler:clipboard-text"/>
 </g>
+<g class="combo combopos-12">
+<path d="M560,190 h-50 a6.0,6.0 0 0 1 -6.0,-6.0 v-16" class="combo"/>
+<path d="M560,190 l0,-32" class="combo"/>
+<path d="M560,190 h50 a6.0,6.0 0 0 0 6.0,-6.0 v-10" class="combo"/>
+<rect rx="6" ry="6" x="548" y="179" width="24" height="22" class="combo"/>
+<use href="#tabler:screenshot" xlink:href="#tabler:screenshot" x="553" y="183" height="14" width="14.0" class="combo tap glyph tabler:screenshot"/>
+</g>
+<g class="combo combopos-13">
+<rect rx="6" ry="6" x="576" y="81" width="24" height="22" class="combo"/>
+<text x="588" y="92" class="combo tap">-</text>
+</g>
+<g class="combo combopos-14">
+<rect rx="6" ry="6" x="100" y="25" width="24" height="22" class="combo"/>
+<use href="#tabler:square-x" xlink:href="#tabler:square-x" x="105" y="29" height="14" width="14.0" class="combo tap glyph tabler:square-x"/>
+</g>
+<g class="combo combopos-15">
+<rect rx="6" ry="6" x="156" y="22" width="24" height="22" class="combo"/>
+<use href="#tabler:square-plus" xlink:href="#tabler:square-plus" x="161" y="26" height="14" width="14.0" class="combo tap glyph tabler:square-plus"/>
+</g>
+<g class="combo combopos-16">
+<path d="M140,9 h-50 a6.0,6.0 0 0 0 -6.0,6.0 v10" class="combo"/>
+<path d="M140,9 h50 a6.0,6.0 0 0 1 6.0,6.0 v4" class="combo"/>
+<rect rx="6" ry="6" x="128" y="-2" width="24" height="22" class="combo"/>
+<use href="#tabler:restore" xlink:href="#tabler:restore" x="133" y="2" height="14" width="14.0" class="combo tap glyph tabler:restore"/>
+</g>
+<g class="combo combopos-17">
+<path d="M84,161 h-50 a6.0,6.0 0 0 1 -6.0,-6.0 v-18" class="combo"/>
+<path d="M84,161 h50 a6.0,6.0 0 0 0 6.0,-6.0 v-52" class="combo"/>
+<rect rx="6" ry="6" x="72" y="150" width="24" height="22" class="combo"/>
+<use href="#tabler:arrow-back" xlink:href="#tabler:arrow-back" x="77" y="154" height="14" width="14.0" class="combo tap glyph tabler:arrow-back"/>
+</g>
 <g class="combo combopos-18">
-<path d="M538,190 h-28 a6.0,6.0 0 0 1 -6.0,-6.0 v-16" class="combo"/>
-<path d="M538,190 h16 a6.0,6.0 0 0 0 6.0,-6.0 v-26" class="combo"/>
-<path d="M538,190 h72 a6.0,6.0 0 0 0 6.0,-6.0 v-10" class="combo"/>
-<rect rx="6" ry="6" x="526" y="179" width="24" height="22" class="combo"/>
-<use href="#tabler:screenshot" xlink:href="#tabler:screenshot" x="531" y="183" height="14" width="14.0" class="combo tap glyph tabler:screenshot"/>
+<path d="M140,51 h-50 a6.0,6.0 0 0 0 -6.0,6.0 v24" class="combo"/>
+<path d="M140,51 h50 a6.0,6.0 0 0 1 6.0,6.0 v18" class="combo"/>
+<rect rx="6" ry="6" x="128" y="40" width="24" height="22" class="combo"/>
+<use href="#tabler:arrow-forward" xlink:href="#tabler:arrow-forward" x="133" y="44" height="14" width="14.0" class="combo tap glyph tabler:arrow-forward"/>
 </g>
 <g class="combo combopos-19">
-<rect rx="6" ry="6" x="100" y="25" width="24" height="22" class="combo"/>
-<text x="112" y="36" class="combo tap">-</text>
-</g>
-<g class="combo combopos-20">
-<path d="M532,-14 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v27" class="combo"/>
-<path d="M532,-14 h78 a6.0,6.0 0 0 1 6.0,6.0 v33" class="combo"/>
-<rect rx="6" ry="6" x="520" y="-25" width="24" height="22" class="combo"/>
-<use href="#tabler:square-plus" xlink:href="#tabler:square-plus" x="525" y="-21" height="14" width="14.0" class="combo tap glyph tabler:square-plus"/>
-</g>
-<g class="combo combopos-21">
-<path d="M588,-43 h-78 a6.0,6.0 0 0 0 -6.0,6.0 v56" class="combo"/>
-<path d="M588,-43 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v46" class="combo"/>
-<path d="M588,-43 h22 a6.0,6.0 0 0 1 6.0,6.0 v62" class="combo"/>
-<rect rx="6" ry="6" x="576" y="-54" width="24" height="22" class="combo"/>
-<use href="#tabler:square-x" xlink:href="#tabler:square-x" x="581" y="-50" height="14" width="14.0" class="combo tap glyph tabler:square-x"/>
-</g>
-<g class="combo combopos-22">
-<path d="M644,147 h-78 a6.0,6.0 0 0 1 -6.0,-6.0 v-38" class="combo"/>
-<path d="M644,147 h22 a6.0,6.0 0 0 0 6.0,-6.0 v-4" class="combo"/>
-<rect rx="6" ry="6" x="632" y="136" width="24" height="22" class="combo"/>
-<use href="#tabler:restore" xlink:href="#tabler:restore" x="637" y="140" height="14" width="14.0" class="combo tap glyph tabler:restore"/>
-</g>
-<g class="combo combopos-23">
-<path d="M140,65 h-50 a6.0,6.0 0 0 0 -6.0,6.0 v10" class="combo"/>
-<path d="M140,65 h50 a6.0,6.0 0 0 1 6.0,6.0 v4" class="combo"/>
-<rect rx="6" ry="6" x="128" y="54" width="24" height="22" class="combo"/>
-<use href="#tabler:switch-horizontal" xlink:href="#tabler:switch-horizontal" x="133" y="58" height="14" width="14.0" class="combo tap glyph tabler:switch-horizontal"/>
-</g>
-<g class="combo combopos-24">
-<path d="M168,-14 h-78 a6.0,6.0 0 0 0 -6.0,6.0 v33" class="combo"/>
-<path d="M168,-14 h22 a6.0,6.0 0 0 1 6.0,6.0 v27" class="combo"/>
-<rect rx="6" ry="6" x="156" y="-25" width="24" height="22" class="combo"/>
-<use href="#tabler:app-window" xlink:href="#tabler:app-window" x="161" y="-21" height="14" width="14.0" class="combo tap glyph tabler:app-window"/>
-</g>
-<g class="combo combopos-25">
-<path d="M582,218 h-72 a6.0,6.0 0 0 1 -6.0,-6.0 v-44" class="combo"/>
-<path d="M582,218 h28 a6.0,6.0 0 0 0 6.0,-6.0 v-38" class="combo"/>
-<rect rx="6" ry="6" x="570" y="207" width="24" height="22" class="combo"/>
-<use href="#tabler:layout-grid" xlink:href="#tabler:layout-grid" x="575" y="211" height="14" width="14.0" class="combo tap glyph tabler:layout-grid"/>
-</g>
-<g class="combo combopos-26">
-<path d="M616,237 h-50 a6.0,6.0 0 0 1 -6.0,-6.0 v-72" class="combo"/>
-<path d="M616,237 l0,-62" class="combo"/>
-<path d="M616,237 h50 a6.0,6.0 0 0 0 6.0,-6.0 v-38" class="combo"/>
-<rect rx="6" ry="6" x="604" y="226" width="24" height="22" class="combo"/>
-<use href="#tabler:layout-rows" xlink:href="#tabler:layout-rows" x="609" y="230" height="14" width="14.0" class="combo tap glyph tabler:layout-rows"/>
-</g>
-<g class="combo combopos-27">
 <path d="M560,129 h-50 a6.0,6.0 0 0 1 -6.0,-6.0 v-10" class="combo"/>
 <path d="M560,129 h50 a6.0,6.0 0 0 0 6.0,-6.0 v-4" class="combo"/>
 <rect rx="6" ry="6" x="548" y="118" width="24" height="22" class="combo"/>
 <use href="#tabler:strikethrough" xlink:href="#tabler:strikethrough" x="553" y="122" height="14" width="14.0" class="combo tap glyph tabler:strikethrough"/>
 </g>
-<g class="combo combopos-28">
-<path d="M112,-43 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v62" class="combo"/>
-<path d="M112,-43 h22 a6.0,6.0 0 0 1 6.0,6.0 v46" class="combo"/>
-<path d="M112,-43 h78 a6.0,6.0 0 0 1 6.0,6.0 v56" class="combo"/>
-<rect rx="6" ry="6" x="100" y="-54" width="24" height="22" class="combo"/>
-<use href="#tabler:clear-all" xlink:href="#tabler:clear-all" x="105" y="-50" height="14" width="14.0" class="combo tap glyph tabler:clear-all"/>
-</g>
-<g class="combo combopos-29">
+<g class="combo combopos-20">
 <path d="M350,134 h-148 a6.0,6.0 0 0 1 -6.0,-6.0 v-16" class="combo"/>
 <path d="M350,134 h148 a6.0,6.0 0 0 0 6.0,-6.0 v-16" class="combo"/>
 <rect rx="6" ry="6" x="338" y="123" width="24" height="22" class="combo"/>
 <use href="#tabler:letter-case-upper" xlink:href="#tabler:letter-case-upper" x="343" y="127" height="14" width="14.0" class="combo tap glyph tabler:letter-case-upper"/>
 </g>
-<g class="combo combopos-30">
+<g class="combo combopos-21">
 <path d="M350,100 l-79,0" class="combo"/>
 <path d="M350,100 l79,0" class="combo"/>
 <rect rx="6" ry="6" x="338" y="89" width="24" height="22" class="combo"/>
 <use href="#tabler:mood-smile" xlink:href="#tabler:mood-smile" x="343" y="93" height="14" width="14.0" class="combo tap glyph tabler:mood-smile"/>
 </g>
-<g class="combo combopos-31">
+<g class="combo combopos-22">
 <path d="M350,-68 h-316 a6.0,6.0 0 0 0 -6.0,6.0 v105" class="combo"/>
 <path d="M350,-68 h316 a6.0,6.0 0 0 1 6.0,6.0 v105" class="combo"/>
 <rect rx="6" ry="6" x="338" y="-79" width="24" height="22" class="combo"/>
@@ -1370,104 +1205,77 @@ svg.keymap { font-family: "Nunito", sans-serif; }
 </g>
 </g>
 </g>
-<!-- combo-legend --><g data-added="342" class="combo-legend">
+<!-- combo-legend --><g data-added="258" class="combo-legend">
 <text x="30" y="832" style="text-anchor: start; font-weight: 700;">Combos</text>
 <text x="96" y="832" style="text-anchor: start; font-size: 12px;">green: only while NAV is held</text>
 <g transform="translate(-70.0, 775.0)" class="combo"><rect rx="6" ry="6" x="100" y="81" width="24" height="22" class="combo"/><use href="#tabler:arrow-down-from-arc" xlink:href="#tabler:arrow-down-from-arc" x="105" y="85" height="14" width="14.0" class="combo tap glyph tabler:arrow-down-from-arc"/></g>
 <text x="64.0" y="867.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">S + D</text>
 <text x="130.0" y="867.0" style="text-anchor: start; font-size: 12px;">Escape</text>
-<g transform="translate(-126.0, 806.0)" class="combo"><rect rx="6" ry="6" x="156" y="78" width="24" height="22" class="combo"/><use href="#tabler:arrow-bar-to-right" xlink:href="#tabler:arrow-bar-to-right" x="161" y="82" height="14" width="14.0" class="combo tap glyph tabler:arrow-bar-to-right"/></g>
-<text x="64.0" y="895.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">D + F</text>
-<text x="130.0" y="895.0" style="text-anchor: start; font-size: 12px;">Tab</text>
-<g transform="translate(-490.0, 834.0)" class="combo"><rect rx="6" ry="6" x="520" y="78" width="24" height="22" class="combo"/><use href="#tabler:corner-down-left" xlink:href="#tabler:corner-down-left" x="525" y="82" height="14" width="14.0" class="combo tap glyph tabler:corner-down-left"/></g>
-<text x="64.0" y="923.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">J + K</text>
-<text x="130.0" y="923.0" style="text-anchor: start; font-size: 12px;">Enter</text>
-<g transform="translate(-546.0, 859.0)" class="combo"><rect rx="6" ry="6" x="576" y="81" width="24" height="22" class="combo"/><use href="#tabler:backspace" xlink:href="#tabler:backspace" x="581" y="85" height="14" width="14.0" class="combo tap glyph tabler:backspace"/></g>
-<text x="64.0" y="951.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">K + L</text>
-<text x="130.0" y="951.0" style="text-anchor: start; font-size: 12px;">Backspace</text>
-<g transform="translate(-490.0, 834.0)" class="combo"><rect rx="6" ry="6" x="520" y="134" width="24" height="22" class="combo"/><use href="#tabler:arrow-bar-to-left" xlink:href="#tabler:arrow-bar-to-left" x="525" y="138" height="14" width="14.0" class="combo tap glyph tabler:arrow-bar-to-left"/></g>
-<text x="64.0" y="979.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">M + ,</text>
-<text x="130.0" y="979.0" style="text-anchor: start; font-size: 12px;">Desktop to the left</text>
-<g transform="translate(-546.0, 859.0)" class="combo"><rect rx="6" ry="6" x="576" y="137" width="24" height="22" class="combo"/><use href="#tabler:arrow-bar-to-right" xlink:href="#tabler:arrow-bar-to-right" x="581" y="141" height="14" width="14.0" class="combo tap glyph tabler:arrow-bar-to-right"/></g>
-<text x="64.0" y="1007.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">, + .</text>
-<text x="130.0" y="1007.0" style="text-anchor: start; font-size: 12px;">Desktop to the right</text>
-<g transform="translate(-490.0, 1002.0)" class="combo"><rect rx="6" ry="6" x="520" y="22" width="24" height="22" class="combo"/><use href="#tabler:arrow-back" xlink:href="#tabler:arrow-back" x="525" y="26" height="14" width="14.0" class="combo tap glyph tabler:arrow-back"/></g>
-<text x="64.0" y="1035.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">U + I</text>
-<text x="130.0" y="1035.0" style="text-anchor: start; font-size: 12px;">Previous tab</text>
-<g transform="translate(-546.0, 1027.0)" class="combo"><rect rx="6" ry="6" x="576" y="25" width="24" height="22" class="combo"/><use href="#tabler:arrow-forward" xlink:href="#tabler:arrow-forward" x="581" y="29" height="14" width="14.0" class="combo tap glyph tabler:arrow-forward"/></g>
-<text x="64.0" y="1063.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">I + O</text>
-<text x="130.0" y="1063.0" style="text-anchor: start; font-size: 12px;">Next tab</text>
-<g transform="translate(-126.0, 946.0)" class="combo"><rect rx="6" ry="6" x="156" y="134" width="24" height="22" class="combo"/><use href="#tabler:copy" xlink:href="#tabler:copy" x="161" y="138" height="14" width="14.0" class="combo tap glyph tabler:copy"/></g>
-<text x="64.0" y="1091.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">C + V</text>
-<text x="130.0" y="1091.0" style="text-anchor: start; font-size: 12px;">Copy</text>
-<g transform="translate(-76.0, 901.0)" class="combo"><rect rx="6" ry="6" x="106" y="207" width="24" height="22" class="combo"/><use href="#tabler:clipboard" xlink:href="#tabler:clipboard" x="111" y="211" height="14" width="14.0" class="combo tap glyph tabler:clipboard"/></g>
-<text x="64.0" y="1119.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">X + V</text>
-<text x="130.0" y="1119.0" style="text-anchor: start; font-size: 12px;">Paste</text>
-<g transform="translate(-70.0, 999.0)" class="combo"><rect rx="6" ry="6" x="100" y="137" width="24" height="22" class="combo"/><use href="#tabler:cut" xlink:href="#tabler:cut" x="105" y="141" height="14" width="14.0" class="combo tap glyph tabler:cut"/></g>
-<text x="64.0" y="1147.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">X + C</text>
-<text x="130.0" y="1147.0" style="text-anchor: start; font-size: 12px;">Cut</text>
-<g transform="translate(219.3, 702.0)" class="combo"><rect rx="6" ry="6" x="44" y="154" width="24" height="22" class="combo"/><use href="#tabler:arrow-back-up" xlink:href="#tabler:arrow-back-up" x="49" y="158" height="14" width="14.0" class="combo tap glyph tabler:arrow-back-up"/></g>
-<text x="297.3" y="867.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">Z + X</text>
-<text x="363.3" y="867.0" style="text-anchor: start; font-size: 12px;">Undo</text>
-<g transform="translate(191.3, 658.0)" class="combo"><rect rx="6" ry="6" x="72" y="226" width="24" height="22" class="combo"/><use href="#tabler:arrow-forward-up" xlink:href="#tabler:arrow-forward-up" x="77" y="230" height="14" width="14.0" class="combo tap glyph tabler:arrow-forward-up"/></g>
-<text x="297.3" y="895.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">Z + X + C</text>
-<text x="363.3" y="895.0" style="text-anchor: start; font-size: 12px;">Redo</text>
-<g transform="translate(219.3, 814.0)" class="combo"><rect rx="6" ry="6" x="44" y="98" width="24" height="22" class="combo"/><text x="56" y="109" class="combo tap">`</text></g>
-<text x="297.3" y="923.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">A + S</text>
-<text x="363.3" y="923.0" style="text-anchor: start; font-size: 12px;">Backtick</text>
-<g transform="translate(-368.7, 842.0)" class="combo"><rect rx="6" ry="6" x="632" y="98" width="24" height="22" class="combo"/><text x="644" y="109" class="combo tap">&#x27;</text></g>
-<text x="297.3" y="951.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">L + ;</text>
-<text x="363.3" y="951.0" style="text-anchor: start; font-size: 12px;">Apostrophe</text>
-<g transform="translate(-284.7, 924.0)" class="combo nav"><rect rx="6" ry="6" x="548" y="44" width="24" height="22" class="combo nav"/><use href="#tabler:chevrons-down" xlink:href="#tabler:chevrons-down" x="553" y="48" height="14" width="14.0" class="combo nav tap glyph tabler:chevrons-down"/></g>
-<text x="297.3" y="979.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">J + K</text>
-<text x="363.3" y="979.0" style="text-anchor: start; font-size: 12px;">Scroll down (NAV)</text>
-<g transform="translate(-368.7, 936.0)" class="combo nav"><rect rx="6" ry="6" x="632" y="60" width="24" height="22" class="combo nav"/><use href="#tabler:chevrons-up" xlink:href="#tabler:chevrons-up" x="637" y="64" height="14" width="14.0" class="combo nav tap glyph tabler:chevrons-up"/></g>
-<text x="297.3" y="1007.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">L + ;</text>
-<text x="363.3" y="1007.0" style="text-anchor: start; font-size: 12px;">Scroll up (NAV)</text>
-<g transform="translate(113.3, 845.0)" class="combo"><rect rx="6" ry="6" x="150" y="179" width="24" height="22" class="combo"/><use href="#tabler:clipboard-text" xlink:href="#tabler:clipboard-text" x="155" y="183" height="14" width="14.0" class="combo tap glyph tabler:clipboard-text"/></g>
-<text x="297.3" y="1035.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">X + C + V</text>
-<text x="363.3" y="1035.0" style="text-anchor: start; font-size: 12px;">Clipboard manager</text>
-<g transform="translate(-262.7, 873.0)" class="combo"><rect rx="6" ry="6" x="526" y="179" width="24" height="22" class="combo"/><use href="#tabler:screenshot" xlink:href="#tabler:screenshot" x="531" y="183" height="14" width="14.0" class="combo tap glyph tabler:screenshot"/></g>
-<text x="297.3" y="1063.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">M + , + .</text>
-<text x="363.3" y="1063.0" style="text-anchor: start; font-size: 12px;">Screenshot of an area</text>
-<g transform="translate(163.3, 1055.0)" class="combo"><rect rx="6" ry="6" x="100" y="25" width="24" height="22" class="combo"/><text x="112" y="36" class="combo tap">-</text></g>
-<text x="297.3" y="1091.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">W + E</text>
-<text x="363.3" y="1091.0" style="text-anchor: start; font-size: 12px;">Minus</text>
-<g transform="translate(-256.7, 1133.0)" class="combo"><rect rx="6" ry="6" x="520" y="-25" width="24" height="22" class="combo"/><use href="#tabler:square-plus" xlink:href="#tabler:square-plus" x="525" y="-21" height="14" width="14.0" class="combo tap glyph tabler:square-plus"/></g>
-<text x="297.3" y="1119.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">U + O</text>
-<text x="363.3" y="1119.0" style="text-anchor: start; font-size: 12px;">New tab</text>
-<g transform="translate(-312.7, 1190.0)" class="combo"><rect rx="6" ry="6" x="576" y="-54" width="24" height="22" class="combo"/><use href="#tabler:square-x" xlink:href="#tabler:square-x" x="581" y="-50" height="14" width="14.0" class="combo tap glyph tabler:square-x"/></g>
-<text x="297.3" y="1147.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">U + I + O</text>
-<text x="363.3" y="1147.0" style="text-anchor: start; font-size: 12px;">Close tab</text>
-<g transform="translate(-135.3, 720.0)" class="combo"><rect rx="6" ry="6" x="632" y="136" width="24" height="22" class="combo"/><use href="#tabler:restore" xlink:href="#tabler:restore" x="637" y="140" height="14" width="14.0" class="combo tap glyph tabler:restore"/></g>
-<text x="530.7" y="867.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">K + ;</text>
+<g transform="translate(-490.0, 806.0)" class="combo"><rect rx="6" ry="6" x="520" y="78" width="24" height="22" class="combo"/><use href="#tabler:corner-down-left" xlink:href="#tabler:corner-down-left" x="525" y="82" height="14" width="14.0" class="combo tap glyph tabler:corner-down-left"/></g>
+<text x="64.0" y="895.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">J + K</text>
+<text x="130.0" y="895.0" style="text-anchor: start; font-size: 12px;">Enter</text>
+<g transform="translate(-126.0, 778.0)" class="combo"><rect rx="6" ry="6" x="156" y="134" width="24" height="22" class="combo"/><use href="#tabler:copy" xlink:href="#tabler:copy" x="161" y="138" height="14" width="14.0" class="combo tap glyph tabler:copy"/></g>
+<text x="64.0" y="923.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">C + V</text>
+<text x="130.0" y="923.0" style="text-anchor: start; font-size: 12px;">Copy</text>
+<g transform="translate(-76.0, 733.0)" class="combo"><rect rx="6" ry="6" x="106" y="207" width="24" height="22" class="combo"/><use href="#tabler:clipboard" xlink:href="#tabler:clipboard" x="111" y="211" height="14" width="14.0" class="combo tap glyph tabler:clipboard"/></g>
+<text x="64.0" y="951.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">X + V</text>
+<text x="130.0" y="951.0" style="text-anchor: start; font-size: 12px;">Paste</text>
+<g transform="translate(-70.0, 831.0)" class="combo"><rect rx="6" ry="6" x="100" y="137" width="24" height="22" class="combo"/><use href="#tabler:cut" xlink:href="#tabler:cut" x="105" y="141" height="14" width="14.0" class="combo tap glyph tabler:cut"/></g>
+<text x="64.0" y="979.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">X + C</text>
+<text x="130.0" y="979.0" style="text-anchor: start; font-size: 12px;">Cut</text>
+<g transform="translate(-14.0, 842.0)" class="combo"><rect rx="6" ry="6" x="44" y="154" width="24" height="22" class="combo"/><use href="#tabler:arrow-back-up" xlink:href="#tabler:arrow-back-up" x="49" y="158" height="14" width="14.0" class="combo tap glyph tabler:arrow-back-up"/></g>
+<text x="64.0" y="1007.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">Z + X</text>
+<text x="130.0" y="1007.0" style="text-anchor: start; font-size: 12px;">Undo</text>
+<g transform="translate(-42.0, 798.0)" class="combo"><rect rx="6" ry="6" x="72" y="226" width="24" height="22" class="combo"/><use href="#tabler:arrow-forward-up" xlink:href="#tabler:arrow-forward-up" x="77" y="230" height="14" width="14.0" class="combo tap glyph tabler:arrow-forward-up"/></g>
+<text x="64.0" y="1035.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">Z + X + C</text>
+<text x="130.0" y="1035.0" style="text-anchor: start; font-size: 12px;">Redo</text>
+<g transform="translate(-14.0, 954.0)" class="combo"><rect rx="6" ry="6" x="44" y="98" width="24" height="22" class="combo"/><text x="56" y="109" class="combo tap">`</text></g>
+<text x="64.0" y="1063.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">A + S</text>
+<text x="130.0" y="1063.0" style="text-anchor: start; font-size: 12px;">Backtick</text>
+<g transform="translate(-368.7, 758.0)" class="combo"><rect rx="6" ry="6" x="632" y="98" width="24" height="22" class="combo"/><text x="644" y="109" class="combo tap">&#x27;</text></g>
+<text x="297.3" y="867.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">L + ;</text>
+<text x="363.3" y="867.0" style="text-anchor: start; font-size: 12px;">Apostrophe</text>
+<g transform="translate(-284.7, 840.0)" class="combo nav"><rect rx="6" ry="6" x="548" y="44" width="24" height="22" class="combo nav"/><use href="#tabler:chevrons-down" xlink:href="#tabler:chevrons-down" x="553" y="48" height="14" width="14.0" class="combo nav tap glyph tabler:chevrons-down"/></g>
+<text x="297.3" y="895.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">J + K</text>
+<text x="363.3" y="895.0" style="text-anchor: start; font-size: 12px;">Scroll down (NAV)</text>
+<g transform="translate(-368.7, 852.0)" class="combo nav"><rect rx="6" ry="6" x="632" y="60" width="24" height="22" class="combo nav"/><use href="#tabler:chevrons-up" xlink:href="#tabler:chevrons-up" x="637" y="64" height="14" width="14.0" class="combo nav tap glyph tabler:chevrons-up"/></g>
+<text x="297.3" y="923.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">L + ;</text>
+<text x="363.3" y="923.0" style="text-anchor: start; font-size: 12px;">Scroll up (NAV)</text>
+<g transform="translate(113.3, 761.0)" class="combo"><rect rx="6" ry="6" x="150" y="179" width="24" height="22" class="combo"/><use href="#tabler:clipboard-text" xlink:href="#tabler:clipboard-text" x="155" y="183" height="14" width="14.0" class="combo tap glyph tabler:clipboard-text"/></g>
+<text x="297.3" y="951.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">X + C + V</text>
+<text x="363.3" y="951.0" style="text-anchor: start; font-size: 12px;">Clipboard manager</text>
+<g transform="translate(-284.7, 789.0)" class="combo"><rect rx="6" ry="6" x="548" y="179" width="24" height="22" class="combo"/><use href="#tabler:screenshot" xlink:href="#tabler:screenshot" x="553" y="183" height="14" width="14.0" class="combo tap glyph tabler:screenshot"/></g>
+<text x="297.3" y="979.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">M + , + .</text>
+<text x="363.3" y="979.0" style="text-anchor: start; font-size: 12px;">Screenshot of an area</text>
+<g transform="translate(-312.7, 915.0)" class="combo"><rect rx="6" ry="6" x="576" y="81" width="24" height="22" class="combo"/><text x="588" y="92" class="combo tap">-</text></g>
+<text x="297.3" y="1007.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">K + L</text>
+<text x="363.3" y="1007.0" style="text-anchor: start; font-size: 12px;">Minus</text>
+<g transform="translate(163.3, 999.0)" class="combo"><rect rx="6" ry="6" x="100" y="25" width="24" height="22" class="combo"/><use href="#tabler:square-x" xlink:href="#tabler:square-x" x="105" y="29" height="14" width="14.0" class="combo tap glyph tabler:square-x"/></g>
+<text x="297.3" y="1035.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">W + E</text>
+<text x="363.3" y="1035.0" style="text-anchor: start; font-size: 12px;">Close tab</text>
+<g transform="translate(107.3, 1030.0)" class="combo"><rect rx="6" ry="6" x="156" y="22" width="24" height="22" class="combo"/><use href="#tabler:square-plus" xlink:href="#tabler:square-plus" x="161" y="26" height="14" width="14.0" class="combo tap glyph tabler:square-plus"/></g>
+<text x="297.3" y="1063.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">E + R</text>
+<text x="363.3" y="1063.0" style="text-anchor: start; font-size: 12px;">New tab</text>
+<g transform="translate(368.7, 858.0)" class="combo"><rect rx="6" ry="6" x="128" y="-2" width="24" height="22" class="combo"/><use href="#tabler:restore" xlink:href="#tabler:restore" x="133" y="2" height="14" width="14.0" class="combo tap glyph tabler:restore"/></g>
+<text x="530.7" y="867.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">W + R</text>
 <text x="596.7" y="867.0" style="text-anchor: start; font-size: 12px;">Reopen closed tab</text>
-<g transform="translate(368.7, 830.0)" class="combo"><rect rx="6" ry="6" x="128" y="54" width="24" height="22" class="combo"/><use href="#tabler:switch-horizontal" xlink:href="#tabler:switch-horizontal" x="133" y="58" height="14" width="14.0" class="combo tap glyph tabler:switch-horizontal"/></g>
-<text x="530.7" y="895.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">S + F</text>
-<text x="596.7" y="895.0" style="text-anchor: start; font-size: 12px;">Previous app</text>
-<g transform="translate(340.7, 937.0)" class="combo"><rect rx="6" ry="6" x="156" y="-25" width="24" height="22" class="combo"/><use href="#tabler:app-window" xlink:href="#tabler:app-window" x="161" y="-21" height="14" width="14.0" class="combo tap glyph tabler:app-window"/></g>
-<text x="530.7" y="923.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">W + R</text>
-<text x="596.7" y="923.0" style="text-anchor: start; font-size: 12px;">Next window of app</text>
-<g transform="translate(-73.3, 733.0)" class="combo"><rect rx="6" ry="6" x="570" y="207" width="24" height="22" class="combo"/><use href="#tabler:layout-grid" xlink:href="#tabler:layout-grid" x="575" y="211" height="14" width="14.0" class="combo tap glyph tabler:layout-grid"/></g>
-<text x="530.7" y="951.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">M + .</text>
-<text x="596.7" y="951.0" style="text-anchor: start; font-size: 12px;">Mission Control</text>
-<g transform="translate(-107.3, 742.0)" class="combo"><rect rx="6" ry="6" x="604" y="226" width="24" height="22" class="combo"/><use href="#tabler:layout-rows" xlink:href="#tabler:layout-rows" x="609" y="230" height="14" width="14.0" class="combo tap glyph tabler:layout-rows"/></g>
-<text x="530.7" y="979.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">, + . + /</text>
-<text x="596.7" y="979.0" style="text-anchor: start; font-size: 12px;">Windows of this app</text>
-<g transform="translate(-51.3, 878.0)" class="combo"><rect rx="6" ry="6" x="548" y="118" width="24" height="22" class="combo"/><use href="#tabler:strikethrough" xlink:href="#tabler:strikethrough" x="553" y="122" height="14" width="14.0" class="combo tap glyph tabler:strikethrough"/></g>
-<text x="530.7" y="1007.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">J + L</text>
-<text x="596.7" y="1007.0" style="text-anchor: start; font-size: 12px;">Delete word</text>
-<g transform="translate(396.7, 1078.0)" class="combo"><rect rx="6" ry="6" x="100" y="-54" width="24" height="22" class="combo"/><use href="#tabler:clear-all" xlink:href="#tabler:clear-all" x="105" y="-50" height="14" width="14.0" class="combo tap glyph tabler:clear-all"/></g>
-<text x="530.7" y="1035.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">W + E + R</text>
-<text x="596.7" y="1035.0" style="text-anchor: start; font-size: 12px;">Delete to line start</text>
-<g transform="translate(158.7, 929.0)" class="combo"><rect rx="6" ry="6" x="338" y="123" width="24" height="22" class="combo"/><use href="#tabler:letter-case-upper" xlink:href="#tabler:letter-case-upper" x="343" y="127" height="14" width="14.0" class="combo tap glyph tabler:letter-case-upper"/></g>
-<text x="530.7" y="1063.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">F + J</text>
-<text x="596.7" y="1063.0" style="text-anchor: start; font-size: 12px;">Caps word</text>
-<g transform="translate(158.7, 991.0)" class="combo"><rect rx="6" ry="6" x="338" y="89" width="24" height="22" class="combo"/><use href="#tabler:mood-smile" xlink:href="#tabler:mood-smile" x="343" y="93" height="14" width="14.0" class="combo tap glyph tabler:mood-smile"/></g>
-<text x="530.7" y="1091.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">G + H</text>
-<text x="596.7" y="1091.0" style="text-anchor: start; font-size: 12px;">Emoji picker</text>
-<g transform="translate(158.7, 1187.0)" class="combo"><rect rx="6" ry="6" x="338" y="-79" width="24" height="22" class="combo"/><use href="#tabler:lock" xlink:href="#tabler:lock" x="343" y="-75" height="14" width="14.0" class="combo tap glyph tabler:lock"/></g>
-<text x="530.7" y="1119.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">Q + P</text>
-<text x="596.7" y="1119.0" style="text-anchor: start; font-size: 12px;">Lock screen</text>
+<g transform="translate(424.7, 734.0)" class="combo"><rect rx="6" ry="6" x="72" y="150" width="24" height="22" class="combo"/><use href="#tabler:arrow-back" xlink:href="#tabler:arrow-back" x="77" y="154" height="14" width="14.0" class="combo tap glyph tabler:arrow-back"/></g>
+<text x="530.7" y="895.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">A + D</text>
+<text x="596.7" y="895.0" style="text-anchor: start; font-size: 12px;">Previous tab</text>
+<g transform="translate(368.7, 872.0)" class="combo"><rect rx="6" ry="6" x="128" y="40" width="24" height="22" class="combo"/><use href="#tabler:arrow-forward" xlink:href="#tabler:arrow-forward" x="133" y="44" height="14" width="14.0" class="combo tap glyph tabler:arrow-forward"/></g>
+<text x="530.7" y="923.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">S + F</text>
+<text x="596.7" y="923.0" style="text-anchor: start; font-size: 12px;">Next tab</text>
+<g transform="translate(-51.3, 822.0)" class="combo"><rect rx="6" ry="6" x="548" y="118" width="24" height="22" class="combo"/><use href="#tabler:strikethrough" xlink:href="#tabler:strikethrough" x="553" y="122" height="14" width="14.0" class="combo tap glyph tabler:strikethrough"/></g>
+<text x="530.7" y="951.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">J + L</text>
+<text x="596.7" y="951.0" style="text-anchor: start; font-size: 12px;">Delete word</text>
+<g transform="translate(158.7, 845.0)" class="combo"><rect rx="6" ry="6" x="338" y="123" width="24" height="22" class="combo"/><use href="#tabler:letter-case-upper" xlink:href="#tabler:letter-case-upper" x="343" y="127" height="14" width="14.0" class="combo tap glyph tabler:letter-case-upper"/></g>
+<text x="530.7" y="979.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">F + J</text>
+<text x="596.7" y="979.0" style="text-anchor: start; font-size: 12px;">Caps word</text>
+<g transform="translate(158.7, 907.0)" class="combo"><rect rx="6" ry="6" x="338" y="89" width="24" height="22" class="combo"/><use href="#tabler:mood-smile" xlink:href="#tabler:mood-smile" x="343" y="93" height="14" width="14.0" class="combo tap glyph tabler:mood-smile"/></g>
+<text x="530.7" y="1007.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">G + H</text>
+<text x="596.7" y="1007.0" style="text-anchor: start; font-size: 12px;">Emoji picker</text>
+<g transform="translate(158.7, 1103.0)" class="combo"><rect rx="6" ry="6" x="338" y="-79" width="24" height="22" class="combo"/><use href="#tabler:lock" xlink:href="#tabler:lock" x="343" y="-75" height="14" width="14.0" class="combo tap glyph tabler:lock"/></g>
+<text x="530.7" y="1035.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">Q + P</text>
+<text x="596.7" y="1035.0" style="text-anchor: start; font-size: 12px;">Lock screen</text>
 </g><!-- /combo-legend -->
 </svg>

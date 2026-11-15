@@ -141,45 +141,9 @@ combos:
     l:
       - Combos
   - p:
-      - 12
-      - 13
-    k: $$tabler:arrow-bar-to-right$$
-    l:
-      - Combos
-  - p:
       - 16
       - 17
     k: $$tabler:corner-down-left$$
-    l:
-      - Combos
-  - p:
-      - 17
-      - 18
-    k: $$tabler:backspace$$
-    l:
-      - Combos
-  - p:
-      - 26
-      - 27
-    k: $$tabler:arrow-bar-to-left$$
-    l:
-      - Combos
-  - p:
-      - 27
-      - 28
-    k: $$tabler:arrow-bar-to-right$$
-    l:
-      - Combos
-  - p:
-      - 6
-      - 7
-    k: $$tabler:arrow-back$$
-    l:
-      - Combos
-  - p:
-      - 7
-      - 8
-    k: $$tabler:arrow-forward$$
     l:
       - Combos
   - p:
@@ -266,74 +230,47 @@ combos:
       - Combos
     a: bottom
     o: 0.1
-    s: 0.4
   - p:
-      - 1
-      - 2
+      - 17
+      - 18
     k: '-'
     l:
       - Combos
   - p:
-      - 6
-      - 8
-    k: $$tabler:square-plus$$
-    l:
-      - Combos
-    a: top
-    o: 0.4
-    s: -0.5
-  - p:
-      - 6
-      - 7
-      - 8
+      - 1
+      - 2
     k: $$tabler:square-x$$
     l:
       - Combos
-    a: top
-    o: 0.75
-    s: -0.5
   - p:
-      - 17
-      - 19
-    k: $$tabler:restore$$
+      - 2
+      - 3
+    k: $$tabler:square-plus$$
     l:
       - Combos
-    a: bottom
-    s: 0.5
-  - p:
-      - 11
-      - 13
-    k: $$tabler:switch-horizontal$$
-    l:
-      - Combos
-    a: top
   - p:
       - 1
       - 3
-    k: $$tabler:app-window$$
+    k: $$tabler:restore$$
     l:
       - Combos
     a: top
-    o: 0.4
-    s: 0.5
   - p:
-      - 26
-      - 28
-    k: $$tabler:layout-grid$$
+      - 10
+      - 12
+    k: $$tabler:arrow-back$$
     l:
       - Combos
     a: bottom
-    o: 0.6
-    s: 0.4
+    o: 0.25
   - p:
-      - 27
-      - 28
-      - 29
-    k: $$tabler:layout-rows$$
+      - 11
+      - 13
+    k: $$tabler:arrow-forward$$
     l:
       - Combos
-    a: bottom
-    o: 0.6
+    a: top
+    o: 0.25
   - p:
       - 16
       - 18
@@ -341,16 +278,6 @@ combos:
     l:
       - Combos
     a: bottom
-  - p:
-      - 1
-      - 2
-      - 3
-    k: $$tabler:clear-all$$
-    l:
-      - Combos
-    a: top
-    o: 0.75
-    s: -0.5
   - p:
       - 13
       - 16
