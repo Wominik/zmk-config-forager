@@ -2,8 +2,9 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
-// Scroll speed of &msc (NAV scroll combos); ZMK's default is 10
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 25
+// Top scroll speed of &msc (NAV scroll combos), reached after
+// time-to-max-speed-ms below; ZMK's default is 10
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 40
 #include <dt-bindings/zmk/pointing.h>
 
 #include "forager-keys.dtsi"
@@ -18,4 +19,13 @@
 // &brac_bspc/etc. without losing the layer-hold on a genuine cold hold.
 &lt {
     quick-tap-ms = <200>;
+};
+
+// Scroll starts slow and speeds up while the combo is held: speed grows
+// linearly (acceleration-exponent 1) from 0 to the top speed above in
+// time-to-max-speed-ms. ZMK's default is a constant speed (exponent 0).
+// 2 instead of 1 makes the start even gentler and the ramp steeper.
+&msc {
+    acceleration-exponent = <1>;
+    time-to-max-speed-ms = <800>;
 };
