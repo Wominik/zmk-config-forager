@@ -148,6 +148,8 @@ parse_config:
     "&kp LA(BSPC)": "$$tabler:strikethrough$$"
     "&caps_word": "$$tabler:letter-case-upper$$"
     "&emoji_picker": "$$tabler:mood-smile$$"
+    # Shift+0 on NUM (num0_morph): the macro types "=>"
+    "&fat_arrow": "=>"
     "&kp LC(LG(Q))": "$$tabler:lock$$"
 
     # esc/tab/ent/bspc combos also carry a modifier hold, but on the combo

@@ -14,11 +14,9 @@ on:
 # reproduced here in CI so nothing needs to be installed/run locally):
 #   - base.svg:     every layer drawn on its own, plus a virtual "Combos" layer
 #   - overview.svg: NAV/NUM/BRAC folded into BASE as per-key corner labels
-#                    (tr=NAV, br=NUM, bl=BRAC, tl=BRAC+Shift where BRAC has
-#                    a Shift-morphed F-key, else a synthetic "NUM+Shift"
-#                    symbol on the digit positions - the two never land on
-#                    the same physical key, since the F-keys are on the left
-#                    hand and the NUM digits are on the right hand). A
+#                    (tl=BRAC+Shift, the F-keys; tr=NUM+Shift; br=NUM;
+#                    bl=BRAC on the left hand and NAV on the right hand -
+#                    the two never land on the same physical key). A
 #                    corner is dropped whenever it would just repeat the
 #                    key's own tap/hold (e.g. the modifier row mirrored onto
 #                    NAV/NUM/BRAC for consistency on A/S/D/F and H/J/K/L/;)
@@ -72,9 +70,9 @@ jobs:
             def is_transparent: type == "object" and (.type == "trans" or .type == "held");
             # tap (and hold, if any) text already shown in the center/bottom of the key
             def base_values: if type == "string" then [.] else ([.t] + (if has("h") then [.h] else [] end)) end;
-            # what Shift+key produces on a US layout, for the synthetic "NUM+Shift" tl corner.
-            # 9 and 0 are deliberately absent - they are now &num9_morph/&num0_morph in the
-            # keymap, so keymap-drawer already renders their Shift value natively as "shifted".
+            # what Shift+key produces on a US layout, for the NUM+Shift tr corner. 9 and 0
+            # are absent: they are &num9_morph/&num0_morph in the keymap, which keymap-drawer
+            # renders with their own Shift value in the "s" (shifted) field - used instead.
             def shift_map: {
               "1": "!", "2": "@", "3": "#", "4": "$", "5": "%",
               "6": "^", "7": "&", "8": "*",
@@ -102,16 +100,17 @@ jobs:
                 # BRAC+Shift (the F-keys), top-left: keymap-drawer renders the brac_f* mod-morphs
                 # as {t: bracket or empty, s: F-key}, so the F-key is the "s" (shifted) field
                 (.value[3] | if type == "object" and has("s") then .s else null end) as $fun |
-                # top-left is BRAC+Shift where BRAC has an F-key (left hand), else the synthetic
-                # NUM+Shift symbol on the digit positions (right hand) - the two never collide
-                (if $fun != null and $fun != "" then $fun
+                # NUM+Shift, top-right: the Shift value of a mod-morph, else Shift+key on US
+                (if (.value[2] | type == "object" and has("s")) then .value[2].s
                  elif $num_label == null or ((shift_map | has($num_label)) | not) then null
-                 else shift_map[$num_label] end) as $tl |
+                 else shift_map[$num_label] end) as $num_shift |
+                # bottom-left is shared: BRAC is on the left hand, NAV on the right one
+                (if $nav != null and $nav != "" then $nav else $brac end) as $bl |
                 $base
-                + (if $nav  == null or $nav  == "" then {} else {tr: $nav}  end)
-                + (if $num  == null or $num  == "" then {} else {br: $num}  end)
-                + (if $brac == null or $brac == "" then {} else {bl: $brac} end)
-                + (if $tl   == null or $tl   == "" then {} else {tl: $tl}   end)
+                + (if $fun       == null or $fun       == "" then {} else {tl: $fun}       end)
+                + (if $num_shift == null or $num_shift == "" then {} else {tr: $num_shift} end)
+                + (if $num       == null or $num       == "" then {} else {br: $num}       end)
+                + (if $bl        == null or $bl        == "" then {} else {bl: $bl}        end)
               ],
               Combos: .layers.Combos
             } |
