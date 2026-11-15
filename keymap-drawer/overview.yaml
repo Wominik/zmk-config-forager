@@ -258,15 +258,15 @@ combos:
   - p:
       - 10
       - 12
-    k: $$tabler:arrow-back$$
+    k: $$tabler:square-chevron-left$$
     l:
       - Combos
-    a: bottom
-    o: 0.25
+    a: left
+    o: 0.1
   - p:
       - 11
       - 13
-    k: $$tabler:arrow-forward$$
+    k: $$tabler:square-chevron-right$$
     l:
       - Combos
     a: top

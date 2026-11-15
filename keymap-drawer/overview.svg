@@ -1,22 +1,5 @@
 <svg width="760" height="1095" viewBox="0 0 760 1095" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>/* start glyphs */
-<svg id="tabler:arrow-back">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-back"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M9 11l-4 4l4 4m-4 -4h11a4 4 0 0 0 0 -8h-1" />
-</svg>
-</svg>
 <svg id="tabler:arrow-back-up">
 <svg
   xmlns="http://www.w3.org/2000/svg"
@@ -108,23 +91,6 @@
   <path d="M12 15v-12" />
   <path d="M16 7l-4 -4l-4 4" />
   <path d="M3 12a9 9 0 0 0 18 0" />
-</svg>
-</svg>
-<svg id="tabler:arrow-forward">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-forward"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M15 11l4 4l-4 4m4 -4h-11a4 4 0 0 1 0 -8h1" />
 </svg>
 </svg>
 <svg id="tabler:arrow-forward-up">
@@ -553,6 +519,42 @@
 >
   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
   <path d="M4 10v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1 -1v-3" />
+</svg>
+</svg>
+<svg id="tabler:square-chevron-left">
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-square-chevron-left"
+>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M13 15l-3 -3l3 -3" />
+  <path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14" />
+</svg>
+</svg>
+<svg id="tabler:square-chevron-right">
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="icon icon-tabler icons-tabler-outline icon-tabler-square-chevron-right"
+>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+  <path d="M11 9l3 3l-3 3" />
+  <path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14" />
 </svg>
 </svg>
 <svg id="tabler:square-plus">
@@ -1168,16 +1170,16 @@ svg.keymap { font-family: "Nunito", sans-serif; }
 <use href="#tabler:restore" xlink:href="#tabler:restore" x="133" y="2" height="14" width="14.0" class="combo tap glyph tabler:restore"/>
 </g>
 <g class="combo combopos-17">
-<path d="M84,161 h-50 a6.0,6.0 0 0 1 -6.0,-6.0 v-18" class="combo"/>
-<path d="M84,161 h50 a6.0,6.0 0 0 0 6.0,-6.0 v-52" class="combo"/>
-<rect rx="6" ry="6" x="72" y="150" width="24" height="22" class="combo"/>
-<use href="#tabler:arrow-back" xlink:href="#tabler:arrow-back" x="77" y="154" height="14" width="14.0" class="combo tap glyph tabler:arrow-back"/>
+<path d="M-7,101 v11 a6.0,6.0 0 0 0 6.0,6.0 h10" class="combo"/>
+<path d="M-7,101 v-11 a6.0,6.0 0 0 1 6.0,-6.0 h122" class="combo"/>
+<rect rx="6" ry="6" x="-19" y="90" width="24" height="22" class="combo"/>
+<use href="#tabler:square-chevron-left" xlink:href="#tabler:square-chevron-left" x="-14" y="94" height="14" width="14.0" class="combo tap glyph tabler:square-chevron-left"/>
 </g>
 <g class="combo combopos-18">
 <path d="M140,51 h-50 a6.0,6.0 0 0 0 -6.0,6.0 v24" class="combo"/>
 <path d="M140,51 h50 a6.0,6.0 0 0 1 6.0,6.0 v18" class="combo"/>
 <rect rx="6" ry="6" x="128" y="40" width="24" height="22" class="combo"/>
-<use href="#tabler:arrow-forward" xlink:href="#tabler:arrow-forward" x="133" y="44" height="14" width="14.0" class="combo tap glyph tabler:arrow-forward"/>
+<use href="#tabler:square-chevron-right" xlink:href="#tabler:square-chevron-right" x="133" y="44" height="14" width="14.0" class="combo tap glyph tabler:square-chevron-right"/>
 </g>
 <g class="combo combopos-19">
 <path d="M560,129 h-50 a6.0,6.0 0 0 1 -6.0,-6.0 v-10" class="combo"/>
@@ -1259,10 +1261,10 @@ svg.keymap { font-family: "Nunito", sans-serif; }
 <g transform="translate(368.7, 858.0)" class="combo"><rect rx="6" ry="6" x="128" y="-2" width="24" height="22" class="combo"/><use href="#tabler:restore" xlink:href="#tabler:restore" x="133" y="2" height="14" width="14.0" class="combo tap glyph tabler:restore"/></g>
 <text x="530.7" y="867.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">W + R</text>
 <text x="596.7" y="867.0" style="text-anchor: start; font-size: 12px;">Reopen closed tab</text>
-<g transform="translate(424.7, 734.0)" class="combo"><rect rx="6" ry="6" x="72" y="150" width="24" height="22" class="combo"/><use href="#tabler:arrow-back" xlink:href="#tabler:arrow-back" x="77" y="154" height="14" width="14.0" class="combo tap glyph tabler:arrow-back"/></g>
+<g transform="translate(515.7, 794.0)" class="combo"><rect rx="6" ry="6" x="-19" y="90" width="24" height="22" class="combo"/><use href="#tabler:square-chevron-left" xlink:href="#tabler:square-chevron-left" x="-14" y="94" height="14" width="14.0" class="combo tap glyph tabler:square-chevron-left"/></g>
 <text x="530.7" y="895.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">A + D</text>
 <text x="596.7" y="895.0" style="text-anchor: start; font-size: 12px;">Previous tab</text>
-<g transform="translate(368.7, 872.0)" class="combo"><rect rx="6" ry="6" x="128" y="40" width="24" height="22" class="combo"/><use href="#tabler:arrow-forward" xlink:href="#tabler:arrow-forward" x="133" y="44" height="14" width="14.0" class="combo tap glyph tabler:arrow-forward"/></g>
+<g transform="translate(368.7, 872.0)" class="combo"><rect rx="6" ry="6" x="128" y="40" width="24" height="22" class="combo"/><use href="#tabler:square-chevron-right" xlink:href="#tabler:square-chevron-right" x="133" y="44" height="14" width="14.0" class="combo tap glyph tabler:square-chevron-right"/></g>
 <text x="530.7" y="923.0" style="text-anchor: start; font-size: 12px; font-weight: 700;">S + F</text>
 <text x="596.7" y="923.0" style="text-anchor: start; font-size: 12px;">Next tab</text>
 <g transform="translate(-51.3, 822.0)" class="combo"><rect rx="6" ry="6" x="548" y="118" width="24" height="22" class="combo"/><use href="#tabler:strikethrough" xlink:href="#tabler:strikethrough" x="553" y="122" height="14" width="14.0" class="combo tap glyph tabler:strikethrough"/></g>
