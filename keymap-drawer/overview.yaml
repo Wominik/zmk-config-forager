@@ -95,55 +95,78 @@ layers:
       h: NAV
     - t: $$tabler:arrow-down-from-arc$$
       h: NUM
-      s: ⌘ Tab
-      bl: $$tabler:arrow-bar-to-right$$
+      s: $$tabler:switch-horizontal$$
     - t: $$tabler:backspace$$
       h: BRAC
       s: $$tabler:eraser$$
     - t: $$tabler:space$$
       h: $$tabler:option$$
   Combos:
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - ''
+    - t: Q
+      type: combo-key
+    - t: W
+      type: combo-key
+    - t: E
+      type: combo-key
+    - t: R
+      type: combo-key
+    - t: T
+      type: combo-key
+    - t: 'Y'
+      type: combo-key
+    - t: U
+      type: combo-key
+    - t: I
+      type: combo-key
+    - t: O
+      type: combo-key
+    - t: P
+      type: combo-key
+    - t: A
+      type: combo-key
+    - t: S
+      type: combo-key
+    - t: D
+      type: combo-key
+    - t: F
+      type: combo-key
+    - t: G
+      type: combo-key
+    - t: H
+      type: combo-key
+    - t: J
+      type: combo-key
+    - t: K
+      type: combo-key
+    - t: L
+      type: combo-key
+    - t: ;
+      type: combo-key
+    - t: Z
+      type: combo-key
+    - t: X
+      type: combo-key
+    - t: C
+      type: combo-key
+    - t: V
+      type: combo-key
+    - t: B
+      type: combo-key
+    - t: 'N'
+      type: combo-key
+    - t: M
+      type: combo-key
+    - t: ','
+      type: combo-key
+    - t: .
+      type: combo-key
+    - t: /
+      type: combo-key
     - ''
     - ''
     - ''
     - ''
 combos:
-  - p:
-      - 11
-      - 12
-    k: $$tabler:arrow-down-from-arc$$
-    l:
-      - Combos
   - p:
       - 12
       - 13
@@ -211,7 +234,6 @@ combos:
     l:
       - Combos
     a: top
-    s: 1.0
     type: nav
   - p:
       - 18
@@ -282,13 +304,6 @@ combos:
     a: top
     o: 0.25
   - p:
-      - 16
-      - 18
-    k: $$tabler:strikethrough$$
-    l:
-      - Combos
-    a: bottom
-  - p:
       - 13
       - 16
     k: $$tabler:letter-case-upper$$
@@ -309,4 +324,4 @@ combos:
     l:
       - Combos
     a: top
-    o: 1.8
+    o: 0.7
