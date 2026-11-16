@@ -23,11 +23,9 @@
             slow-release;
             key-positions = <LM3 LM2>;
             bindings = <&mt LC(LALT) ESC>;
-            // on NUM S+D runs the app swapper backwards instead
-            layers = <BASE NAV BRAC>;
         };
-        // Tap Tab, hold Shift+Cmd. Not on NAV (D and F are held modifiers
-        // there) or NUM (D+F is the app swapper there).
+        // Tap Tab, hold Shift+Cmd. Not on NAV / NUM, where D and F are held
+        // modifiers.
         combo_tab {
             timeout-ms = <50>;
             require-prior-idle-ms = <COMBO_IDLE_MS>;
@@ -105,21 +103,6 @@
             key-positions = <RM3 RM4>;
             bindings = <&msc SCRL_UP>;
             layers = <NAV>;
-        };
-        // NUM only: app swapper (see swapper in forager-behaviors.dtsi).
-        // No require-prior-idle-ms: D+F is pressed repeatedly in quick
-        // succession while cycling through apps.
-        combo_swapper {
-            timeout-ms = <50>;
-            key-positions = <LM2 LM1>;
-            bindings = <&swapper>;
-            layers = <NUM>;
-        };
-        combo_swapper_back {
-            timeout-ms = <50>;
-            key-positions = <LM3 LM2>;
-            bindings = <&kp LS(TAB)>;
-            layers = <NUM>;
         };
         combo_clipboard_manager {
             timeout-ms = <50>;

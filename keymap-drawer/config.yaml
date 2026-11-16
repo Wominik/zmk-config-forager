@@ -158,9 +158,10 @@ parse_config:
     "&mt LC(LALT) ESC": { t: "$$tabler:arrow-down-from-arc$$" }
     "&mt RS(RGUI) ENTER": { t: "$$tabler:corner-down-left$$" }
     "&mt LS(LGUI) TAB": { t: "$$tabler:arrow-bar-to-right$$" }
-    "&swapper": "$$tabler:switch-horizontal$$"
-    "&kp LS(TAB)": "$$tabler:arrow-bar-to-left$$"
     "&clipboard_manager": "$$tabler:clipboard-text$$"
+    # LH0: tap Escape (Tab while Cmd is held, see esc_tab_morph), hold NUM
+    # (keymap-drawer sees layer names already resolved to their numbers)
+    "&num_esc 2 0": { t:"$$tabler:arrow-down-from-arc$$", s: "⌘ Tab", h: NUM }
 
   # Nudge combo boxes apart where several combos' key-positions overlap and
   # their default (centroid) placement would otherwise collide - see
@@ -194,9 +195,6 @@ parse_config:
     # own colour (type becomes a CSS class, see svg_extra_style)
     combo_scroll_down: { align: top, slide: 1, type: nav }
     combo_scroll_up: { align: top, type: nav }
-    # NUM-only app swapper shares D+F / S+D with tab / escape
-    combo_swapper: { align: bottom, slide: 1, type: num }
-    combo_swapper_back: { align: bottom, slide: -1, type: num }
     # across both hands: lock (Q+P) runs over the top of everything, caps
     # word (F+J) just under the emoji box (G+H)
     combo_lock: { align: top, offset: 1.8 }

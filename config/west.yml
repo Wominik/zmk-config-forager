@@ -12,8 +12,6 @@ manifest:
       url-base: https://github.com/nrfconnect
     - name: wominik
       url-base: https://github.com/Wominik
-    - name: urob
-      url-base: https://github.com/urob
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -31,10 +29,6 @@ manifest:
       # split transport requires.
       remote: wominik
       revision: 5d53c1de159c717530a714bec0cedcf861b298e1
-    # Tri-state behavior, for the app swapper on NUM (forager-behaviors.dtsi)
-    - name: zmk-tri-state
-      remote: urob
-      revision: c08969627245adeddbcdb6dfc1a4c167c04160e2 # main, 2026-09-10
     # ESB split transport + the Nordic SDK pieces it needs (NCS 3.1, patched
     # by the module author to pass ZMK 0.4 / Zephyr 4.1 CMake validation)
     - name: zmk-feature-split-esb

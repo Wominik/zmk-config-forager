@@ -102,17 +102,28 @@
         BRAC_FN(brac_f2,  &none,     F2)
         BRAC_FN(brac_f3,  &kp LBKT,  F3)
 
-        // App switcher, run by combos on NUM (combo_swapper*): the first
-        // D+F presses ⌘Tab and keeps ⌘ down, every further D+F is another
-        // Tab, S+D goes backwards. Letting go of the NUM thumb - or any
-        // other key - releases ⌘ and switches to the selected app.
-        // Needs github.com/urob/zmk-tri-state (config/west.yml).
-        swapper: swapper {
-            compatible = "zmk,behavior-tri-state";
+        // LH0: tap = Escape, but Tab while Cmd is held, hold = NUM. So with
+        // D held (Cmd), every tap of the thumb is Cmd+Tab: cycle through
+        // apps, let go of D to switch. D and F held (Cmd+Shift): backwards.
+        // Cmd stays down for the Tab (keep-mods); Shift is not part of the
+        // morph, so it passes through as well.
+        esc_tab_morph: esc_tab_morph {
+            compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
-            // the raw presses of S, D and F behind the combos must not end it
-            ignored-key-positions = <LM3 LM2 LM1>;
+            bindings = <&kp ESC>, <&kp TAB>;
+            mods = <(MOD_LGUI|MOD_RGUI)>;
+            keep-mods = <(MOD_LGUI|MOD_RGUI)>;
+        };
+
+        // Same timing as the &lt it replaces (see the &lt override in
+        // forager.keymap)
+        num_esc: num_esc {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            bindings = <&mo>, <&esc_tab_morph>;
         };
     };
 };
