@@ -93,8 +93,9 @@ layers:
       br: \
     - t: $$tabler:space$$
       h: NAV
-    - t: $$tabler:arrow-bar-to-right$$
+    - t: $$tabler:arrow-down-from-arc$$
       h: NUM
+      bl: $$tabler:arrow-bar-to-right$$
     - t: $$tabler:backspace$$
       h: BRAC
       s: $$tabler:eraser$$
@@ -140,6 +141,12 @@ combos:
       - 11
       - 12
     k: $$tabler:arrow-down-from-arc$$
+    l:
+      - Combos
+  - p:
+      - 12
+      - 13
+    k: $$tabler:arrow-bar-to-right$$
     l:
       - Combos
   - p:
@@ -213,6 +220,24 @@ combos:
       - Combos
     a: top
     type: nav
+  - p:
+      - 12
+      - 13
+    k: $$tabler:switch-horizontal$$
+    l:
+      - Combos
+    a: bottom
+    s: 1.0
+    type: num
+  - p:
+      - 11
+      - 12
+    k: $$tabler:arrow-bar-to-left$$
+    l:
+      - Combos
+    a: bottom
+    s: -1.0
+    type: num
   - p:
       - 21
       - 22
