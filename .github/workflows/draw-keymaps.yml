@@ -60,8 +60,12 @@ jobs:
           yq -Yi '.combos.[].l = ["Combos"]' keymap-drawer/base.yaml
           # faint BASE letters on the otherwise empty keys under the combo boxes,
           # so it is clear which keys a combo uses (thumbs and icons left out);
-          # the overview reuses this layer as is
-          yq -Yi '.layers.Combos = [.layers.BASE | to_entries[] | ((.value | if type == "string" then . else .t end) // "") as $t | if .key >= 30 or ($t | test("\\$\\$")) then "" else {t: $t, type: "combo-key"} end]' keymap-drawer/base.yaml
+          # the overview reuses this layer as is. Plain -y, not -Y: the round-trip
+          # mode adds hidden style entries to lists, which would end up as keys.
+          yq -y '.layers.Combos = [.layers.BASE | to_entries[] | ((.value | if type == "string" then . else .t end) // "") as $t | if .key >= 30 or ($t | test("\\$\\$")) then "" else {t: $t, type: "combo-key"} end]' keymap-drawer/base.yaml > keymap-drawer/base.yaml.tmp
+          mv keymap-drawer/base.yaml.tmp keymap-drawer/base.yaml
+          # keymap-drawer rejects a layer whose size does not match the keyboard
+          test "$(yq '.layers.Combos | length' keymap-drawer/base.yaml)" = "$(yq '.layers.BASE | length' keymap-drawer/base.yaml)"
           keymap "${config_arg[@]}" draw keymap-drawer/base.yaml > keymap-drawer/base.svg
           # keymap-drawer places the footer at the right edge; re-center it (see config.yaml's svg_extra_style)
           sed -i -E 's/(x=")[0-9.]+(" y="[0-9.]+" class="footer")/\150%\2/' keymap-drawer/base.svg
