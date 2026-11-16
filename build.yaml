@@ -28,10 +28,17 @@ include:
     shield: forager_right rgbled_adapter
     cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n -DCONFIG_ZMK_SPLIT_ESB_PERIPHERAL_ID=1
     artifact-name: forager_right
+  # Two dongles, same keymap and ESB key, either one works with the halves:
+  # one with the Prospector screen ...
   - board: xiao_ble/nrf52840/zmk
     shield: forager_central_dongle prospector_adapter
     cmake-args: -DCONFIG_ZMK_STUDIO=n
-    artifact-name: forager_dongle
+    artifact-name: forager_dongle_prospector
+  # ... and a bare XIAO without any display
+  - board: xiao_ble/nrf52840/zmk
+    shield: forager_central_dongle
+    cmake-args: -DCONFIG_ZMK_STUDIO=n -DCONFIG_ZMK_DISPLAY=n
+    artifact-name: forager_dongle_xiao
   - board: xiao_ble/nrf52840/zmk
     shield: settings_reset
     artifact-name: settings_reset

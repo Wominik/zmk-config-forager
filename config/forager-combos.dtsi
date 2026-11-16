@@ -17,13 +17,6 @@
 / {
     combos {
         compatible = "zmk,combos";
-        combo_esc {
-            timeout-ms = <50>;
-            require-prior-idle-ms = <COMBO_IDLE_MS>;
-            slow-release;
-            key-positions = <LM3 LM2>;
-            bindings = <&mt LC(LALT) ESC>;
-        };
         // Tap Tab, hold Shift+Cmd. Not on NAV / NUM, where D and F are held
         // modifiers.
         combo_tab {
@@ -35,7 +28,7 @@
             layers = <BASE BRAC>;
         };
         // Not on NAV: there J+K scrolls instead (combo_scroll_down).
-        // slow-release (here and on esc/tab): the modifier of the hold
+        // slow-release (here and on tab): the modifier of the hold
         // stays until both keys are up, not just the first.
         combo_ent {
             timeout-ms = <50>;
@@ -169,14 +162,6 @@
             require-prior-idle-ms = <COMBO_IDLE_MS>;
             key-positions = <LM3 LM1>;
             bindings = <&kp LG(LS(RBKT))>;
-            layers = <BASE>;
-        };
-        // J+L delete word
-        combo_del_word {
-            timeout-ms = <50>;
-            require-prior-idle-ms = <COMBO_IDLE_MS>;
-            key-positions = <RM1 RM3>;
-            bindings = <&kp LA(BSPC)>;
             layers = <BASE>;
         };
         // Across hands: F+J caps word, G+H emoji picker, Q+P lock screen

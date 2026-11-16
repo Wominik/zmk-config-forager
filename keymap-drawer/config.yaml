@@ -145,23 +145,21 @@ parse_config:
     "&kp LG(T)": "$$tabler:square-plus$$"
     "&kp LG(W)": "$$tabler:square-x$$"
     "&kp LG(LS(T))": "$$tabler:restore$$"
-    "&kp LA(BSPC)": "$$tabler:strikethrough$$"
     "&caps_word": "$$tabler:letter-case-upper$$"
     "&emoji_picker": "$$tabler:mood-smile$$"
     # Shift+0 on NUM (num0_morph): the macro types "=>"
     "&fat_arrow": "=>"
     "&kp LC(LG(Q))": "$$tabler:lock$$"
 
-    # esc/tab/ent/bspc combos also carry a modifier hold, but on the combo
+    # tab/enter combos also carry a modifier hold, but on the combo
     # diagram just the tap is what matters - drop the "h" field so the mod
     # doesn't render at all instead of showing a possibly-misleading glyph.
-    "&mt LC(LALT) ESC": { t: "$$tabler:arrow-down-from-arc$$" }
     "&mt RS(RGUI) ENTER": { t: "$$tabler:corner-down-left$$" }
     "&mt LS(LGUI) TAB": { t: "$$tabler:arrow-bar-to-right$$" }
     "&clipboard_manager": "$$tabler:clipboard-text$$"
     # LH0: tap Escape (Tab while Cmd is held, see esc_tab_morph), hold NUM
     # (keymap-drawer sees layer names already resolved to their numbers)
-    "&num_esc 2 0": { t: "$$tabler:arrow-down-from-arc$$", s: "⌘ Tab", h: NUM }
+    "&num_esc 2 0": { t: "$$tabler:arrow-down-from-arc$$", s: "$$tabler:switch-horizontal$$", h: NUM }
 
   # Nudge combo boxes apart where several combos' key-positions overlap and
   # their default (centroid) placement would otherwise collide - see
@@ -190,14 +188,14 @@ parse_config:
     # A+D: off the left edge, out of the crowded undo/cut corner
     combo_prev_tab: { align: left, offset: 0.1 }
     combo_next_tab: { align: top, offset: 0.25 }
-    combo_del_word: { align: bottom }
     # NAV-only combos share their keys with enter / apostrophe: own spot and
     # own colour (type becomes a CSS class, see svg_extra_style)
-    combo_scroll_down: { align: top, slide: 1, type: nav }
+    combo_scroll_down: { align: top, type: nav }
     combo_scroll_up: { align: top, type: nav }
     # across both hands: lock (Q+P) runs over the top of everything, caps
     # word (F+J) just under the emoji box (G+H)
-    combo_lock: { align: top, offset: 1.8 }
+    # (lower would bring its line within 4px of the reopen-tab box on W+R)
+    combo_lock: { align: top, offset: 0.7 }
     combo_caps_word: { align: bottom, offset: 0.2 }
 
 draw_config:
@@ -211,19 +209,42 @@ draw_config:
     text.footer { text-anchor: middle; }
     /* combos that only exist on NAV (type: nav in zmk_combos) */
     rect.combo.nav { fill: #bfe8c5; }
+    /* faint BASE letters on the keys of the combo diagram (type combo-key,
+       set in the draw workflow) - there to find the keys, not to be read */
+    text.key.combo-key { fill: #b9bdc2; }
+    /* single characters in combo boxes (backtick, apostrophe, minus) are
+       hard to spot at the default 11px */
+    text.combo.tap { font-size: 14px; font-weight: 700; }
     /* combos that only exist on NUM (type: num) */
     rect.combo.num { fill: #fde2b8; }
-    /* corner legends (NAV/NUM/BRAC folded onto BASE in the overview) sit
-       2px from the key border by default, text right on it - move them in
-       to about where the hold glyphs end up */
-    text.tl { transform: translate(3px, 3px); }
-    text.tr { transform: translate(-3px, 3px); }
-    text.bl { transform: translate(3px, -5px); }
-    text.br { transform: translate(-3px, -5px); }
-    use.tl { transform: translate(2px, 2px); }
-    use.tr { transform: translate(-2px, 2px); }
-    use.bl { transform: translate(2px, -2px); }
-    use.br { transform: translate(-2px, -2px); }
+    /* Key legends, in key coordinates (centre 0, border at +-26).
+       Bottom line: the hold (centre) and the bl/br corners share one
+       vertical centre, y = 17. Text: baseline at 21, and at 11px a digit
+       or symbol has its middle ~4px above the baseline. Glyphs: the middle
+       of their box (12px for the hold, 10px for corners). keymap-drawer's
+       defaults put corner text on the border and every glyph 1-2px lower
+       than the text next to it. */
+    text.key.hold { transform: translate(0, -3px); }
+    use.key.hold { transform: translate(0, -1px); }
+    text.key.bl { transform: translate(3px, -3px); }
+    text.key.br { transform: translate(-3px, -3px); }
+    use.key.bl { transform: translate(2px, -2px); }
+    use.key.br { transform: translate(-2px, -2px); }
+    /* Top line, the mirror image: shifted (centre) and the tl/tr corners
+       share the vertical centre y = -17. Text is centred on that line
+       (dominant-baseline: central) instead of hanging from y = -24: the
+       hanging baseline sits at a different height in Nunito (letters,
+       digits) and in the fallback font (symbols like dollar, percent,
+       caret), so neighbouring corners did not line up.
+       NB: no ampersand or angle brackets in these comments - this CSS is
+       pasted into the SVG as is, and those would break its XML. */
+    text.key.tl, text.key.tr, text.key.shifted { dominant-baseline: central; }
+    text.key.tl { transform: translate(3px, 7px); }
+    text.key.tr { transform: translate(-3px, 7px); }
+    text.key.shifted { transform: translate(0, 7px); }
+    use.key.tl { transform: translate(2px, 2px); }
+    use.key.tr { transform: translate(-2px, 2px); }
+    use.key.shifted { transform: translate(0, 2px); }
     /* uniform stroke weight for every glyph (fetched Tabler icons and the
        hand-built F10/F11/F12 below) - the nested svg element is what carries
        the glyph's own stroke-width, see keymap-drawer's get_glyph_defs() */

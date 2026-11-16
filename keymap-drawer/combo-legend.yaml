@@ -2,7 +2,6 @@
 # keymap drawings. One line per combo node in config/forager-combos.dtsi:
 #   combo_name: text
 # Every combo needs a line here - the drawing workflow fails otherwise.
-combo_esc: Escape
 combo_tab: Tab
 combo_ent: Enter
 combo_prev_tab: Previous tab
@@ -22,7 +21,6 @@ combo_minus: Minus
 combo_new_tab: New tab
 combo_close_tab: Close tab
 combo_reopen_tab: Reopen closed tab
-combo_del_word: Delete word
 combo_caps_word: Caps word
 combo_emoji: Emoji picker
 combo_lock: Lock screen

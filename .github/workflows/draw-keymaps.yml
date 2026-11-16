@@ -22,7 +22,9 @@ on:
 #                    NAV/NUM/BRAC for consistency on A/S/D/F and H/J/K/L/;)
 #                    - the Hyper chord on G (NAV/NUM) and H (BRAC) is
 #                    hardcoded away since its hold is abbreviated to "✦" and
-#                    would not text-match the spelled-out chord.
+#                    would not text-match the spelled-out chord. Thumb keys
+#                    get no corners at all (they would collide with the
+#                    NAV/NUM/BRAC hold labels).
 
 jobs:
   draw:
@@ -56,6 +58,10 @@ jobs:
 
           keymap "${config_arg[@]}" parse -z config/forager.keymap --virtual-layers Combos > keymap-drawer/base.yaml
           yq -Yi '.combos.[].l = ["Combos"]' keymap-drawer/base.yaml
+          # faint BASE letters on the otherwise empty keys under the combo boxes,
+          # so it is clear which keys a combo uses (thumbs and icons left out);
+          # the overview reuses this layer as is
+          yq -Yi '.layers.Combos = [.layers.BASE | to_entries[] | ((.value | if type == "string" then . else .t end) // "") as $t | if .key >= 30 or ($t | test("\\$\\$")) then "" else {t: $t, type: "combo-key"} end]' keymap-drawer/base.yaml
           keymap "${config_arg[@]}" draw keymap-drawer/base.yaml > keymap-drawer/base.svg
           # keymap-drawer places the footer at the right edge; re-center it (see config.yaml's svg_extra_style)
           sed -i -E 's/(x=")[0-9.]+(" y="[0-9.]+" class="footer")/\150%\2/' keymap-drawer/base.svg
@@ -106,11 +112,15 @@ jobs:
                  else shift_map[$num_label] end) as $num_shift |
                 # bottom-left is shared: BRAC is on the left hand, NAV on the right one
                 (if $nav != null and $nav != "" then $nav else $brac end) as $bl |
+                # thumbs (30-33) get no corners: their hold label (NAV, NUM, BRAC) already
+                # fills the bottom, and a corner there just collides with it
+                if $pos >= 30 then $base else
                 $base
                 + (if $fun       == null or $fun       == "" then {} else {tl: $fun}       end)
                 + (if $num_shift == null or $num_shift == "" then {} else {tr: $num_shift} end)
                 + (if $num       == null or $num       == "" then {} else {br: $num}       end)
                 + (if $bl        == null or $bl        == "" then {} else {bl: $bl}        end)
+                end
               ],
               Combos: .layers.Combos
             } |
