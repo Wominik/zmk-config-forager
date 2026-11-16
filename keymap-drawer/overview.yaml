@@ -95,6 +95,7 @@ layers:
       h: NAV
     - t: $$tabler:arrow-down-from-arc$$
       h: NUM
+      s: ⌘ Tab
       bl: $$tabler:arrow-bar-to-right$$
     - t: $$tabler:backspace$$
       h: BRAC
@@ -220,24 +221,6 @@ combos:
       - Combos
     a: top
     type: nav
-  - p:
-      - 12
-      - 13
-    k: $$tabler:switch-horizontal$$
-    l:
-      - Combos
-    a: bottom
-    s: 1.0
-    type: num
-  - p:
-      - 11
-      - 12
-    k: $$tabler:arrow-bar-to-left$$
-    l:
-      - Combos
-    a: bottom
-    s: -1.0
-    type: num
   - p:
       - 21
       - 22
