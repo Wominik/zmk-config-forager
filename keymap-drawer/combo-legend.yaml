@@ -3,6 +3,7 @@
 #   combo_name: text
 # Every combo needs a line here - the drawing workflow fails otherwise.
 combo_esc: Escape
+combo_tab: Tab
 combo_ent: Enter
 combo_prev_tab: Previous tab
 combo_next_tab: Next tab
@@ -25,3 +26,5 @@ combo_del_word: Delete word
 combo_caps_word: Caps word
 combo_emoji: Emoji picker
 combo_lock: Lock screen
+combo_swapper: Next app (hold NUM)
+combo_swapper_back: Previous app (hold NUM)

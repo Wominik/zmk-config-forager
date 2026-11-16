@@ -37,6 +37,8 @@ TITLE_H = 34
 KEYS_DX = 34  # from the left edge of the box to the key names
 DESC_DX = 100  # ... and to the description
 BEGIN, END = "<!-- combo-legend -->", "<!-- /combo-legend -->"
+# CSS class of a combo box (its zmk_combos "type") -> what its colour means
+LAYER_COLOURS = [("nav", "green: only while NAV is held"), ("num", "orange: only while NUM is held")]
 
 
 def strip_comments(text: str) -> str:
@@ -137,10 +139,12 @@ def add_legend(path: Path) -> None:
 
     out = [f'{BEGIN}<g data-added="{added}" class="combo-legend">']
     out.append(f'<text x="{MARGIN}" y="{top + 10:.0f}" {start} font-weight: 700;">Combos</text>')
-    if any("nav" in d["class"].split() for d in drawn):
+    # colour key for combos that only exist on one layer (zmk_combos "type")
+    notes = [text for cls, text in LAYER_COLOURS if any(cls in d["class"].split() for d in drawn)]
+    if notes:
         out.append(
             f'<text x="{MARGIN + 66}" y="{top + 10:.0f}" {start} font-size: 12px;">'
-            "green: only while NAV is held</text>"
+            f"{html.escape(', '.join(notes))}</text>"
         )
     for i, (combo, box) in enumerate(zip(combos, drawn)):
         x = MARGIN + (i // rows) * col_w

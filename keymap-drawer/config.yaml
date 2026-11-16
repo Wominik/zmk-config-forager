@@ -157,6 +157,9 @@ parse_config:
     # doesn't render at all instead of showing a possibly-misleading glyph.
     "&mt LC(LALT) ESC": { t: "$$tabler:arrow-down-from-arc$$" }
     "&mt RS(RGUI) ENTER": { t: "$$tabler:corner-down-left$$" }
+    "&mt LS(LGUI) TAB": { t: "$$tabler:arrow-bar-to-right$$" }
+    "&swapper": "$$tabler:switch-horizontal$$"
+    "&kp LS(TAB)": "$$tabler:arrow-bar-to-left$$"
     "&clipboard_manager": "$$tabler:clipboard-text$$"
 
   # Nudge combo boxes apart where several combos' key-positions overlap and
@@ -191,6 +194,9 @@ parse_config:
     # own colour (type becomes a CSS class, see svg_extra_style)
     combo_scroll_down: { align: top, slide: 1, type: nav }
     combo_scroll_up: { align: top, type: nav }
+    # NUM-only app swapper shares D+F / S+D with tab / escape
+    combo_swapper: { align: bottom, slide: 1, type: num }
+    combo_swapper_back: { align: bottom, slide: -1, type: num }
     # across both hands: lock (Q+P) runs over the top of everything, caps
     # word (F+J) just under the emoji box (G+H)
     combo_lock: { align: top, offset: 1.8 }
@@ -207,6 +213,8 @@ draw_config:
     text.footer { text-anchor: middle; }
     /* combos that only exist on NAV (type: nav in zmk_combos) */
     rect.combo.nav { fill: #bfe8c5; }
+    /* combos that only exist on NUM (type: num) */
+    rect.combo.num { fill: #fde2b8; }
     /* corner legends (NAV/NUM/BRAC folded onto BASE in the overview) sit
        2px from the key border by default, text right on it - move them in
        to about where the hold glyphs end up */

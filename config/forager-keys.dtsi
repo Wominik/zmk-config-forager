@@ -52,7 +52,7 @@
 #define HPR_G &hml LS(LA(LC(LGUI))) G
 #define HPR_H &hmr RS(RA(RC(RGUI))) H
 #define NAV_SPC &lt NAV SPACE
-#define NUM_TAB &lt NUM TAB
+#define NUM_ESC &lt NUM ESC
 
 #define XXX &none
 #define ___ &trans
