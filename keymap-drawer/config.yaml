@@ -161,7 +161,7 @@ parse_config:
     "&clipboard_manager": "$$tabler:clipboard-text$$"
     # LH0: tap Escape (Tab while Cmd is held, see esc_tab_morph), hold NUM
     # (keymap-drawer sees layer names already resolved to their numbers)
-    "&num_esc 2 0": { t:"$$tabler:arrow-down-from-arc$$", s: "⌘ Tab", h: NUM }
+    "&num_esc 2 0": { t: "$$tabler:arrow-down-from-arc$$", s: "⌘ Tab", h: NUM }
 
   # Nudge combo boxes apart where several combos' key-positions overlap and
   # their default (centroid) placement would otherwise collide - see
